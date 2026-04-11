@@ -1,0 +1,14 @@
+{
+    "metadata":{
+        "title": "vs. DJ Subatomic Supernova (From No Straight Roads)",
+        "bpm": 120,
+        "resolution": 480,
+        "offset": 0
+    },
+    "notes": [
+        {"tick": 480, "type": "normal" },
+        {"tick": 960, "type": "normal" },
+        {"tick": 1440, "type": "normal" },
+        {"tick": 1920, "type": "normal" }
+    ]
+}

@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 /// <summary>
@@ -5,16 +6,18 @@ using UnityEngine;
 /// </summary>
 public class Tester : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public ChartData chartData;
     void Start()
     {
         GameObject jsonReader = GameObject.Find("JSONReader");
-        ChartData chartData = jsonReader.GetComponent<JSONReader>().Load("vs. DJ Subatomic Supernova (From No Straight Roads)");
+        chartData = jsonReader.GetComponent<JSONReader>().Load("vs. DJ Subatomic Supernova (From No Straight Roads)");
         Debug.Log("Tester: " + chartData.metadata.title);
         Conductor.Instance.Init(chartData.metadata);
+
+
+        GameObject lane = GameObject.Find("Lane");
     }
 
-    // Update is called once per frame
     void Update()
     {
         

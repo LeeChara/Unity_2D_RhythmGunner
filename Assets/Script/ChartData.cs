@@ -20,3 +20,10 @@ public class NoteData
     public int tick;
     public string type;
 }
+
+[System.Serializable]
+public class RuntimeNote
+{
+    public int spawnTick;
+    public string type;
+}

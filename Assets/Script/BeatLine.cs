@@ -6,27 +6,23 @@ using UnityEngine;
 public class BeatLine : MonoBehaviour
 {
     RectTransform rt;
-    public float speed = 50f;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    public float noteSpeed = 1f;
+    private float endX = -100f;
     void Update()
     {
-        
-        rt.anchoredPosition += (Vector2.zero - rt.anchoredPosition).normalized * speed * Time.deltaTime;
-        if ((rt.anchoredPosition - Vector2.zero).magnitude < 0.5f)
+        rt.anchoredPosition += (new Vector2(endX, 0) - rt.anchoredPosition).normalized * noteSpeed * Time.deltaTime;
+        if (rt.anchoredPosition.x < endX)
         {
             Destroy(this.gameObject);
         }
     }
 
-    public void Init(float startX)
+    public void Init(float startX, float endX)
     {
+        this.endX = endX;
         rt = this.GetComponent<RectTransform>();
         rt.anchoredPosition = new Vector2(startX, 0);
+
+        noteSpeed = Conductor.Instance.noteSpeed;
     }
 }

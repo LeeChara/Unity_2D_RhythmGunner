@@ -24,7 +24,7 @@ public class BeatSpawner : MonoBehaviour
     public void Init()
     {
         spawnInterval = Conductor.Instance.resolution;
-        spawnTick = spawnInterval;
+        spawnTick = - 10 * spawnInterval;
         Debug.Log("BeatSpawner: Spawn interval set to " + spawnInterval);
 
         isInitialized = true;
@@ -32,12 +32,11 @@ public class BeatSpawner : MonoBehaviour
 
     void SpawnBeat()
     {
-        float halfWidth = GetComponent<RectTransform>().rect.width / 2f;
+        float xMax = GetComponent<RectTransform>().rect.xMax;
+        float xMin = GetComponent<RectTransform>().rect.xMin;
 
-        GameObject left = Instantiate(beatPrefab, transform);
-        GameObject right = Instantiate(beatPrefab, transform);
+        GameObject beatLine = Instantiate(beatPrefab, transform);
 
-        left.GetComponent<BeatLine>().Init(-halfWidth);
-        right.GetComponent<BeatLine>().Init(halfWidth);
+        beatLine.GetComponent<BeatLine>().Init(xMax, xMin);
     }
 }

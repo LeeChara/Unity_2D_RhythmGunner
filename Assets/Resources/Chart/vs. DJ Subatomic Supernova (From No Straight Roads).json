@@ -9,6 +9,7 @@
         {"tick": 480, "type": "normal" },
         {"tick": 960, "type": "normal" },
         {"tick": 1440, "type": "normal" },
-        {"tick": 1920, "type": "normal" }
+        {"tick": 1920, "type": "normal" },
+        {"tick": 2040, "type": "normal" }
     ]
 }

@@ -1,17 +1,45 @@
 using UnityEngine;
 
-/// <summary>
-/// RuntimeNote에 따라 노트를 생성하는 클래스입니다.
-/// </summary>
 public class NoteSpawner : MonoBehaviour
 {
-    void Start()
+    [SerializeField]
+    private GameObject notePrefab;
+
+    public RectTransform lane;
+
+    private float spawnTick;
+    private float arriveTick;
+    private int resolution; // From GameManager
+    private float noteSpeed; // From GameManager
+    private float destroyX;
+
+    private bool isInitialized = false;
+    private void Update()
     {
-        
+        if (!isInitialized) return;
+
+        while (TickClock.Instance.Tick >= spawnTick)
+        {
+            SpawnNote();
+            spawnTick += resolution;
+        }
     }
 
-    void Update()
+    private void SpawnNote()
     {
-        
+        GameObject note = Instantiate(notePrefab, transform.position, Quaternion.identity);
+        note.GetComponent<RectTransform>().SetParent(lane, false);
+        note.GetComponent<NoteController>().Init(noteSpeed, destroyX);
+    }
+
+    public void Init(int resolution, float noteSpeed, float arriveTick)
+    {
+        this.resolution = resolution;
+        this.noteSpeed = noteSpeed;
+        this.arriveTick = arriveTick;
+        spawnTick = - arriveTick;
+        this.destroyX = lane.rect.width;
+
+        isInitialized = true;
     }
 }

@@ -14,6 +14,8 @@ public class LaneController : MonoBehaviour
     }
     public float getArriveTime()
     {
-        return moveDistance / noteSpeed;
+        float arriveTime = moveDistance / noteSpeed;
+        Debug.Log("LaneController getArriveTime: moveDistance = " + moveDistance + ", noteSpeed = " + noteSpeed + ", arriveTime = " + arriveTime);
+        return arriveTime;
     }
 }

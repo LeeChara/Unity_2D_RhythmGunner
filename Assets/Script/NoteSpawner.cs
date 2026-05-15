@@ -29,7 +29,7 @@ public class NoteSpawner : MonoBehaviour
     {
         GameObject note = Instantiate(notePrefab, transform.position, Quaternion.identity);
         note.GetComponent<RectTransform>().SetParent(lane, false);
-        note.GetComponent<NoteController>().Init(noteSpeed, destroyX);
+        note.GetComponent<NoteController>().Init(TickClock.Instance.Tick + arriveTick, NoteType.Attack, noteSpeed, destroyX); // Todo : NoteType should be determined by the note data
     }
 
     public void Init(int resolution, float noteSpeed, float arriveTick)

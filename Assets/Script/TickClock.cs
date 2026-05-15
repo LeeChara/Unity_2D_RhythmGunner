@@ -3,7 +3,6 @@ using UnityEngine;
 public class TickClock : MonoBehaviour
 {
     public static TickClock Instance { get; private set; }
-
     public float Tick { get; private set; } = 0f;
 
     private float bpm = 120f;

@@ -2,18 +2,29 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance { get; private set; }
+
     public LaneController laneController;
     public NoteSpawner noteSpawner;
     public JudgeSystem judgeSystem;
 
-    public float perfectTime = 23.0f, goodTime = 80.0f; // ms
-    public float noteSpeed = 5f;
+    public Transform lane;
+
+    public float perfectTime = 75.0f; // ms
+    public float goodTime = 150.0f; // ms
+    public float missTime = 250.0f; // ms
+    public float noteSpeed = 100.0f;
 
     public float perfectTick { get; private set; }
     public float goodTick { get; private set; }
+    public float missTick { get; private set; }
+    private void Awake()
+    {
+        Instance = this;
+    }
     void Start()
     {
-        float bpm = 120f;
+        float bpm = 75f;
         int resolution = 480;
         laneController.Init(noteSpeed);
         float arriveTime = laneController.getArriveTime();
@@ -23,8 +34,9 @@ public class GameManager : MonoBehaviour
 
         perfectTick = perfectTime / 1000f * (bpm / 60f) * resolution;
         goodTick = goodTime / 1000f * (bpm / 60f) * resolution;
+        missTick = missTime / 1000f * (bpm / 60f) * resolution;
 
-        judgeSystem.Init(perfectTick, goodTick);
+        judgeSystem.Init(perfectTick, goodTick, missTick, lane);
     }
 
 }

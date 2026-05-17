@@ -17,8 +17,6 @@ public class JudgeSystem : MonoBehaviour
 
     public bool Judge(NoteType noteType)
     {
-        Debug.Log($"Judging note of type {noteType} at tick {TickClock.Instance.Tick}");
-
         NoteController closestNote = null;
         float minTickDiff = float.MaxValue;
         foreach (Transform note in lane)
@@ -34,6 +32,7 @@ public class JudgeSystem : MonoBehaviour
         }
 
         if (closestNote == null) return false;
+        if (closestNote.noteType == NoteType.Reload && minTickDiff > perfectTick) return false; // Reload note can only be judged as Perfect
         if (minTickDiff > missTick) return false;
 
         if (minTickDiff <= perfectTick)

@@ -192,9 +192,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 237e955e336232342b06c4bd9095c249, type: 3}
+  m_Resource: {fileID: 8300000, guid: 5c474351ad6fbfb41be8bc7f410f2c76, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -648,8 +648,9 @@ MonoBehaviour:
   laneController: {fileID: 313273113}
   noteSpawner: {fileID: 2105939860}
   judgeSystem: {fileID: 1935994273}
+  musicPlayer: {fileID: 211218900}
   lane: {fileID: 313273110}
-  perfectTime: 75
+  perfectTime: 100
   goodTime: 200
   missTime: 400
   noteSpeed: 100

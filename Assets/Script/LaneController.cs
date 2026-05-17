@@ -10,7 +10,7 @@ public class LaneController : MonoBehaviour
     public void Init(float noteSpeed)
     {
         this.noteSpeed = noteSpeed;
-        moveDistance = this.GetComponent<RectTransform>().rect.width - judgementLine.GetComponent<RectTransform>().anchoredPosition.x;
+        moveDistance = this.GetComponent<RectTransform>().rect.width - judgementLine.GetComponent<RectTransform>().anchoredPosition.x;  
     }
     public float getArriveTime()
     {

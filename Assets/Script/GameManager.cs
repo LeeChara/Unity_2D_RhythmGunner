@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public LaneController laneController;
     public NoteSpawner noteSpawner;
     public JudgeSystem judgeSystem;
+    public MusicPlayer musicPlayer;
 
     public Transform lane;
 
@@ -26,11 +27,14 @@ public class GameManager : MonoBehaviour
     {
         float bpm = 75f;
         int resolution = 480;
+        Debug.Log("GameManager Start: bpm = " + bpm + ", resolution = " + resolution);
+        float audioOffset = 0f; // æÁºˆ: ¿Ωæ«¿Ã ¥ ∞‘ Ω√¿€, ¿Ωºˆ: ¿Ωæ«¿Ã ¿œ¬Ô Ω√¿€
         laneController.Init(noteSpeed);
         float arriveTime = laneController.getArriveTime();
         TickClock.Instance.Init(bpm, resolution, arriveTime);
         float arriveTick = arriveTime * (bpm / 60f) * resolution;
         noteSpawner.Init(resolution, noteSpeed, arriveTick);
+        musicPlayer.Init(arriveTime, audioOffset);
 
         perfectTick = perfectTime / 1000f * (bpm / 60f) * resolution;
         goodTick = goodTime / 1000f * (bpm / 60f) * resolution;

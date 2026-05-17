@@ -20,16 +20,16 @@ public class NoteSpawner : MonoBehaviour
 
         while (TickClock.Instance.Tick >= spawnTick)
         {
-            SpawnNote();
+            SpawnNote(NoteType.Reload);
             spawnTick += resolution;
         }
     }
 
-    private void SpawnNote()
+    private void SpawnNote(NoteType noteType)
     {
         GameObject note = Instantiate(notePrefab, transform.position, Quaternion.identity);
         note.GetComponent<RectTransform>().SetParent(lane, false);
-        note.GetComponent<NoteController>().Init(TickClock.Instance.Tick + arriveTick, NoteType.Attack, noteSpeed, destroyX); // Todo : NoteType should be determined by the note data
+        note.GetComponent<NoteController>().Init(TickClock.Instance.Tick + arriveTick, noteType, noteSpeed, destroyX); // Todo : NoteType should be determined by the note data
     }
 
     public void Init(int resolution, float noteSpeed, float arriveTick)

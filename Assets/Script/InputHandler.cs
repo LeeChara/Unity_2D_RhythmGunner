@@ -8,6 +8,14 @@ public class InputHandler : MonoBehaviour
     private Key[] counterKeys = { Key.Space };
     void Update()
     {
+        foreach (Key key in counterKeys)
+        {
+            if (Keyboard.current[key].wasPressedThisFrame)
+            {
+                GameManager.Instance.judgeSystem.Judge(NoteType.Counter);
+            }
+        }
+
         foreach (Key key in attackKeys)
         {
             if (Keyboard.current[key].wasPressedThisFrame)
@@ -28,15 +36,6 @@ public class InputHandler : MonoBehaviour
                 {
                     GameManager.Instance.judgeSystem.Judge(NoteType.Reload);
                 }
-                return;
-            }
-        }
-
-        foreach (Key key in counterKeys)
-        {
-            if (Keyboard.current[key].wasPressedThisFrame)
-            {
-                GameManager.Instance.judgeSystem.Judge(NoteType.Counter);
                 return;
             }
         }

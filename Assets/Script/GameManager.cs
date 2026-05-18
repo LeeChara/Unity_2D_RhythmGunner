@@ -15,10 +15,10 @@ public class GameManager : MonoBehaviour
 
     public Transform lane;
 
-    public float perfectTime = 75.0f; // ms
-    public float goodTime = 150.0f; // ms
-    public float missTime = 250.0f; // ms
-    public float noteSpeed = 100.0f; // Test value
+    public float perfectTime; // ms
+    public float goodTime; // ms
+    public float missTime; // ms
+    public float noteSpeed; // Test value
 
     public float perfectTick { get; private set; }
     public float goodTick { get; private set; }
@@ -31,19 +31,20 @@ public class GameManager : MonoBehaviour
     {
         // Test Code
         ChartData chartData = jsonConverter.Load("Test");
-        Debug.Log("[GameManager]ChartData loaded: " + chartData.metaData.title);
+        //Debug.Log("[GameManager]ChartData loaded: " + chartData.metaData.title);
         // chartDataViewer.ViewChartData(chartData);
 
         float bpm = chartData.metaData.bpm;
         int resolution = chartData.metaData.resolution;
         float audioOffset = chartData.metaData.offset; // sec, positive: delay music, negative: advance music
-        Debug.Log("[GameManager] Start: bpm = " + bpm + ", resolution = " + resolution + ", offset = " + audioOffset);
+        //Debug.Log("[GameManager] Start: bpm = " + bpm + ", resolution = " + resolution + ", offset = " + audioOffset);
 
         laneController.Init(noteSpeed);
         float arriveTime = laneController.getArriveTime();
 
         TickClock.Instance.Init(bpm, resolution, arriveTime);
         musicPlayer.Init(arriveTime, audioOffset);
+        Debug.Log($"[GameManager] arriveTime: {arriveTime}, audioOffset: {audioOffset}");
 
         float arriveTick = arriveTime * (bpm / 60f) * resolution;
         noteSpawner.Init(resolution, noteSpeed, arriveTick);

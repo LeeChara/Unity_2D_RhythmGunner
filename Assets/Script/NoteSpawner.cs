@@ -51,8 +51,7 @@ public class NoteSpawner : MonoBehaviour
             noteType = noteData.noteType,
             intensity = noteData.intensity
         };
-        Debug.Log($"[NoteSpawner] arriveTick = {arriveTick}");
-        Debug.Log($"[NoteSpawner] Scheduled Note - Original Tick: {noteData.tick}, Scheduled Tick: {scheduledNoteData.tick}, NoteType: {scheduledNoteData.noteType}, Intensity: {scheduledNoteData.intensity}");
+        // Debug.Log($"[NoteSpawner] Scheduled Note - Original Tick: {noteData.tick}, Scheduled Tick: {scheduledNoteData.tick}, NoteType: {scheduledNoteData.noteType}, Intensity: {scheduledNoteData.intensity}");
         notes.Add(scheduledNoteData);
     }
     private void SpawnNote(NoteData noteData)
@@ -75,6 +74,6 @@ public class NoteSpawner : MonoBehaviour
         }
         GameObject note = Instantiate(notePrefab, transform.position, Quaternion.identity);
         note.GetComponent<RectTransform>().SetParent(lane, false);
-        note.GetComponent<NoteController>().Init(noteData.tick, noteData.noteType, noteSpeed, destroyX);
+        note.GetComponent<NoteController>().Init(noteData.tick + arriveTick, noteData.noteType, noteSpeed, destroyX);
     }
 }

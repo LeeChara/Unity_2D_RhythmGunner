@@ -3,7 +3,7 @@
         "title": "Test",
         "bpm": 125,
         "resolution": 480,
-        "offset": 0.8
+        "offset": 0.5
     },
     "events": [
         {"tick": 0, "type": "Note", "noteType": "Attack"},

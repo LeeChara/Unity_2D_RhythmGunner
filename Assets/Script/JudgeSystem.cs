@@ -12,7 +12,7 @@ public class JudgeSystem : MonoBehaviour
         this.missTick = missTick;
         this.lane = lane;
 
-        Debug.Log($"JudgeSystem initialized with perfectTick: {perfectTick}, goodTick: {goodTick}, badTick: {missTick}");
+        //Debug.Log($"[JudgeSystem] Initialized with perfectTick: {perfectTick}, goodTick: {goodTick}, badTick: {missTick}");
     }
 
     public bool Judge(NoteType noteType, bool isKeyDown = false)
@@ -53,16 +53,16 @@ public class JudgeSystem : MonoBehaviour
 
     private void OnPerfect()
     {
-        Debug.Log("Perfect!");
+        Debug.Log("[JudgeSystem] Perfect!");
     }
 
     private void OnGood()
     {
-        Debug.Log("Good!");
+        Debug.Log("[JudgeSystem] Good!");
     }
 
     public void OnMiss()
     {
-        Debug.Log("Miss!");
+        Debug.Log("[JudgeSystem] Miss!");
     }
 }

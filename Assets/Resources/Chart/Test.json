@@ -1,0 +1,43 @@
+{
+    "metaData":{
+        "title": "Test",
+        "bpm": 125,
+        "resolution": 480,
+        "offset": 0.8
+    },
+    "events": [
+        {"tick": 0, "type": "Note", "noteType": "Attack"},
+        {"tick": 480, "type": "Note", "noteType": "Attack"},
+        {"tick": 960, "type": "Note", "noteType": "Defense"},
+        {"tick": 1440, "type": "Note", "noteType": "Counter"},
+        {"tick": 1920, "type": "Note", "noteType": "Reload"},
+        {"tick": 2080, "type": "Note", "noteType": "Reload"},
+        {"tick": 2240, "type": "Note", "noteType": "Reload"},
+        {"tick": 2400, "type": "Note", "noteType": "Attack", "intensity": "Strong"},
+        {"tick": 2880, "type": "Note", "noteType": "Attack", "intensity": "Weak"},
+        {"tick": 3360, "type": "Enemy", "enemyType": "Enemy1"},
+        {"tick": 3840, "type": "Enemy", "enemyType": "Enemy1", "position": {"x": 0.8, "y": 1}},
+        {"tick": 4320, "type": "Boss", "bossType": "Boss1", "bossAction": "Appear"},
+        {"tick": 4800, "type": "BossAttack", "bossType": "Boss1", "attackType": "Attack"},
+        {"tick": 5280, "type": "BossAttack", "bossType": "Boss1", "attackType": "Attack"},
+        {"tick": 5760, "type": "Boss", "bossType": "Boss1", "bossAction": "DIsappear"},
+        {"tick": 6240, "type": "TextEffect", "text": "Test", "position": {"x": 0.5, "y": 0.5}, "size": 32, "duration": 750},
+        {"tick": 6720, "type": "TextEffect", "text": "T", "position": {"x": 0.5, "y": 0.6}, "size": 32, "duration": 250},
+        {"tick": 7200, "type": "TextEffect", "text": "Te", "position": {"x": 0.5, "y": 0.6}, "size": 32, "duration": 250},
+        {"tick": 7680, "type": "TextEffect", "text": "Tes", "position": {"x": 0.5, "y": 0.6}, "size": 32, "duration": 250},
+        {"tick": 8160, "type": "TextEffect", "text": "Test", "position": {"x": 0.5, "y": 0.6}, "size": 32, "duration": 250},
+        {"tick": 8640, "type": "NoteEffect", "noteType": "Attack", "startPosition": {"x": 0.5, "y": 0.5}, "endPosition": {"x": 0.5, "y": 0.5}, "duration": 500},
+        {"tick": 9120, "type": "NoteEffect", "noteType": "Defense", "startPosition": {"x": 0.5, "y": 0.5}, "endPosition": {"x": 1.0, "y": 0.5}, "duration": 500},
+        {"tick": 9600, "type": "AlertEffect", "alertType": "Warning"},
+        {"tick": 10080, "type": "BPMEvent", "bpm": 250},
+        {"tick": 10560, "type": "Note", "noteType": "Attack"},
+        {"tick": 11040, "type": "SVEvent", "sv": 0.5},
+        {"tick": 11520, "type": "Note", "noteType": "Attack"},
+        {"tick": 12100, "type": "BPMEvent", "bpm": 125},
+        {"tick": 12580, "type": "Note", "noteType": "Attack"},
+        {"tick": 13060, "type": "SVEvent", "sv": 2.0},
+        {"tick": 13540, "type": "Note", "noteType": "Attack"},
+        {"tick": 14020, "type": "SVEvent", "sv": 1.0},
+        {"tick": 14500, "type": "Note", "noteType": "Attack"}
+    ]
+}

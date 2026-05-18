@@ -119,6 +119,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &85299931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 85299933}
+  - component: {fileID: 85299932}
+  m_Layer: 0
+  m_Name: ChartScheduler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &85299932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85299931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cd1291bb6a5c914bb202307a755d08e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChartScheduler
+  noteSpawner: {fileID: 2105939860}
+--- !u!4 &85299933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85299931}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &125401897
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,7 +237,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 5c474351ad6fbfb41be8bc7f410f2c76, type: 3}
+  m_Resource: {fileID: 8300000, guid: bff8f117ba287954a9ba100fc5b483cb, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.3
   m_Pitch: 1
@@ -297,6 +342,50 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 211218898}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &274676240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 274676242}
+  - component: {fileID: 274676241}
+  m_Layer: 0
+  m_Name: ChartDataViewer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &274676241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274676240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3fadf00811d9994d9dd261b9b2494b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChartDataViewer
+--- !u!4 &274676242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274676240}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -689,6 +778,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2142bec24359c3c4c806d22ebf942aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  jsonConverter: {fileID: 467746786}
+  chartDataViewer: {fileID: 274676241}
+  chartScheduler: {fileID: 85299932}
   laneController: {fileID: 313273113}
   noteSpawner: {fileID: 2105939860}
   judgeSystem: {fileID: 1935994273}
@@ -697,7 +789,7 @@ MonoBehaviour:
   perfectTime: 100
   goodTime: 200
   missTime: 400
-  noteSpeed: 100
+  noteSpeed: 200
 --- !u!4 &916413291
 Transform:
   m_ObjectHideFlags: 0
@@ -1086,7 +1178,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d234d3fa6a88b3246a735f9cc74d0adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteSpawner
-  notePrefab: {fileID: 2371959308978748360, guid: f6ca6cc64bc9be440ab7858fd1a812c9, type: 3}
+  AttackNotePrefab: {fileID: 7095249127904749382, guid: a107e01be7f21b947a91498d20ce30a1, type: 3}
+  DefenseNotePrefab: {fileID: 6310845467106633534, guid: 9f4535a17454cb342bfdaf5c97227410, type: 3}
+  CounterNotePrefab: {fileID: 4358690545235733304, guid: 446664fa2eb4bae40bf938aa39329cb1, type: 3}
+  ReloadNotePrefab: {fileID: 8451063671797415450, guid: 2a2e8537fdba1fc4a9588b4c7c9a3df9, type: 3}
   lane: {fileID: 313273110}
 --- !u!4 &2105939861
 Transform:
@@ -1117,4 +1212,6 @@ SceneRoots:
   - {fileID: 2105939861}
   - {fileID: 1935994274}
   - {fileID: 125401899}
+  - {fileID: 274676242}
   - {fileID: 467746787}
+  - {fileID: 85299933}

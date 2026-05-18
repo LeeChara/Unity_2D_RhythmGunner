@@ -23,7 +23,7 @@ public class EventData
 }
 public class NoteData : EventData
 {
-    public string noteType;
+    public NoteType noteType;
     public string intensity; // "Normal", "Strong", "Weak" 등으로 구분
 }
 public class EnemyData : EventData

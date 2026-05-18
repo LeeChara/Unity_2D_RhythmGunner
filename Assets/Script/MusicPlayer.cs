@@ -10,6 +10,6 @@ public class MusicPlayer : MonoBehaviour
     public void Init(float arriveTime, float audioOffset)
     {
         audioSource.PlayScheduled(AudioSettings.dspTime + arriveTime + audioOffset);
-        Debug.Log($"MusicPlayer scheduled to play at: {AudioSettings.dspTime + arriveTime + audioOffset}");
+        // Debug.Log($"[MusicPlayer] Scheduled to play at: {AudioSettings.dspTime + arriveTime + audioOffset}");
     }
 }

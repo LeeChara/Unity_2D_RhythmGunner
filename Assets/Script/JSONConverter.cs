@@ -7,7 +7,7 @@ public class JSONConverter : MonoBehaviour
 {
     public ChartData Load(string jsonString)
     {
-        TextAsset jsonFile = Resources.Load<TextAsset>(jsonString);
+        TextAsset jsonFile = Resources.Load<TextAsset>("Chart/" + jsonString);
         string jsonContent = jsonFile.text;
 
         JObject jsonObject = JObject.Parse(jsonContent);
@@ -24,9 +24,14 @@ public class JSONConverter : MonoBehaviour
             switch (type)
             {
                 case "Note":
-                    string noteType = jo["noteType"]?.ToString() ?? "Attack";
+                    string noteTypeStr = jo["noteType"]?.ToString() ?? "Attack";
                     if (jo["noteType"] == null)
-                        Debug.LogWarning($"Note event at tick {jo["tick"]} is missing 'noteType'. Defaulting to 'Attack'.");
+                        Debug.LogWarning($"[JSONConverter] Note event at tick {jo["tick"]} is missing 'noteType'. Defaulting to 'Attack'.");
+                    if (!System.Enum.TryParse<NoteType>(noteTypeStr, out NoteType noteType))
+                    {
+                        Debug.LogWarning($"[JSONConverter] Note event at tick {jo["tick"]} has invalid 'noteType' value '{noteTypeStr}'. Defaulting to 'Attack'.");
+                        noteType = NoteType.Attack;
+                    }
 
                     eventData = new NoteData
                     {
@@ -40,7 +45,7 @@ public class JSONConverter : MonoBehaviour
                 case "Enemy":
                     string enemyType = jo["enemyType"]?.ToString() ?? "Unknown";
                     if (jo["enemyType"] == null)
-                        Debug.LogWarning($"Enemy event at tick {jo["tick"]} is missing 'enemyType'. Defaulting to 'Unknown'.");
+                        Debug.LogWarning($"[JSONConverter] Enemy event at tick {jo["tick"]} is missing 'enemyType'. Defaulting to 'Unknown'.");
                     Position position = jo["position"]?.ToObject<Position>();
                     if (position == null)
                     {
@@ -60,10 +65,10 @@ public class JSONConverter : MonoBehaviour
                 case "Boss":
                     string bossType = jo["bossType"]?.ToString() ?? "Unknown";
                     if (jo["bossType"] == null)
-                        Debug.LogWarning($"Boss event at tick {jo["tick"]} is missing 'bossType'. Defaulting to 'Unknown'.");
+                        Debug.LogWarning($"[JSONConverter] Boss event at tick {jo["tick"]} is missing 'bossType'. Defaulting to 'Unknown'.");
                     string bossAction = jo["bossAction"]?.ToString() ?? "Unknown";
                     if (jo["bossAction"] == null)
-                        Debug.LogWarning($"Boss event at tick {jo["tick"]} is missing 'bossAction'. Defaulting to 'Unknown'.");
+                        Debug.LogWarning($"[JSONConverter] Boss event at tick {jo["tick"]} is missing 'bossAction'. Defaulting to 'Unknown'.");
 
                     eventData = new BossData
                     {
@@ -77,10 +82,10 @@ public class JSONConverter : MonoBehaviour
                 case "BossAttack":
                     bossType = jo["bossType"]?.ToString() ?? "Unknown";
                     if (jo["bossType"] == null)
-                        Debug.LogWarning($"BossAttack event at tick {jo["tick"]} is missing 'bossType'. Defaulting to 'Unknown'.");
+                        Debug.LogWarning($"[JSONConverter] BossAttack event at tick {jo["tick"]} is missing 'bossType'. Defaulting to 'Unknown'.");
                     string attackType = jo["attackType"]?.ToString() ?? "Unknown";
                     if (jo["attackType"] == null)
-                        Debug.LogWarning($"BossAttack event at tick {jo["tick"]} is missing 'attackType'. Defaulting to 'Unknown'.");
+                        Debug.LogWarning($"[JSONConverter] BossAttack event at tick {jo["tick"]} is missing 'attackType'. Defaulting to 'Unknown'.");
 
                     eventData = new BossAttackData
                     {
@@ -111,10 +116,15 @@ public class JSONConverter : MonoBehaviour
                     break;
 
                 case "NoteEffect":
-                    noteType = jo["noteType"]?.ToString() ?? "Attack";
+                    noteTypeStr = jo["noteType"]?.ToString() ?? "Attack";
                     if (jo["noteType"] == null)
-                            Debug.LogWarning($"NoteEffect event at tick {jo["tick"]} is missing 'noteType'. Defaulting to 'Attack'.");
-                    Position startPosition = jo["startPosition"]?.ToObject<Position>();
+                            Debug.LogWarning($"[JSONConverter] NoteEffect event at tick {jo["tick"]} is missing 'noteType'. Defaulting to 'Attack'.");
+                    if (!System.Enum.TryParse<NoteType>(noteTypeStr, out noteType))
+                    {
+                        Debug.LogWarning($"[JSONConverter] NoteEffect event at tick {jo["tick"]} has invalid 'noteType' value '{noteTypeStr}'. Defaulting to 'Attack'.");
+                        noteType = NoteType.Attack;
+                    }
+                        Position startPosition = jo["startPosition"]?.ToObject<Position>();
                     if (startPosition == null)
                     {
                         // Temporarily set to (0,0) if startPosition is missing.
@@ -132,10 +142,10 @@ public class JSONConverter : MonoBehaviour
                     };
                     break;
 
-                case "AlertEvent":
+                case "AlertEffect":
                     string alertEffect = jo["alertType"]?.ToString() ?? "Unknown";
                     if (jo["alertType"] == null)
-                        Debug.LogWarning($"AlterEvent at tick {jo["tick"]} is missing 'alertType'. Defaulting to 'Unknown'.");
+                        Debug.LogWarning($"[JSONConverter] AlterEvent at tick {jo["tick"]} is missing 'alertType'. Defaulting to 'Unknown'.");
 
                     eventData = new AlertEffectData
                     {
@@ -148,7 +158,7 @@ public class JSONConverter : MonoBehaviour
                 case "BPMEvent":
                     float bpm = jo["bpm"]?.ToObject<float>() ?? 120f;
                     if (jo["bpm"] == null)
-                        Debug.LogWarning($"BPMEvent at tick {jo["tick"]} is missing 'bpm'. Defaulting to 120.");
+                        Debug.LogWarning($"[JSONConverter] BPMEvent at tick {jo["tick"]} is missing 'bpm'. Defaulting to 120.");
 
                     eventData = new BPMEventData
                     {
@@ -161,7 +171,7 @@ public class JSONConverter : MonoBehaviour
                 case "SVEvent":
                     float sv = jo["sv"]?.ToObject<float>() ?? 1f;
                     if (jo["sv"] == null)
-                        Debug.LogWarning($"SVEvent at tick {jo["tick"]} is missing 'sv'. Defaulting to 1.");
+                        Debug.LogWarning($"[JSONConverter] SVEvent at tick {jo["tick"]} is missing 'sv'. Defaulting to 1.");
 
                     eventData = new SVEventData
                     {
@@ -172,7 +182,7 @@ public class JSONConverter : MonoBehaviour
                     break;
 
                 default:
-                    Debug.LogWarning($"Unknown event type '{type}' at tick {jo["tick"]}. Skipping this event.");
+                    Debug.LogWarning($"[JSONConverter] Unknown event type '{type}' at tick {jo["tick"]}. Skipping this event.");
                     break;
             }
             if (eventData != null)

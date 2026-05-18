@@ -44,7 +44,7 @@ public class InputHandler : MonoBehaviour
         {
             if (Keyboard.current[key].isPressed)
             {
-                GameManager.Instance.judgeSystem.Judge(NoteType.Reload);
+                GameManager.Instance.judgeSystem.Judge(NoteType.Reload, true);
                 return;
             }
         }
@@ -53,7 +53,7 @@ public class InputHandler : MonoBehaviour
         {
             if (Keyboard.current[key].isPressed)
             {
-                GameManager.Instance.judgeSystem.Judge(NoteType.Reload);
+                GameManager.Instance.judgeSystem.Judge(NoteType.Reload, true);
                 return;
             }
         }

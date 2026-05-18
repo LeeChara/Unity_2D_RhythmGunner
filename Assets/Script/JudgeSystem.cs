@@ -15,7 +15,7 @@ public class JudgeSystem : MonoBehaviour
         Debug.Log($"JudgeSystem initialized with perfectTick: {perfectTick}, goodTick: {goodTick}, badTick: {missTick}");
     }
 
-    public bool Judge(NoteType noteType)
+    public bool Judge(NoteType noteType, bool isKeyDown = false)
     {
         NoteController closestNote = null;
         float minTickDiff = float.MaxValue;
@@ -32,7 +32,7 @@ public class JudgeSystem : MonoBehaviour
         }
 
         if (closestNote == null) return false;
-        if (closestNote.noteType == NoteType.Reload && minTickDiff > perfectTick) return false; // Reload note can only be judged as Perfect
+        if (closestNote.noteType == NoteType.Reload && minTickDiff > perfectTick && isKeyDown) return false; // Reload note can only be judged as Perfect
         if (minTickDiff > missTick) return false;
 
         if (minTickDiff <= perfectTick)

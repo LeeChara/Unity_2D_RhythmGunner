@@ -9,9 +9,10 @@ public class GameManager : MonoBehaviour
     public ChartScheduler chartScheduler;
 
     public LaneController laneController;
-    public NoteSpawner noteSpawner;
     public JudgeSystem judgeSystem;
     public MusicPlayer musicPlayer;
+    public NoteSpawner noteSpawner;
+    public EnemySpawner enemySpawner;
 
     public Transform lane;
 
@@ -42,12 +43,13 @@ public class GameManager : MonoBehaviour
         laneController.Init(noteSpeed);
         float arriveTime = laneController.getArriveTime();
 
-        TickClock.Instance.Init(bpm, resolution, arriveTime);
         musicPlayer.Init(arriveTime, audioOffset);
+        TickClock.Instance.Init(bpm, resolution, arriveTime);
         Debug.Log($"[GameManager] arriveTime: {arriveTime}, audioOffset: {audioOffset}");
 
         float arriveTick = arriveTime * (bpm / 60f) * resolution;
-        noteSpawner.Init(resolution, noteSpeed, arriveTick);
+        noteSpawner.Init(resolution, noteSpeed, arriveTick, laneController.moveDistance);
+        enemySpawner.Init();
 
         chartScheduler.Init(chartData);
 

@@ -9,7 +9,10 @@ public class MusicPlayer : MonoBehaviour
     }
     public void Init(float arriveTime, float audioOffset)
     {
-        audioSource.PlayScheduled(AudioSettings.dspTime + arriveTime + audioOffset);
-        // Debug.Log($"[MusicPlayer] Scheduled to play at: {AudioSettings.dspTime + arriveTime + audioOffset}");
+        double songStartDspTime = AudioSettings.dspTime + arriveTime + audioOffset;
+        audioSource.PlayScheduled(songStartDspTime);
+        TickClock.Instance.SetSongStartDspTime(songStartDspTime); // Music Start Tick is 0
+
+        Debug.Log($"[MusicPlayer] Music scheduled to play at time: {songStartDspTime - AudioSettings.dspTime}, dspTime: {AudioSettings.dspTime}, songStartDspTime: {songStartDspTime}");
     }
 }

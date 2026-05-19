@@ -3,7 +3,7 @@
         "title": "Test",
         "bpm": 125,
         "resolution": 480,
-        "offset": 0.5
+        "offset": 0
     },
     "events": [
         {"tick": 0, "type": "Note", "noteType": "Attack"},
@@ -15,8 +15,8 @@
         {"tick": 2240, "type": "Note", "noteType": "Reload"},
         {"tick": 2400, "type": "Note", "noteType": "Attack", "intensity": "Strong"},
         {"tick": 2880, "type": "Note", "noteType": "Attack", "intensity": "Weak"},
-        {"tick": 3360, "type": "Enemy", "enemyType": "Enemy1"},
-        {"tick": 3840, "type": "Enemy", "enemyType": "Enemy1", "position": {"x": 0.8, "y": 1}},
+        {"tick": 3360, "type": "Enemy", "enemyType": "RobotA"},
+        {"tick": 3840, "type": "Enemy", "enemyType": "EnemyA", "position": {"x": 0.8, "y": 1}},
         {"tick": 4320, "type": "Boss", "bossType": "Boss1", "bossAction": "Appear"},
         {"tick": 4800, "type": "BossAttack", "bossType": "Boss1", "attackType": "Attack"},
         {"tick": 5280, "type": "BossAttack", "bossType": "Boss1", "attackType": "Attack"},

@@ -3,29 +3,32 @@ using UnityEngine;
 public class TickClock : MonoBehaviour
 {
     public static TickClock Instance { get; private set; }
-    public float Tick { get; private set; } = 0f;
+    public double Tick { get; private set; }
+    public float Bpm { get; private set; }
+    public int Resolution { get; private set; }
 
-    private float bpm;
-    private int resolution;
+    public double SongStartDspTime { get; private set; }
+    public void SetSongStartDspTime (double startDspTime)
+    {
+        this.SongStartDspTime = startDspTime;
+    }
     private void Awake()
     {
         Instance = this;
     }
     void Update()
     {
-        Tick += Time.deltaTime * (bpm / 60f) * resolution;
+        Tick = (AudioSettings.dspTime - this.SongStartDspTime) * (Bpm / 60f) * Resolution;
     }
 
     public void Init(float bpm, int resolution, float arriveTime)
     {
-        this.bpm = bpm;
-        this.resolution = resolution;
-        Tick = - arriveTime * (bpm / 60f) * resolution;
-        Debug.Log($"[TickClock] Initialized: initial Tick = {Tick}");
+        this.Bpm = bpm;
+        this.Resolution = resolution;
     }
 
     public void ChangeBpm(float bpm)
     {
-        this.bpm = bpm;
+        this.Bpm = bpm;
     }
 }

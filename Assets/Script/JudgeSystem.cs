@@ -1,9 +1,9 @@
 using UnityEngine;
 public class JudgeSystem : MonoBehaviour
 {
-    private float perfectTick;
-    private float goodTick;
-    private float missTick;
+    private float perfectTick; // tick
+    private float goodTick; // tick
+    private float missTick; // tick
     private Transform lane;
     public void Init(float perfectTick, float goodTick, float missTick, Transform lane)
     {
@@ -23,7 +23,7 @@ public class JudgeSystem : MonoBehaviour
         {
             NoteController nc = note.GetComponent<NoteController>();
             if (nc == null) continue;
-            float tickDiff = Mathf.Abs(nc.targetTick - TickClock.Instance.Tick);
+            float tickDiff = Mathf.Abs(nc.targetTick - (float) TickClock.Instance.Tick);
             if (tickDiff < minTickDiff && (nc.noteType == noteType || (nc.noteType == NoteType.Reload && noteType != NoteType.Counter)))
             {
                 closestNote = nc;

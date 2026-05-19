@@ -6,6 +6,7 @@ public class ChartScheduler : MonoBehaviour
     private List<EventData> events;
 
     public NoteSpawner noteSpawner;
+    public EnemySpawner enemySpawner;
     public void Init(ChartData chartData)
     {
         this.events = chartData.events;
@@ -22,6 +23,10 @@ public class ChartScheduler : MonoBehaviour
                 case "Note":
                     noteSpawner.AddSchedule(e as NoteData);
                     break;
+                case "Enemy":
+                    enemySpawner.AddSchedule(e as EnemyData);
+                    break;
+
             }
         }
     }

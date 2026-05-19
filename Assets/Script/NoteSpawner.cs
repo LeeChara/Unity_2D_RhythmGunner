@@ -18,6 +18,7 @@ public class NoteSpawner : MonoBehaviour
     private int resolution; // From GameManager
     private float noteSpeed; // From GameManager
     private float destroyX;
+    private float moveDistance;
 
     private List<NoteData> notes = new List<NoteData>();
 
@@ -30,16 +31,18 @@ public class NoteSpawner : MonoBehaviour
         {
             SpawnNote(notes[0]);
             notes.RemoveAt(0);
+            // Debug.Log($"[NoteSpawner] Spawned note at tick: {TickClock.Instance.Tick}, remaining notes: {notes.Count}");
         }
     }
-    public void Init(int resolution, float noteSpeed, float arriveTick)
+    public void Init(int resolution, float noteSpeed, float arriveTick, float moveDistance)
     {
         this.resolution = resolution;
         this.noteSpeed = noteSpeed;
         this.arriveTick = arriveTick;
+        this.moveDistance = moveDistance;
         this.destroyX = lane.rect.width;
 
-        Debug.Log($"[NoteSpawner] Initialized with resolution: {resolution}, noteSpeed: {noteSpeed}, arriveTick: {arriveTick}, destroyX: {destroyX}");
+        // Debug.Log($"[NoteSpawner] Initialized with resolution: {resolution}, noteSpeed: {noteSpeed}, arriveTick: {arriveTick}, destroyX: {destroyX}");
         isInitialized = true;
     }
     public void AddSchedule(NoteData noteData)
@@ -72,8 +75,8 @@ public class NoteSpawner : MonoBehaviour
                 notePrefab = ReloadNotePrefab;
                 break;
         }
-        GameObject note = Instantiate(notePrefab, transform.position, Quaternion.identity);
+        GameObject note = Instantiate(notePrefab);
         note.GetComponent<RectTransform>().SetParent(lane, false);
-        note.GetComponent<NoteController>().Init(noteData.tick + arriveTick, noteData.noteType, noteSpeed, destroyX);
+        note.GetComponent<NoteController>().Init(noteData.tick + arriveTick, noteData.noteType, noteSpeed, moveDistance, destroyX);
     }
 }

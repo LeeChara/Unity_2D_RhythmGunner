@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class LaneController : MonoBehaviour
 {
-    private float moveDistance;
+    public float moveDistance;
     private float noteSpeed; // From GameManager
 
     public GameObject judgementLine;

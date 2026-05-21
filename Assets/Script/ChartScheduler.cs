@@ -1,6 +1,9 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+/// <summary>
+/// ChartData를 받아서 이벤트를 스케줄링하는 클래스. 각 이벤트 담당 클래스에게 이벤트를 전달
+/// </summary>
 public class ChartScheduler : MonoBehaviour
 {
     private List<EventData> events;

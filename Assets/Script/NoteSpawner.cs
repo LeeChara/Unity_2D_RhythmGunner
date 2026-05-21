@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class NoteSpawner : MonoBehaviour
 {
+    // 노트 프리팹
     [SerializeField]
     private GameObject AttackNotePrefab;
     [SerializeField]
@@ -17,7 +18,7 @@ public class NoteSpawner : MonoBehaviour
     private float arriveTick;
     private int resolution; // From GameManager
     private float noteSpeed; // From GameManager
-    private float destroyX;
+    private float destroyX; // 노트가 파괴되는 x 좌표
     private float moveDistance;
 
     private List<NoteData> notes = new List<NoteData>();
@@ -25,8 +26,9 @@ public class NoteSpawner : MonoBehaviour
     private bool isInitialized = false;
     private void Update()
     {
-        if (!isInitialized) return;
+        if (!isInitialized) return; // 초기화 되기 전까지는 리턴
 
+        // 현재 Tick에 스폰될 노트가 있으면 소환하고, 리스트에서 제거
         while (notes.Count > 0 && TickClock.Instance.Tick >= notes[0].tick)
         {
             SpawnNote(notes[0]);
@@ -49,7 +51,7 @@ public class NoteSpawner : MonoBehaviour
     {
         NoteData scheduledNoteData = new NoteData()
         {
-            tick = noteData.tick - arriveTick,
+            tick = noteData.tick - arriveTick, // 노트가 도착하는 tick보다 arriveTick만큼 먼저 스폰
             type = noteData.type,
             noteType = noteData.noteType,
             intensity = noteData.intensity
@@ -60,7 +62,7 @@ public class NoteSpawner : MonoBehaviour
     private void SpawnNote(NoteData noteData)
     {
         GameObject notePrefab = null;
-        switch (noteData.noteType)
+        switch (noteData.noteType) // 노트 타입에 따른 프리팹 선택
         {
             case NoteType.Attack:
                 notePrefab = AttackNotePrefab;

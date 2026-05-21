@@ -3,33 +3,36 @@ using System.Collections.Generic;
 
 public class EnemySpawner : MonoBehaviour
 {
+    // 적 프리팹
     [SerializeField]
     private GameObject RobotAPrefab;
 
-    private List<EnemyData> enemies = new List<EnemyData>();
+    private List<EnemyData> enemies = new List<EnemyData>(); // ChartScheduler로부터 받은 스케줄링된 적 데이터 리스트
     private List<EnemyController> spawnedEnemies = new List<EnemyController>();
     private Vector2 spawnPosition;
-    private float prepareTick;
+    private float prepareTick; // Tick 단위, 시작하기 전 준비 시간
 
     public void Init()
     {
-        spawnPosition = Camera.main.ViewportToWorldPoint(new Vector3(1.5f, 1.5f, 0f));
-        prepareTick = 8 * TickClock.Instance.Resolution;
+        spawnPosition = Camera.main.ViewportToWorldPoint(new Vector3(1.5f, 1.5f, 0f)); // 화면 밖에서 스폰, 정해진 타이밍에 화면 안으로 이동
+        prepareTick = 8 * TickClock.Instance.Resolution; // 8박자
     }
     private void Update()
     {
+        // 현재 Tick에 스폰될 적이 있으면 소환하고, 리스트에서 제거
         while (enemies.Count > 0 && TickClock.Instance.Tick >= enemies[0].tick)
         {
             SpawnEnemy(enemies[0]);
             enemies.RemoveAt(0);
         }
     }
-
+    
+    // 스케줄 추가 메서드. ChartScheduler에서 호출됨
     public void AddSchedule(EnemyData enemyData)
     {
         EnemyData scheduledEnemyData = new EnemyData()
         {
-            tick = enemyData.tick - prepareTick,
+            tick = enemyData.tick - prepareTick, // 준비 시간만큼 먼저 스폰
             type = enemyData.type,
             enemyType = enemyData.enemyType,
             position = enemyData.position
@@ -38,10 +41,12 @@ public class EnemySpawner : MonoBehaviour
         enemies.Add(scheduledEnemyData);
     }
 
-    private void SpawnEnemy(EnemyData enemyData)
+
+    // 적 소환
+    private void SpawnEnemy(EnemyData enemyData) 
     {
         GameObject enemyPrefab = null;
-        switch (enemyData.enemyType)
+        switch (enemyData.enemyType) // 적 타입에 따른 프리팹 선택
         {
             case "RobotA":
                 enemyPrefab = RobotAPrefab;
@@ -57,6 +62,7 @@ public class EnemySpawner : MonoBehaviour
         spawnedEnemies.Add(enemyController);
     }
 
+    // 적 제거 메서드, Judge에서 호출됨. 판정된 tick과 일치하는 적을 제거
     public void DestroyEnemy(float tick)
     {
         foreach (EnemyController enemy in spawnedEnemies)

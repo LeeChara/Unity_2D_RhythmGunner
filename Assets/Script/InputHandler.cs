@@ -8,39 +8,40 @@ public class InputHandler : MonoBehaviour
     private Key[] counterKeys = { Key.Space };
     void Update()
     {
-        foreach (Key key in counterKeys)
+        foreach (Key key in counterKeys) // Counter 키 입력 체크
         {
             if (Keyboard.current[key].wasPressedThisFrame)
             {
                 GameManager.Instance.judgeSystem.Judge(NoteType.Counter);
+                // 리턴이 없음: Counter는 다른 키 입력과 동시에 처리될 수 있음
             }
         }
 
-        foreach (Key key in attackKeys)
+        foreach (Key key in attackKeys) // Attack 키 입력 체크
         {
             if (Keyboard.current[key].wasPressedThisFrame)
             {
                 if (!GameManager.Instance.judgeSystem.Judge(NoteType.Attack))
                 {
-                    GameManager.Instance.judgeSystem.Judge(NoteType.Reload);
+                    GameManager.Instance.judgeSystem.Judge(NoteType.Reload); // 판정 실패 시 Reload 판정 시도
                 }
                 return;
             }
         }
 
-        foreach (Key key in defenseKeys)
+        foreach (Key key in defenseKeys) // Defense 키 입력 체크
         {
             if (Keyboard.current[key].wasPressedThisFrame)
             {
                 if (!GameManager.Instance.judgeSystem.Judge(NoteType.Defense))
                 {
-                    GameManager.Instance.judgeSystem.Judge(NoteType.Reload);
+                    GameManager.Instance.judgeSystem.Judge(NoteType.Reload); // 판정 실패 시 Reload 판정 시도
                 }
                 return;
             }
         }
 
-        foreach (Key key in attackKeys)
+        foreach (Key key in attackKeys) // Attack 키가 눌려있는지 체크 (Reload 판정)
         {
             if (Keyboard.current[key].isPressed)
             {
@@ -49,7 +50,7 @@ public class InputHandler : MonoBehaviour
             }
         }
 
-        foreach (Key key in defenseKeys)
+        foreach (Key key in defenseKeys) // Defense 키가 눌려있는지 체크 (Reload 판정)
         {
             if (Keyboard.current[key].isPressed)
             {

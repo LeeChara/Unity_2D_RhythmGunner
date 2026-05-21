@@ -1,7 +1,9 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-// This class is for debugging purposes, to visualize the loaded chart data in the Unity console.
+/// <summary>
+/// 디버깅용 클래스. ChartData 객체의 내용을 콘솔에 출력하여 데이터가 올바르게 파싱되고 스케줄링되는지 확인
+/// </summary>
 public class ChartDataViewer : MonoBehaviour
 {
     public void ViewChartData(ChartData chartData)

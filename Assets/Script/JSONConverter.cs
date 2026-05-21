@@ -3,6 +3,9 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 
+/// <summary>
+/// JSON 문자열을 ChartData 객체로 파싱, Newtonsoft 패키지를 활용
+/// </summary>
 public class JSONConverter : MonoBehaviour
 {
     public ChartData Load(string jsonString)

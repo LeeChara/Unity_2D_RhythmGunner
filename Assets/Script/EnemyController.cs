@@ -16,12 +16,17 @@ public class EnemyController : MonoBehaviour
     private bool isPrepared = false;
     private bool isAttacked = false;
     private bool isDisappeared = false;
-    public void Init(float targetTick)
+
+    public float targetTick { get; private set; }
+    private Position position;
+    public void Init(float targetTick, Position position)
     {
         appearTick = targetTick - appearBeat * TickClock.Instance.Resolution;
         prepareTick = targetTick - prepareBeat * TickClock.Instance.Resolution;
         attackTick = targetTick - attackBeat * TickClock.Instance.Resolution;
         disappearTick = targetTick - disappearBeat * TickClock.Instance.Resolution;
+
+        this.position = position;
     }
     private void Update()
     {
@@ -52,6 +57,7 @@ public class EnemyController : MonoBehaviour
 
     private void Appear()
     {
+        transform.position = Camera.main.ViewportToWorldPoint(new Vector3(position.x, position.y, 10));
         Debug.Log("[EnemyController] Enemy Appeared at Tick: " + TickClock.Instance.Tick);
     }
     private void Prepare()
@@ -65,6 +71,10 @@ public class EnemyController : MonoBehaviour
     private void Disappear()
     {
         Debug.Log("[EnemyController] Enemy Disappeared at Tick: " + TickClock.Instance.Tick);
+    }
+
+    public void Die()
+    {
         Destroy(this.gameObject);
     }
 }

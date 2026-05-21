@@ -7,13 +7,14 @@ public class EnemySpawner : MonoBehaviour
     private GameObject RobotAPrefab;
 
     private List<EnemyData> enemies = new List<EnemyData>();
+    private List<EnemyController> spawnedEnemies = new List<EnemyController>();
     private Vector2 spawnPosition;
     private float prepareTick;
 
     public void Init()
     {
-        spawnPosition = Camera.main.ViewportToWorldPoint(new Vector3(1.5f, 0.5f));
-        prepareTick = 3 * TickClock.Instance.Resolution;
+        spawnPosition = Camera.main.ViewportToWorldPoint(new Vector3(1.5f, 1.5f, 0f));
+        prepareTick = 8 * TickClock.Instance.Resolution;
     }
     private void Update()
     {
@@ -51,6 +52,20 @@ public class EnemySpawner : MonoBehaviour
                 // Add more enemy types here
         }
         GameObject enemy = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
-        enemy.GetComponent<EnemyController>().Init(enemyData.tick + prepareTick);
+        EnemyController enemyController = enemy.GetComponent<EnemyController>();
+        enemyController.Init(enemyData.tick + prepareTick, enemyData.position);
+        spawnedEnemies.Add(enemyController);
+    }
+
+    public void DestroyEnemy(float tick)
+    {
+        foreach (EnemyController enemy in spawnedEnemies)
+        {
+            if (enemy.targetTick == tick)
+            {
+                enemy.Die();
+                spawnedEnemies.Remove(enemy);
+            }
+        }
     }
 }

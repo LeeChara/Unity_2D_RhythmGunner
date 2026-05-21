@@ -49,8 +49,9 @@ public class JSONConverter : MonoBehaviour
                     Position position = jo["position"]?.ToObject<Position>();
                     if (position == null)
                     {
-                        // Temporarily set to (0,0) if position is missing.
-                        position = new Position { x = 0, y = 0 };
+                        float posX = Random.Range(0.4f, 0.9f);
+                        float posY = Random.Range(0.4f, 0.9f);
+                        position = new Position {x = posX, y = posY};
                     }
 
                     eventData = new EnemyData

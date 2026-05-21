@@ -17,13 +17,14 @@ public class JudgeSystem : MonoBehaviour
 
     public bool Judge(NoteType noteType, bool isKeyDown = false)
     {
+        float currentTick = (float) TickClock.Instance.Tick;
         NoteController closestNote = null;
         float minTickDiff = float.MaxValue;
         foreach (Transform note in lane)
         {
             NoteController nc = note.GetComponent<NoteController>();
             if (nc == null) continue;
-            float tickDiff = Mathf.Abs(nc.targetTick - (float) TickClock.Instance.Tick);
+            float tickDiff = Mathf.Abs(nc.targetTick - currentTick);
             if (tickDiff < minTickDiff && (nc.noteType == noteType || (nc.noteType == NoteType.Reload && noteType != NoteType.Counter)))
             {
                 closestNote = nc;
@@ -37,11 +38,11 @@ public class JudgeSystem : MonoBehaviour
 
         if (minTickDiff <= perfectTick)
         {
-            OnPerfect();
+            OnPerfect(closestNote.targetTick);
         }
         else if (minTickDiff <= goodTick)
         {
-            OnGood();
+            OnGood(closestNote.targetTick);
         }
         else if (minTickDiff <= missTick)
         {
@@ -51,14 +52,16 @@ public class JudgeSystem : MonoBehaviour
         return true;
     }
 
-    private void OnPerfect()
+    private void OnPerfect(float tick)
     {
         Debug.Log("[JudgeSystem] Perfect!");
+        GameManager.Instance.enemySpawner.DestroyEnemy(tick);
     }
 
-    private void OnGood()
+    private void OnGood(float tick)
     {
         Debug.Log("[JudgeSystem] Good!");
+        GameManager.Instance.enemySpawner.DestroyEnemy(tick);
     }
 
     public void OnMiss()

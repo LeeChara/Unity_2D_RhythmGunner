@@ -7,16 +7,38 @@
     },
     "events": [
         {"tick": 0, "type": "Note", "noteType": "Attack"},
-        {"tick": 480, "type": "Note", "noteType": "Attack"},
-        {"tick": 960, "type": "Note", "noteType": "Defense"},
-        {"tick": 1440, "type": "Note", "noteType": "Counter"},
+        {"tick": 0, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.4, "y": 0.4}},
+        
+        {"tick": 480, "type": "Note", "noteType": "Defense"},
+        {"tick": 480, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.5, "y": 0.4}},
+
+        {"tick": 960, "type": "Note", "noteType": "Counter"},
+        {"tick": 960, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.6, "y": 0.4}},
+
+        {"tick": 1440, "type": "Note", "noteType": "Attack"},
+        {"tick": 1440, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.7, "y": 0.4}},
+
+        {"tick": 1600, "type": "Note", "noteType": "Reload"},
+        {"tick": 1600, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.4, "y": 0.4}},
+
+        {"tick": 1760, "type": "Note", "noteType": "Reload"},
+        {"tick": 1760, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.4, "y": 0.9}},
+
         {"tick": 1920, "type": "Note", "noteType": "Reload"},
-        {"tick": 2080, "type": "Note", "noteType": "Reload"},
-        {"tick": 2240, "type": "Note", "noteType": "Reload"},
-        {"tick": 2400, "type": "Note", "noteType": "Attack", "intensity": "Strong"},
-        {"tick": 2880, "type": "Note", "noteType": "Attack", "intensity": "Weak"},
+        {"tick": 1920, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.8, "y": 0.9}},
+
+        {"tick": 2400, "type": "Note", "noteType": "Attack"},
+        {"tick": 2400, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.8, "y": 0.4}},
+
+        {"tick": 2400, "type": "Note", "noteType": "Counter"},
+        {"tick": 2400, "type": "Enemy", "enemyType": "RobotA"},
+
+        {"tick": 2880, "type": "Note", "noteType": "Attack", "intensity": "Strong"},
+        {"tick": 2880, "type": "Enemy", "enemyType": "RobotA"},
+
+        {"tick": 3360, "type": "Note", "noteType": "Attack", "intensity": "Weak"},
         {"tick": 3360, "type": "Enemy", "enemyType": "RobotA"},
-        {"tick": 3840, "type": "Enemy", "enemyType": "EnemyA", "position": {"x": 0.8, "y": 1}},
+
         {"tick": 4320, "type": "Boss", "bossType": "Boss1", "bossAction": "Appear"},
         {"tick": 4800, "type": "BossAttack", "bossType": "Boss1", "attackType": "Attack"},
         {"tick": 5280, "type": "BossAttack", "bossType": "Boss1", "attackType": "Attack"},

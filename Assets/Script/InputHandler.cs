@@ -1,0 +1,62 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class InputHandler : MonoBehaviour
+{
+    private Key[] attackKeys = { Key.A, Key.S, Key.D, Key.F, Key.U, Key.I };
+    private Key[] defenseKeys = { Key.J, Key.K, Key.L, Key.Semicolon, Key.E, Key.R};
+    private Key[] counterKeys = { Key.Space };
+    void Update()
+    {
+        foreach (Key key in counterKeys) // Counter 키 입력 체크
+        {
+            if (Keyboard.current[key].wasPressedThisFrame)
+            {
+                GameManager.Instance.judgeSystem.Judge(NoteType.Counter);
+                // 리턴이 없음: Counter는 다른 키 입력과 동시에 처리될 수 있음
+            }
+        }
+
+        foreach (Key key in attackKeys) // Attack 키 입력 체크
+        {
+            if (Keyboard.current[key].wasPressedThisFrame)
+            {
+                if (!GameManager.Instance.judgeSystem.Judge(NoteType.Attack))
+                {
+                    GameManager.Instance.judgeSystem.Judge(NoteType.Reload); // 판정 실패 시 Reload 판정 시도
+                }
+                return;
+            }
+        }
+
+        foreach (Key key in defenseKeys) // Defense 키 입력 체크
+        {
+            if (Keyboard.current[key].wasPressedThisFrame)
+            {
+                if (!GameManager.Instance.judgeSystem.Judge(NoteType.Defense))
+                {
+                    GameManager.Instance.judgeSystem.Judge(NoteType.Reload); // 판정 실패 시 Reload 판정 시도
+                }
+                return;
+            }
+        }
+
+        foreach (Key key in attackKeys) // Attack 키가 눌려있는지 체크 (Reload 판정)
+        {
+            if (Keyboard.current[key].isPressed)
+            {
+                GameManager.Instance.judgeSystem.Judge(NoteType.Reload, true);
+                return;
+            }
+        }
+
+        foreach (Key key in defenseKeys) // Defense 키가 눌려있는지 체크 (Reload 판정)
+        {
+            if (Keyboard.current[key].isPressed)
+            {
+                GameManager.Instance.judgeSystem.Judge(NoteType.Reload, true);
+                return;
+            }
+        }
+    }
+}

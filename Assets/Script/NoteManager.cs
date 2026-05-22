@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class NoteSpawner : MonoBehaviour
+public class NoteManager: MonoBehaviour
 {
     // ≥Î∆Æ «¡∏Æ∆’
     [SerializeField]

@@ -13,8 +13,9 @@ public class GameManager : MonoBehaviour
     public LaneController laneController;
     public JudgeSystem judgeSystem;
     public MusicPlayer musicPlayer;
-    public NoteSpawner noteSpawner;
-    public EnemySpawner enemySpawner;
+    public NoteManager noteManager;
+    public EnemyManager enemyManager;
+    public BossManager bossManager;
 
     public Transform lane;
 
@@ -58,8 +59,8 @@ public class GameManager : MonoBehaviour
         Debug.Log($"[GameManager] arriveTime: {arriveTime}, audioOffset: {audioOffset}");
 
         arriveTick = arriveTime * (bpm / 60f) * resolution;
-        noteSpawner.Init(resolution, noteSpeed, arriveTick, laneController.moveDistance); // NoteSpawner 초기화, resolution과 noteSpeed, arriveTick, moveDistance 전달
-        enemySpawner.Init(); // EnemySpawner 초기화
+        noteManager.Init(resolution, noteSpeed, arriveTick, laneController.moveDistance); // NoteSpawner 초기화, resolution과 noteSpeed, arriveTick, moveDistance 전달
+        enemyManager.Init(); // EnemySpawner 초기화
 
         chartScheduler.Init(chartData); // ChartScheduler 초기화, ChartData 전달
 

@@ -23,6 +23,7 @@ public class EnemyController : MonoBehaviour
     private Position position;
     public void Init(float targetTick, Position position)
     {
+        this.targetTick = targetTick;
         // 박자를 Tick으로 변환
         appearTick = targetTick - appearBeat * TickClock.Instance.Resolution;
         prepareTick = targetTick - prepareBeat * TickClock.Instance.Resolution;
@@ -62,19 +63,19 @@ public class EnemyController : MonoBehaviour
     private void Appear() // 등장
     {
         transform.position = Camera.main.ViewportToWorldPoint(new Vector3(position.x, position.y, 10));
-        Debug.Log("[EnemyController] Enemy Appeared at Tick: " + TickClock.Instance.Tick);
+        // Debug.Log("[EnemyController] Enemy Appeared at Tick: " + TickClock.Instance.Tick);
     }
     private void Prepare() // 공격 준비
     {
-        Debug.Log("[EnemyController] Enemy Prepared at Tick: " + TickClock.Instance.Tick);
+        // Debug.Log("[EnemyController] Enemy Prepared at Tick: " + TickClock.Instance.Tick);
     }
     private void Attack() // 공격
     {
-        Debug.Log("[EnemyController] Enemy Attacked at Tick: " + TickClock.Instance.Tick);
+        // Debug.Log("[EnemyController] Enemy Attacked at Tick: " + TickClock.Instance.Tick);
     }
     private void Disappear() // 퇴장
     {
-        Debug.Log("[EnemyController] Enemy Disappeared at Tick: " + TickClock.Instance.Tick);
+        // Debug.Log("[EnemyController] Enemy Disappeared at Tick: " + TickClock.Instance.Tick);
     }
 
     public void Die() // 사망

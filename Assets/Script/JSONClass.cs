@@ -34,13 +34,7 @@ public class EnemyData : EventData // 적 클래스
 public class BossData : EventData // 보스 클래스
 {
     public string bossType;
-    public string bossAction; // "Appear", "Disappear" etc.
-}
-
-public class BossAttackData : EventData
-{
-    public string bossType;
-    public string attackType;
+    public string bossAction; // "Appear", "Disappear" 및 기타 보스 행동
 }
 
 public class TextEffectData : EventData // 텍스트 효과 클래스

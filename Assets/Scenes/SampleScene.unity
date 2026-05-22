@@ -148,8 +148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cd1291bb6a5c914bb202307a755d08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChartScheduler
-  noteSpawner: {fileID: 2105939860}
-  enemySpawner: {fileID: 2147113523}
+  noteManager: {fileID: 2105939860}
+  enemyManager: {fileID: 2147113523}
+  bossManager: {fileID: 1928155310}
 --- !u!4 &85299933
 Transform:
   m_ObjectHideFlags: 0
@@ -937,13 +938,19 @@ MonoBehaviour:
   laneController: {fileID: 313273113}
   judgeSystem: {fileID: 1935994273}
   musicPlayer: {fileID: 211218900}
-  noteSpawner: {fileID: 2105939860}
-  enemySpawner: {fileID: 2147113523}
+  noteManager: {fileID: 2105939860}
+  enemyManager: {fileID: 2147113523}
+  bossManager: {fileID: 1928155310}
   lane: {fileID: 313273110}
-  perfectTime: 100
-  goodTime: 200
-  missTime: 400
-  noteSpeed: 100
+  bpm: 0
+  resolution: 0
+  audioOffset: 0
+  arriveTime: 0
+  arriveTick: 0
+  perfectTime: 75
+  goodTime: 150
+  missTime: 500
+  noteSpeed: 150
 --- !u!4 &916413291
 Transform:
   m_ObjectHideFlags: 0
@@ -1260,6 +1267,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817211450}
   m_CullTransparentMesh: 1
+--- !u!1 &1928155309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1928155311}
+  - component: {fileID: 1928155310}
+  m_Layer: 0
+  m_Name: BossManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1928155310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928155309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f84a2816978e0764db8d4aafff26cd24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossManager
+  robotAlpha: {fileID: 2878256528733683552, guid: ad8cf85ed2e141c4d965606ada64869c, type: 3}
+  spawnedBoss: []
+--- !u!4 &1928155311
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928155309}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.41597, y: 1.34997, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1935994272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1315,7 +1368,7 @@ GameObject:
   - component: {fileID: 2105939861}
   - component: {fileID: 2105939860}
   m_Layer: 0
-  m_Name: NoteSpawner
+  m_Name: NoteManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1364,7 +1417,7 @@ GameObject:
   - component: {fileID: 2147113524}
   - component: {fileID: 2147113523}
   m_Layer: 0
-  m_Name: EnemySpawner
+  m_Name: EnemyManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1383,6 +1436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
   RobotAPrefab: {fileID: 4130458831421448935, guid: 69791b270ce2c204c817e96f972fb105, type: 3}
+  spawnedEnemies: []
 --- !u!4 &2147113524
 Transform:
   m_ObjectHideFlags: 0
@@ -1416,3 +1470,4 @@ SceneRoots:
   - {fileID: 85299933}
   - {fileID: 2105939861}
   - {fileID: 2147113524}
+  - {fileID: 1928155311}

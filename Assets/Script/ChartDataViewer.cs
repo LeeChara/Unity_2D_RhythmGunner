@@ -29,10 +29,6 @@ public class ChartDataViewer : MonoBehaviour
                     BossData boss = e as BossData;
                     Debug.Log($"[ChartDataViewer] Boss - Tick: {boss.tick}, BossType: {boss.bossType}, Action: {boss.bossAction}");
                     break;
-                case "BossAttack":
-                    BossAttackData bossAttack = e as BossAttackData;
-                    Debug.Log($"[ChartDataViewer] BossAttack - Tick: {bossAttack.tick}, BossType: {bossAttack.bossType}, AttackType: {bossAttack.attackType}");
-                    break;
                 case "TextEffect":
                     TextEffectData textEffect = e as TextEffectData;
                     Debug.Log($"[ChartDataViewer] TextEffect - Tick: {textEffect.tick}, Text: {textEffect.text}, Position: ({textEffect.position.x}, {textEffect.position.y}), Size: {textEffect.size}, Duration: {textEffect.duration} sec");

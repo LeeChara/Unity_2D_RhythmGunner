@@ -83,23 +83,6 @@ public class JSONConverter : MonoBehaviour
                     };
                     break;
 
-                case "BossAttack":
-                    bossType = jo["bossType"]?.ToString() ?? "Unknown";
-                    if (jo["bossType"] == null)
-                        Debug.LogWarning($"[JSONConverter] BossAttack event at tick {jo["tick"]} is missing 'bossType'. Defaulting to 'Unknown'.");
-                    string attackType = jo["attackType"]?.ToString() ?? "Unknown";
-                    if (jo["attackType"] == null)
-                        Debug.LogWarning($"[JSONConverter] BossAttack event at tick {jo["tick"]} is missing 'attackType'. Defaulting to 'Unknown'.");
-
-                    eventData = new BossAttackData
-                    {
-                        tick = jo["tick"].ToObject<float>(),
-                        type = type,
-                        bossType = bossType,
-                        attackType = attackType
-                    };
-                    break;
-
                 case "TextEffect":
                     string text = jo["text"]?.ToString() ?? "";
                     position = jo["position"]?.ToObject<Position>();

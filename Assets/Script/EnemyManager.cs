@@ -1,13 +1,15 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class EnemySpawner : MonoBehaviour
+public class EnemyManager : MonoBehaviour
 {
     // 적 프리팹
     [SerializeField]
     private GameObject RobotAPrefab;
 
     private List<EnemyData> enemies = new List<EnemyData>(); // ChartScheduler로부터 받은 스케줄링된 적 데이터 리스트
+
+    [SerializeField]
     private List<EnemyController> spawnedEnemies = new List<EnemyController>();
     private Vector2 spawnPosition;
     private float prepareTick; // Tick 단위, 시작하기 전 준비 시간
@@ -37,7 +39,7 @@ public class EnemySpawner : MonoBehaviour
             enemyType = enemyData.enemyType,
             position = enemyData.position
         };
-        Debug.Log($"[EnemySpawner] Scheduled Enemy - Tick: {scheduledEnemyData.tick}, EnemyType: {scheduledEnemyData.enemyType}");
+        // Debug.Log($"[EnemySpawner] Scheduled Enemy - Tick: {scheduledEnemyData.tick}, EnemyType: {scheduledEnemyData.enemyType}");
         enemies.Add(scheduledEnemyData);
     }
 
@@ -52,7 +54,7 @@ public class EnemySpawner : MonoBehaviour
                 enemyPrefab = RobotAPrefab;
                 break;
             default:
-                Debug.LogWarning($"[EnemySpawner] Unknown enemy type: {enemyData.enemyType}");
+                //Debug.LogWarning($"[EnemySpawner] Unknown enemy type: {enemyData.enemyType}");
                 return;
                 // Add more enemy types here
         }
@@ -60,17 +62,19 @@ public class EnemySpawner : MonoBehaviour
         EnemyController enemyController = enemy.GetComponent<EnemyController>();
         enemyController.Init(enemyData.tick + prepareTick, enemyData.position);
         spawnedEnemies.Add(enemyController);
+        //Debug.Log($"[EnemySpawner] Spawned enemy of type {enemyData.enemyType} at tick: {enemyData.tick}, scheduled to appear at tick: {enemyData.tick + prepareTick}");
     }
 
     // 적 제거 메서드, Judge에서 호출됨. 판정된 tick과 일치하는 적을 제거
     public void DestroyEnemy(float tick)
     {
-        foreach (EnemyController enemy in spawnedEnemies)
+        for (int i = spawnedEnemies.Count - 1; i >= 0; i--)
         {
-            if (enemy.targetTick == tick)
+            //Debug.Log($"[EnemySpawner] Enemy targetTick: {spawnedEnemies[i].targetTick}, tick: {tick}");
+            if (spawnedEnemies[i].targetTick == tick)
             {
-                enemy.Die();
-                spawnedEnemies.Remove(enemy);
+                spawnedEnemies[i].Die();
+                spawnedEnemies.RemoveAt(i);
             }
         }
     }

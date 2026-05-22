@@ -59,13 +59,13 @@ public class JudgeSystem : MonoBehaviour
     private void OnPerfect(float tick)
     {
         Debug.Log("[JudgeSystem] Perfect!");
-        GameManager.Instance.enemySpawner.DestroyEnemy(tick); // 노트와 동일한 tick에 소환된 적 제거
+        GameManager.Instance.enemyManager.DestroyEnemy(tick); // 노트와 동일한 tick에 소환된 적 제거
     }
 
     private void OnGood(float tick)
     {
         Debug.Log("[JudgeSystem] Good!");
-        GameManager.Instance.enemySpawner.DestroyEnemy(tick); // 노트와 동일한 tick에 소환된 적 제거
+        GameManager.Instance.enemyManager.DestroyEnemy(tick); // 노트와 동일한 tick에 소환된 적 제거
     }
 
     public void OnMiss()

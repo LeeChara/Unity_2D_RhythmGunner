@@ -39,10 +39,16 @@
         {"tick": 3360, "type": "Note", "noteType": "Attack", "intensity": "Weak"},
         {"tick": 3360, "type": "Enemy", "enemyType": "RobotA"},
 
-        {"tick": 4320, "type": "Boss", "bossType": "Boss1", "bossAction": "Appear"},
-        {"tick": 4800, "type": "BossAttack", "bossType": "Boss1", "attackType": "Attack"},
-        {"tick": 5280, "type": "BossAttack", "bossType": "Boss1", "attackType": "Attack"},
-        {"tick": 5760, "type": "Boss", "bossType": "Boss1", "bossAction": "DIsappear"},
+        {"tick": 3600, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "Appear"},
+
+        {"tick": 3840, "type": "Note", "noteType": "Defense"},
+        {"tick": 3840, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "SlashA"},
+        
+        {"tick": 4320, "type": "Note", "noteType": "Defense"},
+        {"tick": 4320, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "SlashA"},
+        
+        {"tick": 4560, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "DIsappear"},
+
         {"tick": 6240, "type": "TextEffect", "text": "Test", "position": {"x": 0.5, "y": 0.5}, "size": 32, "duration": 750},
         {"tick": 6720, "type": "TextEffect", "text": "T", "position": {"x": 0.5, "y": 0.6}, "size": 32, "duration": 250},
         {"tick": 7200, "type": "TextEffect", "text": "Te", "position": {"x": 0.5, "y": 0.6}, "size": 32, "duration": 250},

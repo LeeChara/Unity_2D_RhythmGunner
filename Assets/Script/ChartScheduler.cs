@@ -8,8 +8,9 @@ public class ChartScheduler : MonoBehaviour
 {
     private List<EventData> events;
 
-    public NoteSpawner noteSpawner;
-    public EnemySpawner enemySpawner;
+    public NoteManager noteManager;
+    public EnemyManager enemyManager;
+    public BossManager bossManager;
     public void Init(ChartData chartData)
     {
         this.events = chartData.events;
@@ -24,12 +25,14 @@ public class ChartScheduler : MonoBehaviour
             switch (e.type)
             {
                 case "Note":
-                    noteSpawner.AddSchedule(e as NoteData);
+                    noteManager.AddSchedule(e as NoteData);
                     break;
                 case "Enemy":
-                    enemySpawner.AddSchedule(e as EnemyData);
+                    enemyManager.AddSchedule(e as EnemyData);
                     break;
-
+                case "Boss":
+                    bossManager.AddSchedule(e as BossData);
+                    break;
             }
         }
     }

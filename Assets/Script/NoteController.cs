@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class NoteController : MonoBehaviour
 {
-    RectTransform rectTransform;
-    private float noteSpeed; // From GameManager, pixels per second
+    private NoteManager noteManager;
+    private RectTransform rectTransform;
     private float destroyX;
     private float moveDistance; // From LaneController, pixels
 
@@ -17,7 +17,7 @@ public class NoteController : MonoBehaviour
         if (!isInitialized) return;
 
         // 노트 위치를 현재 Tick에 따라 업데이트. Tick이 음악에 동기화되어 있기 때문에 노트도 항상 음악과 동기화됨
-        float x = (float) ((targetTick - TickClock.Instance.Tick) * noteSpeed / ((TickClock.Instance.Bpm / 60f) * TickClock.Instance.Resolution)) - moveDistance;
+        float x = (float) ((targetTick - TickClock.Instance.Tick) * noteManager.noteSpeed / ((TickClock.Instance.Bpm / 60f) * TickClock.Instance.Resolution)) - moveDistance;
         rectTransform.anchoredPosition = new Vector2(x, rectTransform.anchoredPosition.y);
 
         if (rectTransform.anchoredPosition.x < - destroyX)
@@ -27,14 +27,14 @@ public class NoteController : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-    public void Init(float targetTick, NoteType noteType, float noteSpeed, float moveDistance, float destroyX)
+    public void Init(float targetTick, NoteType noteType, float moveDistance, float destroyX)
     {
         this.targetTick = targetTick;
         this.noteType = noteType;
-        this.noteSpeed = noteSpeed;
         this.moveDistance = moveDistance;
         this.destroyX = destroyX;
         rectTransform = this.GetComponent<RectTransform>();
+        this.noteManager = GameManager.Instance.noteManager;
 
         isInitialized = true;
     }

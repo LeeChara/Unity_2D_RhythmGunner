@@ -24,16 +24,16 @@ public class RobotAlphaController : BossController
 
     protected override void Appear()
     {
-        Debug.Log($"[BossController] {bossType} appears!");
+        Debug.Log($"[BossController] {BossType} appears!");
         transform.position = Camera.main.ViewportToWorldPoint(new Vector3(0.7f, 0.4f, 10.0f));
     }
     protected override void Disappear()
     {
-        Debug.Log($"[BossController] {bossType} disappears!");
+        Debug.Log($"[BossController] {BossType} disappears!");
         Destroy(gameObject); // 보스 오브젝트 제거
     }
     private void SlashA()
     {
-        Debug.Log($"[BossController] {bossType} uses SlashA!");
+        Debug.Log($"[BossController] {BossType} uses SlashA!");
     }
 }

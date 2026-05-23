@@ -10,6 +10,9 @@ public class TickClock : MonoBehaviour
     public float Bpm { get; private set; }
     public int Resolution { get; private set; }
 
+    public double previousDspTime;
+    public double previousTick;
+
     public double SongStartDspTime { get; private set; }
     public void SetSongStartDspTime (double startDspTime) // 음악이 시작된 시점의 DSP 시간을 설정하는 메서드
     {
@@ -21,17 +24,22 @@ public class TickClock : MonoBehaviour
     }
     void Update()
     {
-        Tick = (AudioSettings.dspTime - this.SongStartDspTime) * (Bpm / 60f) * Resolution;
+        Tick = previousTick + (AudioSettings.dspTime - previousDspTime) * (Bpm / 60f) * Resolution;
     }
 
-    public void Init(float bpm, int resolution, float arriveTime)
+    public void Init(float bpm, int resolution)
     {
         this.Bpm = bpm;
         this.Resolution = resolution;
+        previousTick = 0;
+        previousDspTime = SongStartDspTime;
     }
 
     public void ChangeBpm(float bpm)
     {
+        previousTick = Tick;
+        previousDspTime = AudioSettings.dspTime;
         this.Bpm = bpm;
+        Debug.Log($"[TickClock] BPM changed to: {bpm}, previousTick: {previousTick}, previousDspTime: {previousDspTime}");
     }
 }

@@ -11,6 +11,8 @@ public class ChartScheduler : MonoBehaviour
     public NoteManager noteManager;
     public EnemyManager enemyManager;
     public BossManager bossManager;
+    public TextEffectManager textEffectManager;
+    public BPMEventManager bpmEventManager;
     public void Init(ChartData chartData)
     {
         this.events = chartData.events;
@@ -32,6 +34,12 @@ public class ChartScheduler : MonoBehaviour
                     break;
                 case "Boss":
                     bossManager.AddSchedule(e as BossData);
+                    break;
+                case "TextEffect":
+                    textEffectManager.AddSchedule(e as TextEffectData);
+                    break;
+                case "BPMEvent":
+                    bpmEventManager.AddSchedule(e as BPMEventData);
                     break;
             }
         }

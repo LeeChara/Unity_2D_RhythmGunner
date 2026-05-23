@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public NoteManager noteManager;
     public EnemyManager enemyManager;
     public BossManager bossManager;
+    public TextEffectManager textEffectManager;
+    public BPMEventManager bpmEventManager;
 
     public Transform lane;
 
@@ -55,7 +57,7 @@ public class GameManager : MonoBehaviour
         arriveTime = laneController.getArriveTime(); // LaneController로부터 arriveTime 계산
 
         musicPlayer.Init(arriveTime, audioOffset); // MusicPlayer 초기화, arriveTime과 audioOffset 전달
-        TickClock.Instance.Init(bpm, resolution, arriveTime); // TickClock 초기화, bpm과 resolution, arriveTime 전달
+        TickClock.Instance.Init(bpm, resolution); // TickClock 초기화, bpm과 resolution 전달
         Debug.Log($"[GameManager] arriveTime: {arriveTime}, audioOffset: {audioOffset}");
 
         arriveTick = arriveTime * (bpm / 60f) * resolution;
@@ -68,5 +70,16 @@ public class GameManager : MonoBehaviour
         goodTick = goodTime / 1000f * (bpm / 60f) * resolution;
         missTick = missTime / 1000f * (bpm / 60f) * resolution;
         judgeSystem.Init(perfectTick, goodTick, missTick, lane); // JudgeSystem 초기화, perfectTick, goodTick, missTick, lane 전달
+    }
+
+    public void ChangeBpm(float bpm)
+    {
+        float previousBpm = this.bpm;
+        this.bpm = bpm;
+        noteSpeed = noteSpeed * (bpm / previousBpm); // 노트 스피드 조정
+        TickClock.Instance.ChangeBpm(bpm); // TickClock에 BPM 변경 알림
+        arriveTime = laneController.getArriveTime(); // LaneController로부터 arriveTime 재계산
+        arriveTick = arriveTime * (bpm / 60f) * resolution;
+        noteManager.ChangeBpm(noteSpeed, arriveTick); // NoteSpawner에 BPM 변경 알림, noteSpeed와 arriveTick 전달
     }
 }

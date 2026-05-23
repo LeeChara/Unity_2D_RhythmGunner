@@ -151,6 +151,8 @@ MonoBehaviour:
   noteManager: {fileID: 2105939860}
   enemyManager: {fileID: 2147113523}
   bossManager: {fileID: 1928155310}
+  textEffectManager: {fileID: 1077639197}
+  bpmEventManager: {fileID: 118715546}
 --- !u!4 &85299933
 Transform:
   m_ObjectHideFlags: 0
@@ -158,6 +160,50 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 85299931}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &118715545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 118715547}
+  - component: {fileID: 118715546}
+  m_Layer: 0
+  m_Name: BPMEventManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &118715546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118715545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fced15650e244c47a336e9c38769c42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BPMEventManager
+--- !u!4 &118715547
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118715545}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -941,6 +987,8 @@ MonoBehaviour:
   noteManager: {fileID: 2105939860}
   enemyManager: {fileID: 2147113523}
   bossManager: {fileID: 1928155310}
+  textEffectManager: {fileID: 0}
+  bpmEventManager: {fileID: 118715546}
   lane: {fileID: 313273110}
   bpm: 0
   resolution: 0
@@ -961,6 +1009,52 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1077639196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1077639198}
+  - component: {fileID: 1077639197}
+  m_Layer: 0
+  m_Name: TextEffectManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1077639197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077639196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f8ff8c459a3e24cbb9344e8343fbc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextEffectManager
+  textEffectPrefab: {fileID: 7886168812930919438, guid: d1b569c49f6877a44b6be0d1b94a1c3f, type: 3}
+  canvas: {fileID: 1655185081}
+--- !u!4 &1077639198
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077639196}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.23915, y: 1.01325, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1177,6 +1271,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e95dcf9a6b53714c8dbba8df0e37ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TickClock
+  previousDspTime: 0
+  previousTick: 0
 --- !u!4 &1774783125
 Transform:
   m_ObjectHideFlags: 0
@@ -1471,3 +1567,5 @@ SceneRoots:
   - {fileID: 2105939861}
   - {fileID: 2147113524}
   - {fileID: 1928155311}
+  - {fileID: 118715547}
+  - {fileID: 1077639198}

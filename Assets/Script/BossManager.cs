@@ -12,10 +12,6 @@ public class BossManager : MonoBehaviour
 
     [SerializeField]
     private List<BossController> spawnedBoss = new List<BossController>();
-    public void Init()
-    {
-
-    }
 
     private void Update()
     {
@@ -58,7 +54,7 @@ public class BossManager : MonoBehaviour
         {
             foreach (BossController boss in spawnedBoss)
             {
-                if (boss.bossType == bossData.bossType)
+                if (boss.BossType == bossData.bossType)
                 {
                     boss.Execute("Disappear");
                     spawnedBoss.Remove(boss);
@@ -70,7 +66,7 @@ public class BossManager : MonoBehaviour
 
         foreach (BossController boss in spawnedBoss)
         {
-            if (boss.bossType == bossData.bossType)
+            if (boss.BossType == bossData.bossType)
             {
                 boss.Execute(bossData.bossAction); // 보스 액션 이벤트 호출
                 return;

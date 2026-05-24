@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public JSONConverter jsonConverter;
     public ChartDataViewer chartDataViewer;
     public ChartScheduler chartScheduler;
+    public GameTester gameTester;
 
     public LaneController laneController;
     public JudgeSystem judgeSystem;
@@ -66,6 +67,8 @@ public class GameManager : MonoBehaviour
         enemyManager.Init(); // EnemySpawner 초기화
 
         chartScheduler.Init(chartData); // ChartScheduler 초기화, ChartData 전달
+
+        gameTester.Jump(); // 특정 구간으로 점프. 개발용 기능
 
         perfectTick = perfectTime / 1000f * (bpm / 60f) * resolution;
         goodTick = goodTime / 1000f * (bpm / 60f) * resolution;

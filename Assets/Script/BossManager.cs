@@ -74,4 +74,14 @@ public class BossManager : MonoBehaviour
         }
         Debug.Log($"[BossManager] Boss must Appear first: {bossData.bossType}");
     }
+    public void SkipEvent(float jumpTick)
+    {
+        for (int i = bossEvents.Count - 1; i >= 0; i--)
+        {
+            if (bossEvents[i].tick <= jumpTick)
+            {
+                bossEvents.RemoveAt(i);
+            }
+        }
+    }
 }

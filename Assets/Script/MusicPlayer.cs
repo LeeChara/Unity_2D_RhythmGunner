@@ -17,4 +17,13 @@ public class MusicPlayer : MonoBehaviour
 
         Debug.Log($"[MusicPlayer] Music scheduled to play at time: {songStartDspTime - AudioSettings.dspTime}, dspTime: {AudioSettings.dspTime}, songStartDspTime: {songStartDspTime}");
     }
+
+    public void JumpTo(float jumpTime)
+    {
+        audioSource.Stop();
+        audioSource.time = jumpTime;
+        double songStartDspTime = AudioSettings.dspTime - jumpTime;
+        TickClock.Instance.SetSongStartDspTime(songStartDspTime);
+        audioSource.Play();
+    }
 }

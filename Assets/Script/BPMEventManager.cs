@@ -19,4 +19,19 @@ public class BPMEventManager : MonoBehaviour
         // Debug.Log($"[EventManager] Scheduled BPM Event - Tick: {scheduledBPMEventData.tick}, BPM: {scheduledBPMEventData.bpm}");
         bpmEvents.Add(bpmEventData);
     }
+
+    public List<BPMEventData> GetEvents()
+    {
+        return bpmEvents;
+    }
+    public void SkipEvent(float jumpTick)
+    {
+        for (int i = bpmEvents.Count - 1; i >= 0; i--)
+        {
+            if (bpmEvents[i].tick <= jumpTick)
+            {
+                bpmEvents.RemoveAt(i);
+            }
+        }
+    }
 }

@@ -42,4 +42,11 @@ public class TickClock : MonoBehaviour
         this.Bpm = bpm;
         Debug.Log($"[TickClock] BPM changed to: {bpm}, previousTick: {previousTick}, previousDspTime: {previousDspTime}");
     }
+
+    public void JumpTo(float previousTick, float bpm)
+    {
+        this.previousTick = previousTick;
+        previousDspTime = AudioSettings.dspTime;
+        this.Bpm = bpm;
+    }
 }

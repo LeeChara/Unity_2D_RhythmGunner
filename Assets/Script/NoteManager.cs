@@ -90,4 +90,16 @@ public class NoteManager: MonoBehaviour
         this.arriveTick = arriveTick;
         Debug.Log($"[NoteSpawner] BPM Changed: noteSpeed = {noteSpeed}, arriveTick = {arriveTick}");
     }
+
+    public void SkipEvent(float jumpTick)
+    {
+        for (int i = notes.Count - 1; i >= 0; i--)
+        {
+            if (notes[i].tick + arriveTick <= jumpTick)
+            {
+                Debug.Log($"[NoteSpawner] Skipping note at tick: {notes[i].tick}, {jumpTick}");
+                notes.RemoveAt(i);
+            }
+        }
+    }
 }

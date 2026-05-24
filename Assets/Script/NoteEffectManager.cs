@@ -51,4 +51,15 @@ public class NoteEffectManager : MonoBehaviour
         GameObject noteEffect = Instantiate(noteEffectPrefab, Vector3.zero, Quaternion.identity, lane);
         noteEffect.GetComponent<NoteEffectController>().Init(noteEffectData);
     }
+
+    public void SkipEvent(float jumpTick)
+    {
+        for (int i = noteEffects.Count - 1; i >= 0; i--)
+        {
+            if (noteEffects[i].tick <= jumpTick)
+            {
+                noteEffects.RemoveAt(i);
+            }
+        }
+    }
 }

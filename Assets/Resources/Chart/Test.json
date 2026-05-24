@@ -73,6 +73,8 @@
         {"tick": 12240, "type": "TextEffect", "text": "Tes ", "position": {"x": 0.5, "y": 0.6}, "size": 64, "color": "#FFFFF0", "align": "Left", "duration": 0.25},
         {"tick": 12360, "type": "TextEffect", "text": "Test", "position": {"x": 0.5, "y": 0.6}, "size": 64, "color": "#FFFFFF", "align": "Left", "duration": 0.25},
 
+        {"tick": 12740, "type": "TextEffect", "text": "0172650", "position": {"x": 0.5, "y": 0.8}, "size": 72, "color": "#111111", "align": "Center", "duration": 1},
+
         {"tick": 13220, "type": "TextEffect", "text": "Test", "position": {"x": 0, "y": 0.7}, "size": 96, "duration": 0.25},
         {"tick": 13220, "type": "TextEffect", "text": "Test", "position": {"x": 1, "y": 1}, "size": 96, "duration": 0.25},
 

@@ -30,4 +30,14 @@ public class TextEffectManager : MonoBehaviour
         GameObject textEffect = Instantiate(textEffectPrefab, Vector3.zero, Quaternion.identity, canvas);
         textEffect.GetComponent<TextEffectController>().Init(textEffectData, canvas);
     }
+    public void SkipEvent(float jumpTick)
+    {
+        for (int i = textEffects.Count - 1; i >= 0; i--)
+        {
+            if (textEffects[i].tick <= jumpTick)
+            {
+                textEffects.RemoveAt(i);
+            }
+        }
+    }
 }

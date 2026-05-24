@@ -52,7 +52,7 @@ public class NoteEffectData : EventData // 노트 효과 클래스. 노트 클래스와 다르�
     public string noteType;
     public Position startPosition;
     public Position endPosition; // if equal to startPosition, its velocity is zero
-    public float duration;
+    public float duration; // tick 단위
 }
 
 public class AlertEffectData : EventData // 경고 효과 클래스

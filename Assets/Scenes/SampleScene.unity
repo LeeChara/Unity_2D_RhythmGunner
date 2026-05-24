@@ -152,6 +152,7 @@ MonoBehaviour:
   enemyManager: {fileID: 2147113523}
   bossManager: {fileID: 1928155310}
   textEffectManager: {fileID: 1077639197}
+  noteEffectManager: {fileID: 1590961202}
   bpmEventManager: {fileID: 118715546}
 --- !u!4 &85299933
 Transform:
@@ -532,6 +533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LaneController
   moveDistance: 0
+  hieght: 0
   judgementLine: {fileID: 1817211450}
 --- !u!1 &412264063
 GameObject:
@@ -987,7 +989,8 @@ MonoBehaviour:
   noteManager: {fileID: 2105939860}
   enemyManager: {fileID: 2147113523}
   bossManager: {fileID: 1928155310}
-  textEffectManager: {fileID: 0}
+  textEffectManager: {fileID: 1077639197}
+  noteEffectManager: {fileID: 1590961202}
   bpmEventManager: {fileID: 118715546}
   lane: {fileID: 313273110}
   bpm: 0
@@ -1055,6 +1058,55 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.23915, y: 1.01325, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1590961201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1590961203}
+  - component: {fileID: 1590961202}
+  m_Layer: 0
+  m_Name: NoteEffectManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1590961202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590961201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7682b97c9d80b8418c6335e8518c656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NoteEffectManager
+  AttackNoteEffectPrefab: {fileID: 8652050124540029745, guid: b701c0bfe09ed734baa0c7792c2613f5, type: 3}
+  DefenseNoteEffectPrefab: {fileID: 2586245072346399698, guid: 19087c1f6b10fd44d8de82a33e31e4b6, type: 3}
+  CounterNoteEffectPrefab: {fileID: 3917771110293592336, guid: f6c904351d9136143a4a2318faeedef3, type: 3}
+  ReloadNoteEffectPrefab: {fileID: 2704448134472004317, guid: 5c44c22f229c0aa4695d7ae2d6685f1a, type: 3}
+  lane: {fileID: 313273110}
+--- !u!4 &1590961203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590961201}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1569,3 +1621,4 @@ SceneRoots:
   - {fileID: 1928155311}
   - {fileID: 118715547}
   - {fileID: 1077639198}
+  - {fileID: 1590961203}

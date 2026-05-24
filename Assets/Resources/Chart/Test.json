@@ -76,9 +76,7 @@
         {"tick": 13220, "type": "TextEffect", "text": "Test", "position": {"x": 0, "y": 0.7}, "size": 96, "duration": 0.25},
         {"tick": 13220, "type": "TextEffect", "text": "Test", "position": {"x": 1, "y": 1}, "size": 96, "duration": 0.25},
 
-
-        {"tick": 8640, "type": "NoteEffect", "noteType": "Attack", "startPosition": {"x": 0.5, "y": 0.5}, "endPosition": {"x": 0.5, "y": 0.5}, "duration": 0.5},
-        {"tick": 9120, "type": "NoteEffect", "noteType": "Defense", "startPosition": {"x": 0.5, "y": 0.5}, "endPosition": {"x": 1.0, "y": 0.5}, "duration": 0.5},
-        {"tick": 9600, "type": "AlertEffect", "alertType": "Warning"}
+        {"tick": 13700, "type": "NoteEffect", "noteType": "Attack", "startPosition": {"x": 0.5, "y": 0.5}, "endPosition": {"x": 0.5, "y": 0.5}, "duration": 4800},
+        {"tick": 14180, "type": "NoteEffect", "noteType": "Defense", "startPosition": {"x": 0.5, "y": 0.5}, "endPosition": {"x": 1.0, "y": 0.5}, "duration": 4800}
     ]
 }

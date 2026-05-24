@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public EnemyManager enemyManager;
     public BossManager bossManager;
     public TextEffectManager textEffectManager;
+    public NoteEffectManager noteEffectManager;
     public BPMEventManager bpmEventManager;
 
     public Transform lane;

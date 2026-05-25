@@ -3,11 +3,14 @@ using UnityEngine;
 
 public class GameTester : MonoBehaviour
 {
+    public bool activateJump;
     public float jumpTick;
 
     public BPMEventManager bpmEventManager;
     public void Jump()
     {
+        if (!activateJump) return;
+
         float musicTime = 0f;
         float previousTick = 0f;
         float previousBpm = GameManager.Instance.bpm;

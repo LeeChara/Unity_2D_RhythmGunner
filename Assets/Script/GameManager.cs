@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     public NoteEffectManager noteEffectManager;
     public BPMEventManager bpmEventManager;
 
+    public ResultManager resultManager;
+
     public Transform lane;
 
     public float bpm; // 곡의 BPM
@@ -74,6 +76,10 @@ public class GameManager : MonoBehaviour
         goodTick = goodTime / 1000f * (bpm / 60f) * resolution;
         missTick = missTime / 1000f * (bpm / 60f) * resolution;
         judgeSystem.Init(perfectTick, goodTick, missTick, lane); // JudgeSystem 초기화, perfectTick, goodTick, missTick, lane 전달
+
+        int noteNumber = noteManager.getNoteNumber();
+        resultManager.Init(noteNumber, chartData.metaData); // ResultManager 초기화
+        Debug.Log($"[GameManager] noteNumber: {noteNumber}");
     }
 
     public void ChangeBpm(float bpm)

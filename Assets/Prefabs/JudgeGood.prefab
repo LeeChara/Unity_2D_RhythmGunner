@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8652050124540029745
+--- !u!1 &4331370778635267866
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,24 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 343803002048862706}
-  - component: {fileID: 3107615471389216056}
-  - component: {fileID: 4736452620129798428}
-  - component: {fileID: 466286511686027430}
+  - component: {fileID: 1584405249701952630}
+  - component: {fileID: 4938614298768976701}
+  - component: {fileID: 163757460392024248}
+  - component: {fileID: 7504935408687693575}
   m_Layer: 5
-  m_Name: AttackNoteEffect
+  m_Name: JudgeGood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &343803002048862706
+--- !u!224 &1584405249701952630
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8652050124540029745}
+  m_GameObject: {fileID: 4331370778635267866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,26 +33,26 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 439.32013, y: 239.9391}
-  m_SizeDelta: {x: 15, y: 60}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 90, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &3107615471389216056
+--- !u!222 &4938614298768976701
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8652050124540029745}
+  m_GameObject: {fileID: 4331370778635267866}
   m_CullTransparentMesh: 1
---- !u!114 &4736452620129798428
+--- !u!114 &163757460392024248
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8652050124540029745}
+  m_GameObject: {fileID: 4331370778635267866}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4841720520028814253, guid: 093f461e1fe40bf4ca51897bc2cc4da4, type: 3}
+  m_Sprite: {fileID: 6950174656021418613, guid: 14a32b796d94b3644ab727ffb6e1d02a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -76,15 +76,17 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &466286511686027430
+--- !u!114 &7504935408687693575
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8652050124540029745}
+  m_GameObject: {fileID: 4331370778635267866}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf55240906ddb034aa2625eaaf8119bf, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e75a27eca4e87b4f8402b658218eff7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NoteEffectController
+  m_EditorClassIdentifier: Assembly-CSharp::JudgeEffectController
+  moveDistance: 2
+  duration: 5

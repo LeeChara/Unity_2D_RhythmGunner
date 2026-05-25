@@ -102,4 +102,9 @@ public class NoteManager: MonoBehaviour
             }
         }
     }
+
+    public int getNoteNumber()
+    {
+        return notes.Count;
+    }
 }

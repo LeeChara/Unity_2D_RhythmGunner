@@ -5,6 +5,11 @@ public class JudgeSystem : MonoBehaviour
     private float goodTick; // good 판정 tick 범위
     private float missTick; // miss 판정 tick 범위
     private Transform lane;
+
+    public GameObject judgePerfectPrefab;
+    public GameObject judgeGoodPrefab;
+    public GameObject judgeMissPrefab;
+    public float judgeEffectDistance;
     public void Init(float perfectTick, float goodTick, float missTick, Transform lane)
     {
         this.perfectTick = perfectTick;
@@ -59,17 +64,33 @@ public class JudgeSystem : MonoBehaviour
     private void OnPerfect(float tick)
     {
         Debug.Log("[JudgeSystem] Perfect!");
+        GameManager.Instance.resultManager.OnPerfect();
         GameManager.Instance.enemyManager.DestroyEnemy(tick); // 노트와 동일한 tick에 소환된 적 제거
+        Vector3 position = GameManager.Instance.laneController.getJudgementLinePosition();
+        position.y += 2.0f;
+        Debug.Log(position);
+        GameObject judgeEffect = Instantiate(judgePerfectPrefab, position, Quaternion.identity, lane);
+        judgeEffect.GetComponent<JudgeEffectController>().Init();
     }
 
     private void OnGood(float tick)
     {
         Debug.Log("[JudgeSystem] Good!");
+        GameManager.Instance.resultManager.OnGood();
         GameManager.Instance.enemyManager.DestroyEnemy(tick); // 노트와 동일한 tick에 소환된 적 제거
+        Vector3 position = GameManager.Instance.laneController.getJudgementLinePosition();
+        position.y += judgeEffectDistance;
+        GameObject judgeEffect = Instantiate(judgeGoodPrefab, position, Quaternion.identity, lane);
+        judgeEffect.GetComponent<JudgeEffectController>().Init();
     }
 
     public void OnMiss()
     {
         Debug.Log("[JudgeSystem] Miss!");
+        GameManager.Instance.resultManager.OnMiss();
+        Vector3 position = GameManager.Instance.laneController.getJudgementLinePosition();
+        position.y += judgeEffectDistance;
+        GameObject judgeEffect = Instantiate(judgeMissPrefab, position, Quaternion.identity, lane);
+        judgeEffect.GetComponent<JudgeEffectController>().Init();
     }
 }

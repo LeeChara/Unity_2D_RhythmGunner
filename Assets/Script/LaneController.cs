@@ -23,4 +23,9 @@ public class LaneController : MonoBehaviour
         Debug.Log("[LaneController] Initialized with getArriveTime: moveDistance = " + moveDistance + ", noteSpeed = " + noteSpeed + ", arriveTime = " + arriveTime);
         return arriveTime;
     }
+
+    public Vector3 getJudgementLinePosition()
+    {
+        return judgementLine.GetComponent<RectTransform>().anchoredPosition;
+    }
 }

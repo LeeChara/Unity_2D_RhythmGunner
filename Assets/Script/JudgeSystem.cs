@@ -6,6 +6,7 @@ public class JudgeSystem : MonoBehaviour
     private float missTick; // miss 판정 tick 범위
     private Transform lane;
 
+    public Transform judgementLine;
     public GameObject judgePerfectPrefab;
     public GameObject judgeGoodPrefab;
     public GameObject judgeMissPrefab;
@@ -67,9 +68,10 @@ public class JudgeSystem : MonoBehaviour
         GameManager.Instance.resultManager.OnPerfect();
         GameManager.Instance.enemyManager.DestroyEnemy(tick); // 노트와 동일한 tick에 소환된 적 제거
         Vector3 position = GameManager.Instance.laneController.getJudgementLinePosition();
-        position.y += 2.0f;
+        position.y -= judgeEffectDistance;
         Debug.Log(position);
-        GameObject judgeEffect = Instantiate(judgePerfectPrefab, position, Quaternion.identity, lane);
+        Debug.Log(judgementLine.GetComponent<RectTransform>().anchoredPosition);
+        GameObject judgeEffect = Instantiate(judgePerfectPrefab, position, Quaternion.identity, judgementLine);
         judgeEffect.GetComponent<JudgeEffectController>().Init();
     }
 
@@ -79,8 +81,8 @@ public class JudgeSystem : MonoBehaviour
         GameManager.Instance.resultManager.OnGood();
         GameManager.Instance.enemyManager.DestroyEnemy(tick); // 노트와 동일한 tick에 소환된 적 제거
         Vector3 position = GameManager.Instance.laneController.getJudgementLinePosition();
-        position.y += judgeEffectDistance;
-        GameObject judgeEffect = Instantiate(judgeGoodPrefab, position, Quaternion.identity, lane);
+        position.y -= judgeEffectDistance;
+        GameObject judgeEffect = Instantiate(judgeGoodPrefab, position, Quaternion.identity, judgementLine);
         judgeEffect.GetComponent<JudgeEffectController>().Init();
     }
 
@@ -89,8 +91,8 @@ public class JudgeSystem : MonoBehaviour
         Debug.Log("[JudgeSystem] Miss!");
         GameManager.Instance.resultManager.OnMiss();
         Vector3 position = GameManager.Instance.laneController.getJudgementLinePosition();
-        position.y += judgeEffectDistance;
-        GameObject judgeEffect = Instantiate(judgeMissPrefab, position, Quaternion.identity, lane);
+        position.y -= judgeEffectDistance;
+        GameObject judgeEffect = Instantiate(judgeMissPrefab, position, Quaternion.identity, judgementLine);
         judgeEffect.GetComponent<JudgeEffectController>().Init();
     }
 }

@@ -16,7 +16,7 @@ public class JudgeEffectController : MonoBehaviour
     {
         rectTransform = GetComponent<RectTransform>();
         endPos = rectTransform.anchoredPosition;
-        endPos.y += moveDistance;
+        endPos.y -= moveDistance;
         Destroy(gameObject, duration);
     }
 }

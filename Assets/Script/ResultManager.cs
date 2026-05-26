@@ -1,54 +1,78 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using TMPro;
+using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.UIElements;
 
 public class ResultManager : MonoBehaviour
 {
-    private int score;
-    private int displayScore; // 화면에 표시되는 점수. 실제 score에 점차적으로 접근
-    private int point; // 노트 하나당 점수
-    private int combo;
-
-    public RectTransform scoreText;
-    public RectTransform comboText;
-    public RectTransform titleText;
-
-    public float goodScoreMultiplier = 0.6f; // Good 판정 시 점수 배율
-    private void Update()
+    public ResultData resultData;
+    private int noteNumber;
+    private float progress;
+    public void Init(int noteNumber)
     {
-        if(displayScore < score)
-        {
-            displayScore += Mathf.CeilToInt((score - displayScore) * Time.deltaTime * 10f);
-            if(displayScore > score)
-                displayScore = score;
-        }
-
-        scoreText.GetComponent<TextMeshProUGUI>().text = displayScore.ToString("D7");
-        comboText.GetComponent<TextMeshProUGUI>().text = combo.ToString();
+        resultData = new ResultData();
+        this.noteNumber = noteNumber;
     }
-    public void Init(int noteNumber, MetaData metaData)
-    {
-        score = 0;
-        displayScore = 0;
-        combo = 0;
-        point = 1000000 / noteNumber; // 노트 하나당 점수
-
-        titleText.GetComponent<TextMeshProUGUI>().text = metaData.title;
-    }
-
     public void OnPerfect()
     {
-        score = Mathf.CeilToInt(score + point);
-        if (score > 1000000) score = 1000000; // 최대 점수는 100만점
-        combo++;
+        resultData.perfectCount++;
     }
     public void OnGood()
     {
-        score = Mathf.CeilToInt(score + point * goodScoreMultiplier);
-        if (score > 1000000) score = 1000000; // 최대 점수는 100만점
-        combo++;
+        resultData.goodCount++;
     }
     public void OnMiss()
     {
-        combo = 0;
+        resultData.missCount++;
+    }
+    public void SetScore(int score)
+    {
+        resultData.score = score;
+    }
+    public void UpdateMaxCombo(int combo)
+    {
+        if (resultData.maxCombo < combo) resultData.maxCombo = combo;
+    }
+    public void SetProgress(float progress)
+    {
+        this.progress = progress;
+    }
+    public ResultData GetResultData()
+    {
+        Debug.Log($"[ResultManager] maxNotes : {this.noteNumber}");
+        if (resultData.perfectCount == this.noteNumber)
+        {
+            resultData.isAllPerfect = true;
+        }
+        else
+        {
+            resultData.isAllPerfect = false;
+        }
+        if (resultData.maxCombo == this.noteNumber)
+        {
+            resultData.isFullCombo = true;
+        }
+        else
+        {
+            resultData.isFullCombo = false;
+        }
+
+            float ratio = (float)resultData.score / 1000000;
+        if (ratio >= 0.9f) resultData.grade = "S";
+        else if (ratio >= 0.8f) resultData.grade = "A";
+        else if (ratio >= 0.6f) resultData.grade = "B";
+        else resultData.grade = "C";
+
+        resultData.progressChange = resultData.score / 10000.0f * 0.9f;
+        if (resultData.isAllPerfect)
+        {
+            resultData.progressChange *= 1.1f;
+        }
+        else
+        {
+            resultData.progressChange *= 1.05f;
+        }
+        Debug.Log($"[ResultManager] Result Data perfectCount : {resultData.perfectCount} , goodCount : {resultData.goodCount} ,missCount : {resultData.missCount} ,score : {resultData.score} ,grade : {resultData.grade} ,maxCombo : {resultData.maxCombo} ,isFullCombo : {resultData.isFullCombo} ,isAllPerfect : {resultData.isAllPerfect} ,progress : {resultData.progress} ,progressChange : {resultData.progressChange}");
+        return resultData;
     }
 }

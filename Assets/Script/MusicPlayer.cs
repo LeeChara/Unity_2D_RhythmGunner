@@ -7,6 +7,15 @@ public class MusicPlayer : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
     }
+
+    public void Update()
+    {
+        if (audioSource.time >= audioSource.clip.length - 0.1f)
+        {
+            Debug.Log("[MusicPlayer] Music Ends");
+            GameManager.Instance.OnMusicEnd();
+        }
+    }
     public void Init(float arriveTime, float audioOffset)
     {
         // DSP 시간은 오디오 시스템에서 사용하는 시간으로, 음악이 정확한 타이밍에 재생되도록 하기 위해 사용

@@ -21,9 +21,13 @@ public class GameManager : MonoBehaviour
     public NoteEffectManager noteEffectManager;
     public BPMEventManager bpmEventManager;
 
+    public UIManager uiManager;
+    public PlayerController playerController;
     public ResultManager resultManager;
 
     public Transform lane;
+
+    public float progress; // 스토리 진행도
 
     public float bpm; // 곡의 BPM
     public int resolution; // 곡의 해상도. 한 박을 몇 개의 tick으로 나누는지
@@ -78,8 +82,14 @@ public class GameManager : MonoBehaviour
         judgeSystem.Init(perfectTick, goodTick, missTick, lane); // JudgeSystem 초기화, perfectTick, goodTick, missTick, lane 전달
 
         int noteNumber = noteManager.getNoteNumber();
-        resultManager.Init(noteNumber, chartData.metaData); // ResultManager 초기화
+        uiManager.Init(noteNumber, chartData.metaData); // UIManager 초기화
         Debug.Log($"[GameManager] noteNumber: {noteNumber}");
+
+        playerController.Init();
+
+        resultManager.Init(noteNumber);
+
+        resultManager.SetProgress(progress);
     }
 
     public void ChangeBpm(float bpm)
@@ -91,5 +101,13 @@ public class GameManager : MonoBehaviour
         arriveTime = laneController.getArriveTime(); // LaneController로부터 arriveTime 재계산
         arriveTick = arriveTime * (bpm / 60f) * resolution;
         noteManager.ChangeBpm(noteSpeed, arriveTick); // NoteSpawner에 BPM 변경 알림, noteSpeed와 arriveTick 전달
+    }
+
+    public void OnMusicEnd()
+    {
+        resultManager.UpdateMaxCombo(uiManager.combo);
+        resultManager.SetScore(uiManager.score);
+        ResultData resultData = resultManager.GetResultData();
+        Debug.Log($"[GameManager] Result Data perfectCount : {resultData.perfectCount} , goodCount : {resultData.goodCount} ,missCount : {resultData.missCount} ,score : {resultData.score} ,grade : {resultData.grade} ,maxCombo : {resultData.maxCombo} ,isFullCombo : {resultData.isFullCombo} ,isAllPerfect : {resultData.isAllPerfect} ,progress : {resultData.progress} ,progressChange : {resultData.progressChange}");
     }
 }

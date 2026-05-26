@@ -68,11 +68,11 @@ public class JudgeSystem : MonoBehaviour
         GameManager.Instance.resultManager.OnPerfect();
         GameManager.Instance.enemyManager.DestroyEnemy(tick); // 노트와 동일한 tick에 소환된 적 제거
         Vector3 position = GameManager.Instance.laneController.getJudgementLinePosition();
-        position.y -= judgeEffectDistance;
+        position.y += judgeEffectDistance;
         Debug.Log(position);
         Debug.Log(judgementLine.GetComponent<RectTransform>().anchoredPosition);
         GameObject judgeEffect = Instantiate(judgePerfectPrefab, position, Quaternion.identity, judgementLine);
-        judgeEffect.GetComponent<JudgeEffectController>().Init();
+        judgeEffect.GetComponent<JudgeEffectController>().Init(position); // 0, 50, 0 전달해야함 (아직 구현x)
     }
 
     private void OnGood(float tick)
@@ -81,9 +81,9 @@ public class JudgeSystem : MonoBehaviour
         GameManager.Instance.resultManager.OnGood();
         GameManager.Instance.enemyManager.DestroyEnemy(tick); // 노트와 동일한 tick에 소환된 적 제거
         Vector3 position = GameManager.Instance.laneController.getJudgementLinePosition();
-        position.y -= judgeEffectDistance;
+        position.y += judgeEffectDistance;
         GameObject judgeEffect = Instantiate(judgeGoodPrefab, position, Quaternion.identity, judgementLine);
-        judgeEffect.GetComponent<JudgeEffectController>().Init();
+        judgeEffect.GetComponent<JudgeEffectController>().Init(position);
     }
 
     public void OnMiss()
@@ -91,8 +91,8 @@ public class JudgeSystem : MonoBehaviour
         Debug.Log("[JudgeSystem] Miss!");
         GameManager.Instance.resultManager.OnMiss();
         Vector3 position = GameManager.Instance.laneController.getJudgementLinePosition();
-        position.y -= judgeEffectDistance;
+        position.y += judgeEffectDistance;
         GameObject judgeEffect = Instantiate(judgeMissPrefab, position, Quaternion.identity, judgementLine);
-        judgeEffect.GetComponent<JudgeEffectController>().Init();
+        judgeEffect.GetComponent<JudgeEffectController>().Init(position);
     }
 }

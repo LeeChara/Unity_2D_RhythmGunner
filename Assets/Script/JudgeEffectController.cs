@@ -12,11 +12,12 @@ public class JudgeEffectController : MonoBehaviour
         rectTransform.anchoredPosition = Vector3.Lerp(rectTransform.anchoredPosition, endPos, moveDistance / duration * Time.deltaTime);
     }
 
-    public void Init()
+    public void Init(Vector3 position)
     {
         rectTransform = GetComponent<RectTransform>();
+        rectTransform.anchoredPosition = position;
         endPos = rectTransform.anchoredPosition;
-        endPos.y -= moveDistance;
+        endPos.y += moveDistance;
         Destroy(gameObject, duration);
     }
 }

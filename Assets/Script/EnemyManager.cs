@@ -78,4 +78,14 @@ public class EnemyManager : MonoBehaviour
             }
         }
     }
+    public void SkipEvent(float jumpTick)
+    {
+        for (int i = enemies.Count - 1; i >= 0; i--)
+        {
+            if (enemies[i].tick + prepareTick <= jumpTick)
+            {
+                enemies.RemoveAt(i);
+            }
+        }
+    }
 }

@@ -17,9 +17,10 @@ public class NoteManager: MonoBehaviour
 
     private float arriveTick;
     private int resolution; // From GameManager
-    private float noteSpeed; // From GameManager
     private float destroyX; // 노트가 파괴되는 x 좌표
     private float moveDistance;
+
+    public float noteSpeed { get; private set; }// From GameManager
 
     private List<NoteData> notes = new List<NoteData>();
 
@@ -79,6 +80,31 @@ public class NoteManager: MonoBehaviour
         }
         GameObject note = Instantiate(notePrefab);
         note.GetComponent<RectTransform>().SetParent(lane, false);
-        note.GetComponent<NoteController>().Init(noteData.tick + arriveTick, noteData.noteType, noteSpeed, moveDistance, destroyX);
+        note.GetComponent<NoteController>().Init(noteData.tick + arriveTick, noteData.noteType, moveDistance, destroyX);
+    }
+
+    // BPM이 변경될 때 노트 스피드와 arriveTick을 업데이트하는 메서드. BPMEventManager에서 호출됨
+    public void ChangeBpm(float noteSpeed, float arriveTick)
+    {
+        this.noteSpeed = noteSpeed;
+        this.arriveTick = arriveTick;
+        Debug.Log($"[NoteSpawner] BPM Changed: noteSpeed = {noteSpeed}, arriveTick = {arriveTick}");
+    }
+
+    public void SkipEvent(float jumpTick)
+    {
+        for (int i = notes.Count - 1; i >= 0; i--)
+        {
+            if (notes[i].tick + arriveTick <= jumpTick)
+            {
+                Debug.Log($"[NoteSpawner] Skipping note at tick: {notes[i].tick}, {jumpTick}");
+                notes.RemoveAt(i);
+            }
+        }
+    }
+
+    public int getNoteNumber()
+    {
+        return notes.Count;
     }
 }

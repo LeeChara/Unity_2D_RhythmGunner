@@ -86,11 +86,8 @@ public class JSONConverter : MonoBehaviour
                 case "TextEffect":
                     string text = jo["text"]?.ToString() ?? "";
                     position = jo["position"]?.ToObject<Position>();
-                    if (position == null)
-                    {
-                        // Temporarily set to (0,0) if position is missing.
-                        position = new Position { x = 0, y = 0 };
-                    }
+                    if (position == null) position = new Position { x = 0, y = 0 };
+
                     eventData = new TextEffectData
                     {
                         tick = jo["tick"].ToObject<float>(),
@@ -98,6 +95,8 @@ public class JSONConverter : MonoBehaviour
                         text = text,
                         position = position,
                         size = jo["size"]?.ToObject<int>() ?? 24,
+                        color = jo["color"]?.ToString() ?? "#FFFFFF",
+                        align = jo["align"]?.ToString() ?? "Center",
                         duration = jo["duration"]?.ToObject<float>() ?? 1.0f,
                     };
                     break;
@@ -152,19 +151,6 @@ public class JSONConverter : MonoBehaviour
                         tick = jo["tick"].ToObject<float>(),
                         type = type,
                         bpm = bpm
-                    };
-                    break;
-
-                case "SVEvent":
-                    float sv = jo["sv"]?.ToObject<float>() ?? 1f;
-                    if (jo["sv"] == null)
-                        Debug.LogWarning($"[JSONConverter] SVEvent at tick {jo["tick"]} is missing 'sv'. Defaulting to 1.");
-
-                    eventData = new SVEventData
-                    {
-                        tick = jo["tick"].ToObject<float>(),
-                        type = type,
-                        sv = sv
                     };
                     break;
 

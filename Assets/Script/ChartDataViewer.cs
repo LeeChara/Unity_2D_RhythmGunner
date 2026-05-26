@@ -45,10 +45,6 @@ public class ChartDataViewer : MonoBehaviour
                     BPMEventData bpmEvent = e as BPMEventData;
                     Debug.Log($"[ChartDataViewer] BPMEvent - Tick: {bpmEvent.tick}, New BPM: {bpmEvent.bpm}");
                     break;
-                case "SVEvent":
-                    SVEventData svEvent = e as SVEventData;
-                    Debug.Log($"[ChartDataViewer] SVEvent - Tick: {svEvent.tick}, SVMultiplier: {svEvent.sv}");
-                    break;
             }       
         }
     }

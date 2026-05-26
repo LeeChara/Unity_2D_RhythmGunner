@@ -42,6 +42,8 @@ public class TextEffectData : EventData // 텍스트 효과 클래스
     public string text;
     public Position position;
     public int size;
+    public string color; // 헥스컬러 코드, 예) "#FF0000"
+    public string align; // 글자 정렬, "Left", "Center", "Right" 등으로 구분
     public float duration;
 }
 
@@ -50,7 +52,7 @@ public class NoteEffectData : EventData // 노트 효과 클래스. 노트 클래스와 다르�
     public string noteType;
     public Position startPosition;
     public Position endPosition; // if equal to startPosition, its velocity is zero
-    public float duration;
+    public float duration; // tick 단위
 }
 
 public class AlertEffectData : EventData // 경고 효과 클래스
@@ -63,7 +65,7 @@ public class BPMEventData : EventData // BPM 변경 클래스, 노트 이동속도에 영향을
     public float bpm; // notespeed will be changed if bpm changes
 }
 
-public class SVEventData : EventData // Scroll Velocity 변경 클래스, bpm은 변화하지 않으면서 노트 이동속도에 영향을 줌
-{
-    public float sv; // scroll velocity multiplier
-}
+//public class SVEventData : EventData // Scroll Velocity 변경 클래스, bpm은 변화하지 않으면서 노트 이동속도에 영향을 줌
+//{
+//    public float sv; // scroll velocity multiplier
+//}

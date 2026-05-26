@@ -104,4 +104,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddc79a9d837a9744f8b04b0886434fd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RobotAlphaController
-  bossType: 
+  bossType: RobotAlpha

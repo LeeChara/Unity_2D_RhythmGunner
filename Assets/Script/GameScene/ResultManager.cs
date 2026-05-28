@@ -13,6 +13,11 @@ public class ResultManager : MonoBehaviour
         resultData = new ResultData();
         this.noteNumber = noteNumber;
     }
+
+    public void SetTitle(string title)
+    {
+        resultData.title = title;
+    }
     public void OnPerfect()
     {
         resultData.perfectCount++;

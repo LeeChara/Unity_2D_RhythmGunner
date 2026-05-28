@@ -1,5 +1,6 @@
 public class ResultData
 {
+    public string title;
     public int perfectCount;
     public int goodCount;
     public int missCount;

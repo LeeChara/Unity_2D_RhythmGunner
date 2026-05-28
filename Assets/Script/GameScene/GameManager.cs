@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; } // 싱글톤 패턴으로 구현하여 다른 클래스에서 쉽게 접근 가능
@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour
         playerController.Init();
 
         resultManager.Init(noteNumber);
-
+        resultManager.SetTitle(chartData.metaData.title);
         resultManager.SetProgress(progress);
     }
 
@@ -109,5 +109,12 @@ public class GameManager : MonoBehaviour
         resultManager.SetScore(uiManager.score);
         ResultData resultData = resultManager.GetResultData();
         Debug.Log($"[GameManager] Result Data perfectCount : {resultData.perfectCount} , goodCount : {resultData.goodCount} ,missCount : {resultData.missCount} ,score : {resultData.score} ,grade : {resultData.grade} ,maxCombo : {resultData.maxCombo} ,isFullCombo : {resultData.isFullCombo} ,isAllPerfect : {resultData.isAllPerfect} ,progress : {resultData.progress} ,progressChange : {resultData.progressChange}");
+        LoadResultScene(resultData);
+    }
+
+    private void LoadResultScene(ResultData resultData)
+    {
+        DataCarrier.Instance.SetData(resultData);
+        SceneManager.LoadScene("ResultScene");
     }
 }

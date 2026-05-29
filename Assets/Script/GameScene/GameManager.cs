@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         // Test Code - JSON 파일에서 ChartData 로드
+        jsonConverter.Init();
         ChartData chartData = jsonConverter.Load("Test");
         //Debug.Log("[GameManager]ChartData loaded: " + chartData.metaData.title);
         // chartDataViewer.ViewChartData(chartData);

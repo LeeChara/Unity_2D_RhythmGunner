@@ -10,75 +10,75 @@
         {"tick": 0, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.4, "y": 0.4}},
         
         {"tick": 480, "type": "Note", "noteType": "Defense"},
-        {"tick": 480, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.5, "y": 0.4}},
+        {"tick": 0, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.5, "y": 0.4}},
 
-        {"tick": 960, "type": "Note", "noteType": "Counter"},
-        {"tick": 960, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.6, "y": 0.4}},
+        {"tick": 480, "type": "Note", "noteType": "Counter"},
+        {"tick": 0, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.6, "y": 0.4}},
 
-        {"tick": 1440, "type": "Note", "noteType": "Attack"},
-        {"tick": 1440, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.7, "y": 0.4}},
+        {"tick": 480, "type": "Note", "noteType": "Attack"},
+        {"tick": 0, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.7, "y": 0.4}},
 
-        {"tick": 1600, "type": "Note", "noteType": "Reload"},
-        {"tick": 1600, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.4, "y": 0.4}},
+        {"tick": 480, "type": "Note", "noteType": "Reload"},
+        {"tick": 0, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.4, "y": 0.4}},
 
-        {"tick": 1760, "type": "Note", "noteType": "Reload"},
-        {"tick": 1760, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.4, "y": 0.9}},
+        {"tick": 480, "type": "Note", "noteType": "Reload"},
+        {"tick": 0, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.4, "y": 0.9}},
 
-        {"tick": 1920, "type": "Note", "noteType": "Reload"},
-        {"tick": 1920, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.8, "y": 0.9}},
+        {"tick": 480, "type": "Note", "noteType": "Reload"},
+        {"tick": 0, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.8, "y": 0.9}},
 
-        {"tick": 2400, "type": "Note", "noteType": "Attack"},
-        {"tick": 2400, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.8, "y": 0.4}},
+        {"tick": 480, "type": "Note", "noteType": "Attack"},
+        {"tick": 0, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.8, "y": 0.4}},
 
-        {"tick": 2400, "type": "Note", "noteType": "Counter"},
-        {"tick": 2400, "type": "Enemy", "enemyType": "RobotA"},
+        {"tick": 480, "type": "Note", "noteType": "Counter"},
+        {"tick": 0, "type": "Enemy", "enemyType": "RobotA"},
 
-        {"tick": 2880, "type": "Note", "noteType": "Attack", "intensity": "Strong"},
-        {"tick": 2880, "type": "Enemy", "enemyType": "RobotA"},
+        {"tick": 480, "type": "Note", "noteType": "Attack", "intensity": "Strong"},
+        {"tick": 0, "type": "Enemy", "enemyType": "RobotA"},
 
-        {"tick": 3360, "type": "Note", "noteType": "Attack", "intensity": "Weak"},
-        {"tick": 3360, "type": "Enemy", "enemyType": "RobotA"},
+        {"tick": 480, "type": "Note", "noteType": "Attack", "intensity": "Weak"},
+        {"tick": 0, "type": "Enemy", "enemyType": "RobotA"},
 
-        {"tick": 3600, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "Appear"},
+        {"tick": 480, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "Appear"},
 
-        {"tick": 3840, "type": "Note", "noteType": "Defense"},
-        {"tick": 3840, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "SlashA"},
+        {"tick": 480, "type": "Note", "noteType": "Defense"},
+        {"tick": 0, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "SlashA"},
         
-        {"tick": 4320, "type": "Note", "noteType": "Defense"},
-        {"tick": 4320, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "SlashA"},
+        {"tick": 480, "type": "Note", "noteType": "Defense"},
+        {"tick": 0, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "SlashA"},
         
-        {"tick": 4560, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "Disappear"},
+        {"tick": 480, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "Disappear"},
         
-        {"tick": 4800, "type": "Note", "noteType": "Attack"},
-        {"tick": 5280, "type": "Note", "noteType": "Reload"},
-        {"tick": 5760, "type": "Note", "noteType": "Reload"},
-        {"tick": 6240, "type": "Note", "noteType": "Reload"},
+        {"tick": 480, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Reload"},
+        {"tick": 120, "type": "Note", "noteType": "Reload"},
+        {"tick": 120, "type": "Note", "noteType": "Reload"},
 
-        {"tick": 6720, "type": "BPMEvent", "bpm": 67.5},
-        {"tick": 7200, "type": "Note", "noteType": "Attack"},
-        {"tick": 7680, "type": "Note", "noteType": "Reload"},
-        {"tick": 8160, "type": "Note", "noteType": "Reload"},
-        {"tick": 8640, "type": "Note", "noteType": "Reload"},
+        {"tick": 0, "type": "BPMEvent", "bpm": 67.5},
+        {"tick": 600, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Reload"},
+        {"tick": 120, "type": "Note", "noteType": "Reload"},
+        {"tick": 120, "type": "Note", "noteType": "Reload"},
 
-        {"tick": 9120, "type": "BPMEvent", "bpm": 125},
-        {"tick": 9120, "type": "Note", "noteType": "Attack"},
-        {"tick": 9600, "type": "Note", "noteType": "Reload"},
-        {"tick": 10080, "type": "Note", "noteType": "Reload"},
-        {"tick": 10560, "type": "Note", "noteType": "Reload"},
+        {"tick": 0, "type": "BPMEvent", "bpm": 125},
+        {"tick": 600, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Reload"},
+        {"tick": 120, "type": "Note", "noteType": "Reload"},
+        {"tick": 120, "type": "Note", "noteType": "Reload"},
 
-        {"tick": 11040, "type": "TextEffect", "text": "Test", "position": {"x": 0.5, "y": 0.5}, "size": 64, "color": "#FF0000", "align": "Center", "duration": 0.75},
+        {"tick": 120, "type": "TextEffect", "text": "Test", "position": {"x": 0.5, "y": 0.5}, "size": 64, "color": "#FF0000", "align": "Center", "duration": 0.75},
 
-        {"tick": 12000, "type": "TextEffect", "text": "T   ", "position": {"x": 0.5, "y": 0.6}, "size": 64, "color": "#FFF000", "align": "Left", "duration": 0.25},
-        {"tick": 12120, "type": "TextEffect", "text": "Te  ", "position": {"x": 0.5, "y": 0.6}, "size": 64, "color": "#FFFF00", "align": "Left", "duration": 0.25},
-        {"tick": 12240, "type": "TextEffect", "text": "Tes ", "position": {"x": 0.5, "y": 0.6}, "size": 64, "color": "#FFFFF0", "align": "Left", "duration": 0.25},
-        {"tick": 12360, "type": "TextEffect", "text": "Test", "position": {"x": 0.5, "y": 0.6}, "size": 64, "color": "#FFFFFF", "align": "Left", "duration": 0.25},
+        {"tick": 480, "type": "TextEffect", "text": "T   ", "position": {"x": 0.5, "y": 0.6}, "size": 64, "color": "#FFF000", "align": "Left", "duration": 0.25},
+        {"tick": 120, "type": "TextEffect", "text": "Te  ", "position": {"x": 0.5, "y": 0.6}, "size": 64, "color": "#FFFF00", "align": "Left", "duration": 0.25},
+        {"tick": 120, "type": "TextEffect", "text": "Tes ", "position": {"x": 0.5, "y": 0.6}, "size": 64, "color": "#FFFFF0", "align": "Left", "duration": 0.25},
+        {"tick": 120, "type": "TextEffect", "text": "Test", "position": {"x": 0.5, "y": 0.6}, "size": 64, "color": "#FFFFFF", "align": "Left", "duration": 0.25},
 
-        {"tick": 12740, "type": "TextEffect", "text": "0172650", "position": {"x": 0.5, "y": 0.8}, "size": 72, "color": "#111111", "align": "Center", "duration": 1},
+        {"tick": 120, "type": "TextEffect", "text": "0172650", "position": {"x": 0.5, "y": 0.8}, "size": 72, "color": "#111111", "align": "Center", "duration": 1},
 
-        {"tick": 13220, "type": "TextEffect", "text": "Test", "position": {"x": 0, "y": 0.7}, "size": 96, "duration": 0.25},
-        {"tick": 13220, "type": "TextEffect", "text": "Test", "position": {"x": 1, "y": 1}, "size": 96, "duration": 0.25},
+        {"tick": 480, "type": "TextEffect", "text": "Test", "position": {"x": 0, "y": 0.7}, "size": 96, "duration": 0.25},
+        {"tick": 0, "type": "TextEffect", "text": "Test", "position": {"x": 1, "y": 1}, "size": 96, "duration": 0.25},
 
-        {"tick": 13700, "type": "NoteEffect", "noteType": "Attack", "startPosition": {"x": 0.5, "y": 0.5}, "endPosition": {"x": 0.5, "y": 0.5}, "duration": 4800},
-        {"tick": 14180, "type": "NoteEffect", "noteType": "Defense", "startPosition": {"x": 0.5, "y": 0.5}, "endPosition": {"x": 1.0, "y": 0.5}, "duration": 4800}
+        {"tick": 0, "type": "NoteEffect", "noteType": "Attack", "startPosition": {"x": 0.5, "y": 0.5}, "endPosition": {"x": 0.5, "y": 0.5}, "duration": 4800},
+        {"tick": 0, "type": "NoteEffect", "noteType": "Defense", "startPosition": {"x": 0.5, "y": 0.5}, "endPosition": {"x": 1.0, "y": 0.5}, "duration": 4800}
     ]
 }

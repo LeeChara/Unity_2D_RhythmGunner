@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,16 +11,31 @@ public class PlayerController : MonoBehaviour
     public AudioClip counterSE;
     public AudioClip reloadSE;
     public AudioClip missSE;
+
+    [SerializeField] private Light2D light1;
+    [SerializeField] private Light2D light2;
     public void Init()
     {
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        light1.enabled = false;
+        light2.enabled = false;
     }
 
     public void OnAttack()
     {
         animator.SetTrigger("Attack");
         Debug.Log("[PlayerController] Attack!");
+
+        light1.enabled = true;
+        light2.enabled = true;
+
+        Invoke("TurnOffLight", 0.1f);
+    }
+    private void TurnOffLight()
+    {
+        light1.enabled = false;
+        light2.enabled = false;
     }
     public void OnDefense()
     {

@@ -8,6 +8,7 @@ using System.Collections.Generic;
 /// </summary>
 public class JSONConverter : MonoBehaviour
 {
+    private float previousTick;
     public ChartData Load(string jsonString)
     {
         TextAsset jsonFile = Resources.Load<TextAsset>("Chart/" + jsonString);
@@ -38,7 +39,7 @@ public class JSONConverter : MonoBehaviour
 
                     eventData = new NoteData
                     {
-                        tick = jo["tick"].ToObject<float>(),
+                        tick = previousTick + jo["tick"].ToObject<float>(),
                         type = type,
                         noteType = noteType,
                         intensity = jo["intensity"]?.ToString() ?? "normal"
@@ -59,7 +60,7 @@ public class JSONConverter : MonoBehaviour
 
                     eventData = new EnemyData
                     {
-                        tick = jo["tick"].ToObject<float>(),
+                        tick = previousTick + jo["tick"].ToObject<float>(),
                         type = type,
                         enemyType = enemyType,
                         position = position
@@ -76,7 +77,7 @@ public class JSONConverter : MonoBehaviour
 
                     eventData = new BossData
                     {
-                        tick = jo["tick"].ToObject<float>(),
+                        tick = previousTick + jo["tick"].ToObject<float>(),
                         type = type,
                         bossType = bossType,
                         bossAction = bossAction
@@ -90,7 +91,7 @@ public class JSONConverter : MonoBehaviour
 
                     eventData = new TextEffectData
                     {
-                        tick = jo["tick"].ToObject<float>(),
+                        tick = previousTick + jo["tick"].ToObject<float>(),
                         type = type,
                         text = text,
                         position = position,
@@ -119,7 +120,7 @@ public class JSONConverter : MonoBehaviour
 
                     eventData = new NoteEffectData
                     {
-                        tick = jo["tick"].ToObject<float>(),
+                        tick = previousTick + jo["tick"].ToObject<float>(),
                         type = type,
                         noteType = jo["noteType"]?.ToString() ?? "Attack",
                         startPosition = startPosition,
@@ -135,7 +136,7 @@ public class JSONConverter : MonoBehaviour
 
                     eventData = new AlertEffectData
                     {
-                        tick = jo["tick"].ToObject<float>(),
+                        tick = previousTick + jo["tick"].ToObject<float>(),
                         type = type,
                         alertType = alertEffect
                     };
@@ -148,7 +149,7 @@ public class JSONConverter : MonoBehaviour
 
                     eventData = new BPMEventData
                     {
-                        tick = jo["tick"].ToObject<float>(),
+                        tick = previousTick + jo["tick"].ToObject<float>(),
                         type = type,
                         bpm = bpm
                     };
@@ -158,9 +159,16 @@ public class JSONConverter : MonoBehaviour
                     Debug.LogWarning($"[JSONConverter] Unknown event type '{type}' at tick {jo["tick"]}. Skipping this event.");
                     break;
             }
+            previousTick += jo["tick"].ToObject<float>();
+
             if (eventData != null)
                 chartData.events.Add(eventData);
         }
         return chartData;
+    }
+
+    public void Init()
+    {
+        this.previousTick = 0;
     }
 }

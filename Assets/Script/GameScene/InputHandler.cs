@@ -8,6 +8,28 @@ public class InputHandler : MonoBehaviour
     private Key[] counterKeys = { Key.Space };
     void Update()
     {
+        foreach (Key key in attackKeys)
+        {
+            if (Keyboard.current[key].wasPressedThisFrame)
+            {
+                GameManager.Instance.playerController.PlaySE("Attack");
+            }
+        }
+        foreach (Key key in defenseKeys)
+        {
+            if (Keyboard.current[key].wasPressedThisFrame)
+            {
+                GameManager.Instance.playerController.PlaySE("Defense");
+            }
+        }
+        foreach (Key key in counterKeys)
+        {
+            if (Keyboard.current[key].wasPressedThisFrame)
+            {
+                GameManager.Instance.playerController.PlaySE("Counter");
+            }
+        }
+
         foreach (Key key in counterKeys) // Counter 키 입력 체크
         {
             if (Keyboard.current[key].wasPressedThisFrame)

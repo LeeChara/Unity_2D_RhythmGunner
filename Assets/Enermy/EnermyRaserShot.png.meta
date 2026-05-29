@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: 7160afe1573065749a5da070c1310a57
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5004018027316599141
+    second: EnermyRaserShot_0
+  - first:
+      213: -6220943418390509933
+    second: EnermyRaserShot_1
+  - first:
+      213: 791580986380499110
+    second: EnermyRaserShot_2
+  - first:
+      213: -7117652682940237362
+    second: EnermyRaserShot_3
+  - first:
+      213: 416817210880037175
+    second: EnermyRaserShot_4
+  - first:
+      213: 771969446379963327
+    second: EnermyRaserShot_5
+  - first:
+      213: 8546328282380484729
+    second: EnermyRaserShot_6
+  - first:
+      213: 4937560196861392880
+    second: EnermyRaserShot_7
+  - first:
+      213: -60719026876191109
+    second: EnermyRaserShot_8
+  - first:
+      213: 8797994597711349264
+    second: EnermyRaserShot_9
+  - first:
+      213: -3046824229985446831
+    second: EnermyRaserShot_10
+  - first:
+      213: -6332137851569403394
+    second: EnermyRaserShot_11
+  - first:
+      213: -1474942572904375294
+    second: EnermyRaserShot_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EnermyRaserShot_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 510
+        width: 180
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b96a428dd182e8ab0800000000000000
+      internalID: -5004018027316599141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermyRaserShot_1
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 509
+        width: 214
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3968703cbe4caa9a0800000000000000
+      internalID: -6220943418390509933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermyRaserShot_2
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 509
+        width: 220
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8b92096b24cfa00800000000000000
+      internalID: 791580986380499110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermyRaserShot_4
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 509
+        width: 239
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73116ce7b05d8c500800000000000000
+      internalID: 416817210880037175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermyRaserShot_5
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 509
+        width: 249
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb3cee41f1696ba00800000000000000
+      internalID: 771969446379963327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermyRaserShot_6
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 92
+        width: 269
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970c92dda48aa9670800000000000000
+      internalID: 8546328282380484729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermyRaserShot_7
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 92
+        width: 331
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f7f707b6dcb58440800000000000000
+      internalID: 4937560196861392880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermyRaserShot_8
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 90
+        width: 344
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7eefe3ed58482ff0800000000000000
+      internalID: -60719026876191109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermyRaserShot_9
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 91
+        width: 333
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016046c0971c81a70800000000000000
+      internalID: 8797994597711349264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermyRaserShot_10
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 91
+        width: 198
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1541aae618187b5d0800000000000000
+      internalID: -3046824229985446831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8099dd15dcc545e47a90ad7eb96efb3f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      EnermyRaserShot_0: -5004018027316599141
+      EnermyRaserShot_1: -6220943418390509933
+      EnermyRaserShot_10: -3046824229985446831
+      EnermyRaserShot_11: -6332137851569403394
+      EnermyRaserShot_12: -1474942572904375294
+      EnermyRaserShot_13: 815408472
+      EnermyRaserShot_2: 791580986380499110
+      EnermyRaserShot_3: -7117652682940237362
+      EnermyRaserShot_4: 416817210880037175
+      EnermyRaserShot_5: 771969446379963327
+      EnermyRaserShot_6: 8546328282380484729
+      EnermyRaserShot_7: 4937560196861392880
+      EnermyRaserShot_8: -60719026876191109
+      EnermyRaserShot_9: 8797994597711349264
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

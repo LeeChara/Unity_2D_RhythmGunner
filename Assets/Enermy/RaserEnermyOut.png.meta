@@ -1,61 +1,43 @@
 fileFormatVersion: 2
-guid: 9f92d384f2d0bbc4a8229ed5800e10d9
+guid: 7c400374202fc8c4ba999f3781c02934
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6635707809435179332
-    second: PlayerShot_0
+      213: -8197157186014671985
+    second: RaserEnermyOut_0
   - first:
-      213: -2482697532507938427
-    second: PlayerShot_1
+      213: 4185867070804141397
+    second: RaserEnermyOut_1
   - first:
-      213: 4492445614119365936
-    second: PlayerShot_2
+      213: -4659223257146815521
+    second: RaserEnermyOut_2
   - first:
-      213: 8263055604068036239
-    second: PlayerShot_3
+      213: -4712207866791567320
+    second: RaserEnermyOut_3
   - first:
-      213: 3104217508437336867
-    second: PlayerShot_4
+      213: -2495007747877958723
+    second: RaserEnermyOut_4
   - first:
-      213: -5692885618876925880
-    second: PlayerShot_5
+      213: 5236638260844769207
+    second: RaserEnermyOut_5
   - first:
-      213: -6272329203451795050
-    second: PlayerShot_6
+      213: 1872481099000532187
+    second: RaserEnermyOut_6
   - first:
-      213: 8377923397335054434
-    second: PlayerShot_7
+      213: 5022379686658738303
+    second: RaserEnermyOut_7
   - first:
-      213: 7289780996338796843
-    second: PlayerShot_8
+      213: -2404803912839578583
+    second: RaserEnermyOut_8
   - first:
-      213: 9032539314021942778
-    second: PlayerShot_9
+      213: -6065911794687465224
+    second: RaserEnermyOut_9
   - first:
-      213: 2106564052011759400
-    second: PlayerShot_10
+      213: 2801976645624137125
+    second: RaserEnermyOut_10
   - first:
-      213: 108422925882587542
-    second: PlayerShot_11
-  - first:
-      213: 8035905765383428637
-    second: PlayerShot_12
-  - first:
-      213: 5794928629513461348
-    second: PlayerShot_13
-  - first:
-      213: -2357279952545500780
-    second: PlayerShot_14
-  - first:
-      213: 4681506741793834156
-    second: PlayerShot_15
-  - first:
-      213: -1614852069364004356
-    second: PlayerShot_16
-  - first:
-      213: 3166093518032594026
-    second: PlayerShot_17
+      213: -2799032420848511462
+    second: RaserEnermyOut_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -177,13 +159,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerShot_0
+      name: RaserEnermyOut_0
       rect:
         serializedVersion: 2
-        x: 36
-        y: 573
-        width: 200
-        height: 300
+        x: 0
+        y: 532
+        width: 145
+        height: 202
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4495bae5815c61c50800000000000000
-      internalID: 6635707809435179332
+      spriteID: f8b0e8f38f8dd3e80800000000000000
+      internalID: -8197157186014671985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerShot_1
+      name: RaserEnermyOut_1
       rect:
         serializedVersion: 2
-        x: 524
-        y: 563
-        width: 250
-        height: 300
+        x: 239
+        y: 525
+        width: 220
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,42 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 58120228fbfab8dd0800000000000000
-      internalID: -2482697532507938427
+      spriteID: 55529485cef271a30800000000000000
+      internalID: 4185867070804141397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerShot_7
+      name: RaserEnermyOut_2
       rect:
         serializedVersion: 2
-        x: 783
-        y: 566
-        width: 230
-        height: 335
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 268f69511fc544470800000000000000
-      internalID: 8377923397335054434
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerShot_13
-      rect:
-        serializedVersion: 2
-        x: 582
-        y: 181
+        x: 519
+        y: 536
         width: 240
-        height: 275
+        height: 350
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,8 +218,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 46e14ecb2e8bb6050800000000000000
-      internalID: 5794928629513461348
+      spriteID: fdb868c122d175fb0800000000000000
+      internalID: -4659223257146815521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaserEnermyOut_3
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 532
+        width: 250
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 820661859efda9eb0800000000000000
+      internalID: -4712207866791567320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaserEnermyOut_4
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 524
+        width: 220
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb03e32ca3ff5dd0800000000000000
+      internalID: -2495007747877958723
       vertices: []
       indices: 
       edges: []
@@ -268,7 +272,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9655ab5c25c9efd4f8eb196c3b98fe7a
+    spriteID: f650d12d0b4e51d48acc675631a0f08d
     internalID: 0
     vertices: []
     indices: 
@@ -278,24 +282,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PlayerShot_0: 6635707809435179332
-      PlayerShot_1: -2482697532507938427
-      PlayerShot_10: 1818384206
-      PlayerShot_11: 108422925882587542
-      PlayerShot_12: 8035905765383428637
-      PlayerShot_13: 5794928629513461348
-      PlayerShot_14: 954095730
-      PlayerShot_15: 4681506741793834156
-      PlayerShot_16: -1614852069364004356
-      PlayerShot_17: 3166093518032594026
-      PlayerShot_2: -175162951
-      PlayerShot_3: 1488780272
-      PlayerShot_4: -309496163
-      PlayerShot_5: -5692885618876925880
-      PlayerShot_6: -6272329203451795050
-      PlayerShot_7: 8377923397335054434
-      PlayerShot_8: 7289780996338796843
-      PlayerShot_9: -1178256876
+      RaserEnermyOut_0: -8197157186014671985
+      RaserEnermyOut_1: 4185867070804141397
+      RaserEnermyOut_10: 2801976645624137125
+      RaserEnermyOut_11: -2799032420848511462
+      RaserEnermyOut_2: -4659223257146815521
+      RaserEnermyOut_3: -4712207866791567320
+      RaserEnermyOut_4: -2495007747877958723
+      RaserEnermyOut_5: 5236638260844769207
+      RaserEnermyOut_6: 1872481099000532187
+      RaserEnermyOut_7: 5022379686658738303
+      RaserEnermyOut_8: -2404803912839578583
+      RaserEnermyOut_9: -6065911794687465224
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

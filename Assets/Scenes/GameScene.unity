@@ -1399,7 +1399,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -7870276711496609559, guid: 2dfec1b408597f6418dbf2ba51fce043, type: 3}
+  m_Sprite: {fileID: -7870276711496609559, guid: 00dda370b53b1dc44a333cfbb1c87075, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1458,10 +1458,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fcec5032473f5747b74d97380eb7cf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  attackSE: {fileID: 8300000, guid: de607c23e8bdd7b4b99886ee06e0b43f, type: 3}
-  defenseSE: {fileID: 8300000, guid: f22c0a8f69506a7428b986025cc47257, type: 3}
-  counterSE: {fileID: 0}
-  reloadSE: {fileID: 8300000, guid: ac0dca58b7c0c0c4d88a7766de286799, type: 3}
+  attackSE: {fileID: 8300000, guid: 13e94ca38a870314ca77e3f9db95e186, type: 3}
+  defenseSE: {fileID: 8300000, guid: c94fa14e1c8e9174797095487732dc71, type: 3}
+  counterSE: {fileID: 8300000, guid: 7716ddfb64cc9e7428295c6fb13e490d, type: 3}
+  reloadSE: {fileID: 8300000, guid: 7edc97e78209adc43af532ca8541d924, type: 3}
   missSE: {fileID: 0}
 --- !u!82 &719086509
 AudioSource:
@@ -1476,7 +1476,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0

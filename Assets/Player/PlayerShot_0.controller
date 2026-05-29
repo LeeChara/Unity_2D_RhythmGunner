@@ -37,14 +37,18 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -4260520509865445248}
+<<<<<<<< HEAD:Assets/Player/PlayerShot_0.controller
     m_Position: {x: 30, y: 170, z: 0}
+========
+    m_Position: {x: 260, y: 30, z: 0}
+>>>>>>>> 3b02c125a2eba6b77876585114eec656309ee24d:Assets/Animation/PlayerShot_0.controller
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
-  m_EntryPosition: {x: 50, y: 120, z: 0}
+  m_EntryPosition: {x: 140, y: 110, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: -4260520509865445248}

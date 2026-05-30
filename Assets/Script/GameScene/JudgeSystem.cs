@@ -36,7 +36,7 @@ public class JudgeSystem : MonoBehaviour
                 GameManager.Instance.playerController.OnCounter();
                 break;
         }
-        float currentTick = (float) TickClock.Instance.Tick; // 입력 시점의 tick
+        float currentTick = (float) TickClock.Instance.Tick + SettingManager.Instance.JudgementOffset; // 입력 시점의 tick
 
         // 소환되어있는 노트들 중 currentTick과 가장 가까운 노트를 반환
         // noteType이 일치하거나, noteType이 Counter가 아니면서 소환된 노트의 noteType이 Reload인 경우만 고려 (즉, Counter 입력으로는 Reload 노트를 판정할 수 없음)

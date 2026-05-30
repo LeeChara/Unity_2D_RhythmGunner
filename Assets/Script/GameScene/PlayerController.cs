@@ -12,14 +12,18 @@ public class PlayerController : MonoBehaviour
     public AudioClip reloadSE;
     public AudioClip missSE;
 
-    [SerializeField] private Light2D light1;
-    [SerializeField] private Light2D light2;
+    [SerializeField] private Light2D muzzleLight1;
+    [SerializeField] private Light2D muzzleLight2;
+    [SerializeField] private Light2D shieldLight;
+    [SerializeField] private Light2D counterLight;
     public void Init()
     {
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
-        light1.enabled = false;
-        light2.enabled = false;
+        muzzleLight1.enabled = false;
+        muzzleLight2.enabled = false;
+        shieldLight.enabled = false;
+        counterLight.enabled = false;
     }
 
     public void OnAttack()
@@ -27,25 +31,40 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("Attack");
         Debug.Log("[PlayerController] Attack!");
 
-        light1.enabled = true;
-        light2.enabled = true;
+        muzzleLight1.enabled = true;
+        muzzleLight2.enabled = true;
 
-        Invoke("TurnOffLight", 0.1f);
+        Invoke("TurnOffMuzzleLight", 0.1f);
     }
-    private void TurnOffLight()
-    {
-        light1.enabled = false;
-        light2.enabled = false;
-    }
+
     public void OnDefense()
     {
         animator.SetTrigger("Defense");
         Debug.Log("[PlayerController] Defense!");
+
+        shieldLight.enabled = true;
+        Invoke("TurnOffShieldLight", 0.1f);
     }
     public void OnCounter()
     {
         animator.SetTrigger("Counter");
         Debug.Log("[PlayerController] Counter!");
+
+        counterLight.enabled = true;
+        Invoke("TurnOffCounterLight", 0.1f);
+    }
+    private void TurnOffMuzzleLight()
+    {
+        muzzleLight1.enabled = false;
+        muzzleLight2.enabled = false;
+    }
+    private void TurnOffShieldLight()
+    {
+        shieldLight.enabled = false;
+    }
+    private void TurnOffCounterLight()
+    {
+        counterLight.enabled = false;
     }
 
     public void PlaySE(string soundString)

@@ -1,0 +1,127 @@
+{
+    "metaData":{
+        "title": "Chaos",
+        "bpm": 150,
+        "resolution": 480,
+        "offset": 0
+    },
+    "events": [
+        {"tick": 0, "type": "첫음은 600"},
+        {"tick": 600, "type": "Note", "noteType": "Defense"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 480, "type": "Note", "noteType": "Attack"},
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 0, "type": "8번"},
+        
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
+        {"tick": 120, "type": "Note", "noteType": "Attack"},
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
+        {"tick": 120, "type": "Note", "noteType": "Attack"},
+        
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 120, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Attack"},
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 120, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Attack"},
+        
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
+
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
+
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
+        {"tick": 120, "type": "Note", "noteType": "Attack"},
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
+        {"tick": 120, "type": "Note", "noteType": "Attack"},
+        
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 120, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Attack"},
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 120, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Attack"},
+        
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
+
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
+        {"tick": 0, "type": "13초 구간, 틱 15360"},
+
+        {"tick": 240, "type": "Note", "noteType": "Counter"},
+        {"tick": 1440, "type": "Note", "noteType": "Attack"},
+
+        {"tick": 480, "type": "Note", "noteType": "Counter"},
+        {"tick": 0, "type": "Note", "noteType": "Defense"},
+        {"tick": 720, "type": "Note", "noteType": "Attack"},
+        {"tick": 720, "type": "Note", "noteType": "Attack"},
+
+        {"tick": 480, "type": "Note", "noteType": "Counter"},
+        {"tick": 720, "type": "Note", "noteType": "Defense"},
+        {"tick": 720, "type": "Note", "noteType": "Attack"},
+
+        {"tick": 480, "type": "Note", "noteType": "Defense"},
+        {"tick": 720, "type": "Note", "noteType": "Attack"},
+        {"tick": 720, "type": "Note", "noteType": "Defense"},
+        
+        {"tick": 0, "type": "13마디"},
+        {"tick": 480, "type": "Note", "noteType": "Counter"},
+
+    ]
+}

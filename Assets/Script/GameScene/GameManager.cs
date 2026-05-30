@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public BossManager bossManager;
     public TextEffectManager textEffectManager;
     public NoteEffectManager noteEffectManager;
+    public AlertEffectManager alertEffectManager;
     public BPMEventManager bpmEventManager;
 
     public UIManager uiManager;
@@ -49,11 +50,12 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
     }
-    void Start()
+    public void Init(string songName)
     {
+        Debug.Log($"[GameManager] SongName : {songName}");
         // Test Code - JSON 파일에서 ChartData 로드
         jsonConverter.Init();
-        ChartData chartData = jsonConverter.Load("Test");
+        ChartData chartData = jsonConverter.Load(songName);
         //Debug.Log("[GameManager]ChartData loaded: " + chartData.metaData.title);
         // chartDataViewer.ViewChartData(chartData);
 
@@ -65,13 +67,14 @@ public class GameManager : MonoBehaviour
         laneController.Init(noteSpeed); // LaneController 초기화, noteSpeed 전달
         arriveTime = laneController.getArriveTime(); // LaneController로부터 arriveTime 계산
 
-        musicPlayer.Init(arriveTime, audioOffset); // MusicPlayer 초기화, arriveTime과 audioOffset 전달
+        musicPlayer.Init(chartData.metaData.title, arriveTime, audioOffset); // MusicPlayer 초기화, arriveTime과 audioOffset 전달
         TickClock.Instance.Init(bpm, resolution); // TickClock 초기화, bpm과 resolution 전달
         Debug.Log($"[GameManager] arriveTime: {arriveTime}, audioOffset: {audioOffset}");
 
         arriveTick = arriveTime * (bpm / 60f) * resolution;
         noteManager.Init(resolution, noteSpeed, arriveTick, laneController.moveDistance); // NoteSpawner 초기화, resolution과 noteSpeed, arriveTick, moveDistance 전달
         enemyManager.Init(); // EnemySpawner 초기화
+        alertEffectManager.Init();
 
         chartScheduler.Init(chartData); // ChartScheduler 초기화, ChartData 전달
 

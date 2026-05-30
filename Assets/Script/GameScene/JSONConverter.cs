@@ -11,6 +11,7 @@ public class JSONConverter : MonoBehaviour
     private float previousTick;
     public ChartData Load(string jsonString)
     {
+        Debug.Log($"[JSONConverter] jsonString : {jsonString}");
         TextAsset jsonFile = Resources.Load<TextAsset>("Chart/" + jsonString);
         string jsonContent = jsonFile.text;
 
@@ -130,15 +131,13 @@ public class JSONConverter : MonoBehaviour
                     break;
 
                 case "AlertEffect":
-                    string alertEffect = jo["alertType"]?.ToString() ?? "Unknown";
-                    if (jo["alertType"] == null)
-                        Debug.LogWarning($"[JSONConverter] AlterEvent at tick {jo["tick"]} is missing 'alertType'. Defaulting to 'Unknown'.");
+                    float duration = jo["duration"]?.ToObject<float>() ?? 1.0f;
 
                     eventData = new AlertEffectData
                     {
                         tick = previousTick + jo["tick"].ToObject<float>(),
                         type = type,
-                        alertType = alertEffect
+                        duration = duration
                     };
                     break;
 

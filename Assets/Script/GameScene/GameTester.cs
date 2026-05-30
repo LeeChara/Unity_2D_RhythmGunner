@@ -36,6 +36,7 @@ public class GameTester : MonoBehaviour
         GameManager.Instance.bossManager.SkipEvent(jumpTick);
         GameManager.Instance.textEffectManager.SkipEvent(jumpTick);
         GameManager.Instance.noteEffectManager.SkipEvent(jumpTick);
+        GameManager.Instance.alertEffectManager.SkipEvent(jumpTick);
         GameManager.Instance.bpmEventManager.SkipEvent(jumpTick);
     }
 }

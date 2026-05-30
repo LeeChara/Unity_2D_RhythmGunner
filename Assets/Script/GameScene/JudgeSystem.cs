@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using UnityEngine;
+using static TreeEditor.TreeEditorHelper;
 public class JudgeSystem : MonoBehaviour
 {
     private float perfectTick; // perfect 판정 tick 범위
@@ -19,6 +21,29 @@ public class JudgeSystem : MonoBehaviour
         this.lane = lane;
 
         Debug.Log($"[JudgeSystem] Initialized with perfectTick: {perfectTick}, goodTick: {goodTick}, badTick: {missTick}");
+    }
+
+    private void Update()
+    {
+        if (GameStarter.Instance.isAuto)
+        {
+            List<NoteController> toDestroy = new List<NoteController>();
+            foreach (Transform note in lane)
+            {
+                NoteController nc = note.GetComponent<NoteController>();
+                if (nc == null) continue;
+                if (nc.targetTick <= TickClock.Instance.Tick)
+                {
+                    OnPerfect(nc.targetTick);
+                    GameManager.Instance.playerController.PlaySE(nc.noteType.ToString());
+                    toDestroy.Add(nc);
+                }
+            }
+            foreach (NoteController nc in toDestroy)
+            {
+                Destroy(nc.gameObject);
+            }
+        }
     }
 
     // noteType과 키 입력 상태를 받아 판정을 수행하는 메서드. noteType은 판정하려는 노트의 유형, isKeyDown은 키가 눌렸는지 여부를 나타냄.

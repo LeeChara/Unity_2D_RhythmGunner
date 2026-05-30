@@ -67,6 +67,7 @@
         {"tick": 120, "type": "Note", "noteType": "Reload"},
 
         {"tick": 120, "type": "TextEffect", "text": "Test", "position": {"x": 0.5, "y": 0.5}, "size": 64, "color": "#FF0000", "align": "Center", "duration": 0.75},
+        {"tick": 0, "type": "AlertEffect"},
 
         {"tick": 480, "type": "TextEffect", "text": "T   ", "position": {"x": 0.5, "y": 0.6}, "size": 64, "color": "#FFF000", "align": "Left", "duration": 0.25},
         {"tick": 120, "type": "TextEffect", "text": "Te  ", "position": {"x": 0.5, "y": 0.6}, "size": 64, "color": "#FFFF00", "align": "Left", "duration": 0.25},
@@ -78,6 +79,7 @@
         {"tick": 480, "type": "TextEffect", "text": "Test", "position": {"x": 0, "y": 0.7}, "size": 96, "duration": 0.25},
         {"tick": 0, "type": "TextEffect", "text": "Test", "position": {"x": 1, "y": 1}, "size": 96, "duration": 0.25},
 
+        {"tick": 0, "type": "AlertEffect", "duration": 0.25},
         {"tick": 0, "type": "NoteEffect", "noteType": "Attack", "startPosition": {"x": 0.5, "y": 0.5}, "endPosition": {"x": 0.5, "y": 0.5}, "duration": 4800},
         {"tick": 0, "type": "NoteEffect", "noteType": "Defense", "startPosition": {"x": 0.5, "y": 0.5}, "endPosition": {"x": 1.0, "y": 0.5}, "duration": 4800}
     ]

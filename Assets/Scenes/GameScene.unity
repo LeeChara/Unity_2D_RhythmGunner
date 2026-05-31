@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bdcf7e82d901eb48a61545bb0d3a6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SettingManager
-  JudgementOffset: 30
+  JudgementOffset: 0
   NoteSpawnOffset: 0
 --- !u!4 &76664245
 Transform:
@@ -540,7 +540,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 87acdcf0fe948274ea8bfa23c0710ca7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -845,6 +845,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 309254625}
   m_CullTransparentMesh: 1
+--- !u!1 &309828555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 309828557}
+  - component: {fileID: 309828556}
+  m_Layer: 0
+  m_Name: BeatLineManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &309828556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309828555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28851516bb462d549a8870072fec4a83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BeatLineManager
+  BeatLinePrefab: {fileID: 8770673470234477107, guid: acd92e21c0a10fe45be692b53b8c473f, type: 3}
+  lane: {fileID: 313273110}
+--- !u!4 &309828557
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309828555}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.74964, y: 5.48115, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &313273109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1932,9 +1978,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   attackSE: {fileID: 8300000, guid: c94fa14e1c8e9174797095487732dc71, type: 3}
-  defenseSE: {fileID: 8300000, guid: 13e94ca38a870314ca77e3f9db95e186, type: 3}
+  defenseSE: {fileID: 8300000, guid: 2ed4d06495d09f040b95a4661f57fc48, type: 3}
   counterSE: {fileID: 8300000, guid: 7716ddfb64cc9e7428295c6fb13e490d, type: 3}
-  reloadSE: {fileID: 8300000, guid: 7edc97e78209adc43af532ca8541d924, type: 3}
+  reloadSE: {fileID: 8300000, guid: e8524f6fb0b28664680da329e0f8e2e9, type: 3}
   missSE: {fileID: 8300000, guid: 6e28bd497635ab747b0525fdcb0239c1, type: 3}
   muzzleLight1: {fileID: 1456385829}
   muzzleLight2: {fileID: 166598966}
@@ -1953,7 +1999,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2155,6 +2201,7 @@ MonoBehaviour:
   noteEffectManager: {fileID: 1590961202}
   alertEffectManager: {fileID: 179626792}
   bpmEventManager: {fileID: 118715546}
+  beatLineManager: {fileID: 309828556}
   uiManager: {fileID: 1997749176}
   playerController: {fileID: 719086508}
   resultManager: {fileID: 619038110}
@@ -2168,7 +2215,7 @@ MonoBehaviour:
   perfectTime: 50
   goodTime: 100
   missTime: 200
-  noteSpeed: 150
+  noteSpeed: 300
 --- !u!4 &916413291
 Transform:
   m_ObjectHideFlags: 0
@@ -3397,8 +3444,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b1e1ac1eace6514d9ac79222e2b27ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameTester
-  activateJump: 0
-  jumpTick: 0
+  activateJump: 1
+  jumpTick: 46000
   bpmEventManager: {fileID: 118715546}
 --- !u!4 &1660626230
 Transform:
@@ -4100,6 +4147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameStarter
   songName: Chaos
+  isAuto: 1
 --- !u!4 &2111965049
 Transform:
   m_ObjectHideFlags: 0
@@ -4396,7 +4444,9 @@ SceneRoots:
   - {fileID: 1077639198}
   - {fileID: 1590961203}
   - {fileID: 179626793}
+  - {fileID: 309828557}
   - {fileID: 1997749177}
+  - {fileID: 2111965049}
   - {fileID: 1660626230}
   - {fileID: 619038111}
   - {fileID: 719086506}
@@ -4405,6 +4455,5 @@ SceneRoots:
   - {fileID: 1147929838}
   - {fileID: 76664245}
   - {fileID: 1996565701}
-  - {fileID: 2111965049}
   - {fileID: 341258797}
   - {fileID: 1579564631}

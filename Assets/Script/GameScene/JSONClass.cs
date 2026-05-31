@@ -15,6 +15,7 @@ public class MetaData // 곡 정보 클래스
     public float bpm;
     public int resolution;
     public float offset; // sec, positive: delay music, negative: advance music
+    public float startTick;
 }
 public class EventData // 이벤트 기본 클래스
 {

@@ -16,6 +16,12 @@ public class GameStarter : MonoBehaviour
     private void Start()
     {
         if (songName == null) songName = "Test";
+
+        Invoke("GameStart", 3.0f);
+    }
+
+    private void GameStart()
+    {
         Debug.Log($"[GameStarter] SongName : {songName}");
         GameManager.Instance.Init(songName);
     }

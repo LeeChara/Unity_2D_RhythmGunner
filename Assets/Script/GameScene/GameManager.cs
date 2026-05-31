@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public NoteEffectManager noteEffectManager;
     public AlertEffectManager alertEffectManager;
     public BPMEventManager bpmEventManager;
+    public BeatLineManager beatLineManager;
 
     public UIManager uiManager;
     public PlayerController playerController;
@@ -73,6 +74,9 @@ public class GameManager : MonoBehaviour
 
         arriveTick = arriveTime * (bpm / 60f) * resolution;
         noteManager.Init(resolution, noteSpeed, arriveTick, laneController.moveDistance); // NoteSpawner 초기화, resolution과 noteSpeed, arriveTick, moveDistance 전달
+        float endTick = musicPlayer.ClipLength * (bpm / 60f) * resolution;
+        float startTick = chartData.metaData.startTick;
+        beatLineManager.Init(resolution, noteSpeed, arriveTick, laneController.moveDistance, startTick, endTick);
         enemyManager.Init(); // EnemySpawner 초기화
         alertEffectManager.Init();
 
@@ -105,6 +109,7 @@ public class GameManager : MonoBehaviour
         arriveTime = laneController.getArriveTime(); // LaneController로부터 arriveTime 재계산
         arriveTick = arriveTime * (bpm / 60f) * resolution;
         noteManager.ChangeBpm(noteSpeed, arriveTick); // NoteSpawner에 BPM 변경 알림, noteSpeed와 arriveTick 전달
+        beatLineManager.ChangeBpm(noteSpeed, arriveTick);
     }
 
     public void OnMusicEnd()

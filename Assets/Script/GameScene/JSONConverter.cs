@@ -88,7 +88,7 @@ public class JSONConverter : MonoBehaviour
                 case "TextEffect":
                     string text = jo["text"]?.ToString() ?? "";
                     position = jo["position"]?.ToObject<Position>();
-                    if (position == null) position = new Position { x = 0, y = 0 };
+                    if (position == null) position = new Position { x = 0.5f, y = 0.5f };
 
                     eventData = new TextEffectData
                     {

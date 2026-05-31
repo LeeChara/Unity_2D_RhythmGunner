@@ -20,5 +20,5 @@ MonoBehaviour:
   normalLevel: 6
   hardLevel: 8
   jacketImage: {fileID: 8153675488544687321, guid: 0540ceded7f1649ee8008024a76b2fdd, type: 3}
-  previewClip: {fileID: 0}
+  previewClip: {fileID: 8300000, guid: bad970321b9f14897890919b50b2eac2, type: 3}
   playSceneName: GameScene

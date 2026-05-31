@@ -8,15 +8,10 @@ public class SongData : ScriptableObject
 
     public string artist;
 
-    public int BPM;
+    public float BPM;
 
     [TextArea]
     public string description;
-
-    [Header("Difficulty")]
-    public int easyLevel;
-    public int normalLevel;
-    public int hardLevel;
 
     [Header("Assets")]
     public Sprite jacketImage;

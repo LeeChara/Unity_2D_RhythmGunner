@@ -13,33 +13,56 @@ public class SongPreview : MonoBehaviour
     public TMP_Text bpmText;
     public TMP_Text descriptionText;
 
-    public TMP_Text easyText;
-    public TMP_Text normalText;
-    public TMP_Text hardText;
+    [Header("Difficulty")]
+    [SerializeField]
+    private Difficulty selectedDifficulty =
+        Difficulty.Normal;
+
+    public Difficulty CurrentDifficulty
+    {
+        get { return selectedDifficulty; }
+    }
 
     [Header("Audio")]
     public AudioSource audioSource;
 
     private SongData currentSong;
 
-    public void Setup(SongData songData)
+    public void Setup(SongData songData) // 곡 정보
     {
         currentSong = songData;
 
         jacketImage.sprite = songData.jacketImage;
 
         songNameText.text = songData.songTitle;
+        bpmText.text = $"BPM: {songData.BPM}";
         artistText.text = songData.artist;
         descriptionText.text = songData.description;
 
-        easyText.text = $"EASY  {songData.easyLevel}";
-        normalText.text = $"NORMAL  {songData.normalLevel}";
-        hardText.text = $"HARD  {songData.hardLevel}";
-
         PlayPreview(songData.previewClip);
+
+        RefreshDifficultyButtons();
     }
 
-    void PlayPreview(AudioClip clip)
+    public void SelectDifficulty(Difficulty difficulty) // 선택된 난이도
+    {
+        selectedDifficulty = difficulty;
+
+        RefreshDifficultyButtons();
+    }
+
+    private void RefreshDifficultyButtons()
+    {
+        DifficultyButton[] buttons =
+            GetComponentsInChildren<DifficultyButton>();
+
+        foreach (DifficultyButton button in buttons)
+        {
+            button.UpdateVisual();
+        }
+    }
+
+    private void PlayPreview(AudioClip clip) // 곡 미리 듣기
     {
         if (clip == null)
             return;
@@ -47,21 +70,27 @@ public class SongPreview : MonoBehaviour
         audioSource.Stop();
 
         audioSource.clip = clip;
-
         audioSource.volume = 1f;
 
         audioSource.Play();
     }
 
-    public void OnClickPlay()
+    public void OnClickPlay() // PLAY 버튼 클릭
     {
         if (currentSong == null)
             return;
 
-        SceneManager.LoadScene(currentSong.playSceneName);
+        GameData.SelectedSong =
+            currentSong;
+
+        GameData.SelectedDifficulty =
+            selectedDifficulty;
+
+        SceneManager.LoadScene(
+            currentSong.playSceneName);
     }
 
-    public void OnClickClose()
+    public void OnClickClose() // CLOSE 버튼 클릭
     {
         audioSource.Stop();
 

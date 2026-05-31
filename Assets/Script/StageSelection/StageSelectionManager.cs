@@ -21,10 +21,8 @@ public class StageSelectionManager : MonoBehaviour
 
     public void OpenSongPreview(SongData songData)
     {
-        if (SongButtons != null)
-        {
-            Destroy(currentPreview);
-        }
+        SongButtons.SetActive(false);
+        
         if (currentPreview != null)
         {
             Destroy(currentPreview);

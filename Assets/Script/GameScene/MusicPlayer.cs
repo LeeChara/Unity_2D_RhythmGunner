@@ -1,4 +1,5 @@
 using UnityEngine;
+
 public class MusicPlayer : MonoBehaviour
 {
     private AudioSource audioSource;
@@ -35,4 +36,12 @@ public class MusicPlayer : MonoBehaviour
         audioSource.Play();
     }
     public float ClipLength => audioSource.clip != null ? audioSource.clip.length : 0f;
+    public void Pause()
+    {
+        audioSource.Pause();
+    }
+    public void Resume()
+    {
+        audioSource.UnPause();
+    }
 }

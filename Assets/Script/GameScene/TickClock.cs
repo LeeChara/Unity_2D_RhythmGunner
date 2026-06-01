@@ -24,6 +24,7 @@ public class TickClock : MonoBehaviour
     }
     void Update()
     {
+        if (PauseManager.Instance.IsPaused) return;
         Tick = previousTick + (AudioSettings.dspTime - previousDspTime) * (Bpm / 60f) * Resolution;
     }
 
@@ -48,5 +49,14 @@ public class TickClock : MonoBehaviour
         this.previousTick = previousTick;
         previousDspTime = AudioSettings.dspTime;
         this.Bpm = bpm;
+    }
+    public void OnPause()
+    {
+        previousTick = Tick;
+    }
+
+    public void OnResume()
+    {
+        previousDspTime = AudioSettings.dspTime;
     }
 }

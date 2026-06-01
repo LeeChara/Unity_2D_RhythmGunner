@@ -34,5 +34,14 @@ public class MusicPlayer : MonoBehaviour
         TickClock.Instance.SetSongStartDspTime(songStartDspTime);
         audioSource.Play();
     }
+    public void Pause()
+    {
+        audioSource.Pause();
+    }
+
+    public void Resume()
+    {
+        audioSource.UnPause();
+    }
     public float ClipLength => audioSource.clip != null ? audioSource.clip.length : 0f;
 }

@@ -17,7 +17,7 @@ public class GameStarter : MonoBehaviour
     {
         if (songName == null) songName = "Test";
 
-        Invoke("GameStart", 3.0f);
+        GameStart();
     }
 
     private void GameStart()

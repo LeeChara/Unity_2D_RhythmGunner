@@ -15,6 +15,7 @@ public class MetaData // 곡 정보 클래스
     public float bpm;
     public int resolution;
     public float offset; // sec, positive: delay music, negative: advance music
+    public float startTick;
 }
 public class EventData // 이벤트 기본 클래스
 {
@@ -57,7 +58,7 @@ public class NoteEffectData : EventData // 노트 효과 클래스. 노트 클래스와 다르�
 
 public class AlertEffectData : EventData // 경고 효과 클래스
 {
-    public string alertType;
+    public float duration;
 }
 
 public class BPMEventData : EventData // BPM 변경 클래스, 노트 이동속도에 영향을 줌

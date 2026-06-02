@@ -7,13 +7,13 @@
     },
     "events": [
         {"tick": 0, "type": "Note", "noteType": "Attack"},
-        {"tick": 0, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.4, "y": 0.4}},
+        {"tick": 0, "type": "Enemy", "enemyType": "RobotDog", "position": {"x": 0.4, "y": 0.4}},
         
         {"tick": 480, "type": "Note", "noteType": "Defense"},
-        {"tick": 480, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.5, "y": 0.4}},
+        {"tick": 480, "type": "Enemy", "enemyType": "RobotDog", "position": {"x": 0.5, "y": 0.4}},
 
         {"tick": 960, "type": "Note", "noteType": "Counter"},
-        {"tick": 960, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.6, "y": 0.4}},
+        {"tick": 960, "type": "Enemy", "enemyType": "RobotDog", "position": {"x": 0.6, "y": 0.4}},
 
         {"tick": 1440, "type": "Note", "noteType": "Attack"},
         {"tick": 1440, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.7, "y": 0.4}},

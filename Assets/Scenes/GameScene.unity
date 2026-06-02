@@ -3615,7 +3615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 650d739ff5eee5c428d3860cfc8e6e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
-  RobotAPrefab: {fileID: 4130458831421448935, guid: 69791b270ce2c204c817e96f972fb105, type: 3}
+  RobotAPrefab: {fileID: 8260966495874767488, guid: cfbab8ca53bf1c848a773ff2258ad718, type: 3}
   spawnedEnemies: []
 --- !u!4 &2147113524
 Transform:
@@ -3632,6 +3632,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &6149550271861908735
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1801923002565370671, guid: cfbab8ca53bf1c848a773ff2258ad718, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.90823
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801923002565370671, guid: cfbab8ca53bf1c848a773ff2258ad718, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5607342
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801923002565370671, guid: cfbab8ca53bf1c848a773ff2258ad718, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801923002565370671, guid: cfbab8ca53bf1c848a773ff2258ad718, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801923002565370671, guid: cfbab8ca53bf1c848a773ff2258ad718, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801923002565370671, guid: cfbab8ca53bf1c848a773ff2258ad718, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801923002565370671, guid: cfbab8ca53bf1c848a773ff2258ad718, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801923002565370671, guid: cfbab8ca53bf1c848a773ff2258ad718, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801923002565370671, guid: cfbab8ca53bf1c848a773ff2258ad718, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801923002565370671, guid: cfbab8ca53bf1c848a773ff2258ad718, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260966495874767488, guid: cfbab8ca53bf1c848a773ff2258ad718, type: 3}
+      propertyPath: m_Name
+      value: EnemyDog
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cfbab8ca53bf1c848a773ff2258ad718, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3663,3 +3720,4 @@ SceneRoots:
   - {fileID: 341258797}
   - {fileID: 1531598677}
   - {fileID: 810747577}
+  - {fileID: 6149550271861908735}

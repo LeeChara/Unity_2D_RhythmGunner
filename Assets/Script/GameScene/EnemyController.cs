@@ -21,12 +21,9 @@ public class EnemyController : MonoBehaviour
 
     public float targetTick { get; private set; } // 판정 타이밍 Tick
     private Position position;
-    private string enemyType;
-    private Animator animator;
-    public void Init(string enemyType ,float targetTick, Position position)
+    public void Init(float targetTick, Position position)
     {
         this.targetTick = targetTick;
-        this.enemyType = enemyType;
         // 박자를 Tick으로 변환
         appearTick = targetTick - appearBeat * TickClock.Instance.Resolution;
         prepareTick = targetTick - prepareBeat * TickClock.Instance.Resolution;
@@ -34,7 +31,6 @@ public class EnemyController : MonoBehaviour
         disappearTick = targetTick - disappearBeat * TickClock.Instance.Resolution;
 
         this.position = position;
-        animator = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -64,26 +60,26 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private void Appear()
+    private void Appear() // 등장
     {
         transform.position = Camera.main.ViewportToWorldPoint(new Vector3(position.x, position.y, 10));
-        animator.SetTrigger("Appear");
+        // Debug.Log("[EnemyController] Enemy Appeared at Tick: " + TickClock.Instance.Tick);
     }
-    private void Prepare()
+    private void Prepare() // 공격 준비
     {
-        animator.SetTrigger("Prepare");
+        // Debug.Log("[EnemyController] Enemy Prepared at Tick: " + TickClock.Instance.Tick);
     }
-    private void Attack()
+    private void Attack() // 공격
     {
-        animator.SetTrigger("Attack");
+        // Debug.Log("[EnemyController] Enemy Attacked at Tick: " + TickClock.Instance.Tick);
     }
-    private void Disappear()
+    private void Disappear() // 퇴장
     {
-        animator.SetTrigger("Disappear");
+        // Debug.Log("[EnemyController] Enemy Disappeared at Tick: " + TickClock.Instance.Tick);
     }
-    public void Die()
+
+    public void Die() // 사망
     {
-        animator.SetTrigger("Disappear");
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 }

@@ -5,7 +5,7 @@ public class EnemyManager : MonoBehaviour
 {
     // 적 프리팹
     [SerializeField]
-    private GameObject RobotDogPrefab;
+    private GameObject RobotAPrefab;
 
     private List<EnemyData> enemies = new List<EnemyData>(); // ChartScheduler로부터 받은 스케줄링된 적 데이터 리스트
 
@@ -50,8 +50,8 @@ public class EnemyManager : MonoBehaviour
         GameObject enemyPrefab = null;
         switch (enemyData.enemyType) // 적 타입에 따른 프리팹 선택
         {
-            case "RobotDog":
-                enemyPrefab = RobotDogPrefab;
+            case "RobotA":
+                enemyPrefab = RobotAPrefab;
                 break;
             default:
                 //Debug.LogWarning($"[EnemySpawner] Unknown enemy type: {enemyData.enemyType}");
@@ -60,7 +60,7 @@ public class EnemyManager : MonoBehaviour
         }
         GameObject enemy = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
         EnemyController enemyController = enemy.GetComponent<EnemyController>();
-        enemyController.Init(enemyData.enemyType, enemyData.tick + prepareTick, enemyData.position);
+        enemyController.Init(enemyData.tick + prepareTick, enemyData.position);
         spawnedEnemies.Add(enemyController);
         //Debug.Log($"[EnemySpawner] Spawned enemy of type {enemyData.enemyType} at tick: {enemyData.tick}, scheduled to appear at tick: {enemyData.tick + prepareTick}");
     }

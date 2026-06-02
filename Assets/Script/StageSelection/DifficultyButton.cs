@@ -27,6 +27,7 @@ public class DifficultyButton : MonoBehaviour
         if (preview != null)
         {
             preview.SelectDifficulty(difficulty);
+            Debug.Log("Difficulty Click : " + difficulty);
         }
     }
 

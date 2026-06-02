@@ -21,9 +21,12 @@ public class EnemyController : MonoBehaviour
 
     public float targetTick { get; private set; } // 판정 타이밍 Tick
     private Position position;
-    public void Init(float targetTick, Position position)
+    private string enemyType;
+    private Animator animator;
+    public void Init(string enemyType ,float targetTick, Position position)
     {
         this.targetTick = targetTick;
+        this.enemyType = enemyType;
         // 박자를 Tick으로 변환
         appearTick = targetTick - appearBeat * TickClock.Instance.Resolution;
         prepareTick = targetTick - prepareBeat * TickClock.Instance.Resolution;
@@ -31,6 +34,7 @@ public class EnemyController : MonoBehaviour
         disappearTick = targetTick - disappearBeat * TickClock.Instance.Resolution;
 
         this.position = position;
+        animator = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -60,26 +64,26 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private void Appear() // 등장
+    private void Appear()
     {
         transform.position = Camera.main.ViewportToWorldPoint(new Vector3(position.x, position.y, 10));
-        // Debug.Log("[EnemyController] Enemy Appeared at Tick: " + TickClock.Instance.Tick);
+        animator.SetTrigger("Appear");
     }
-    private void Prepare() // 공격 준비
+    private void Prepare()
     {
-        // Debug.Log("[EnemyController] Enemy Prepared at Tick: " + TickClock.Instance.Tick);
+        animator.SetTrigger("Prepare");
     }
-    private void Attack() // 공격
+    private void Attack()
     {
-        // Debug.Log("[EnemyController] Enemy Attacked at Tick: " + TickClock.Instance.Tick);
+        animator.SetTrigger("Attack");
     }
-    private void Disappear() // 퇴장
+    private void Disappear()
     {
-        // Debug.Log("[EnemyController] Enemy Disappeared at Tick: " + TickClock.Instance.Tick);
+        animator.SetTrigger("Disappear");
     }
-
-    public void Die() // 사망
+    public void Die()
     {
-        Destroy(this.gameObject);
+        animator.SetTrigger("Disappear");
+        Destroy(gameObject);
     }
 }

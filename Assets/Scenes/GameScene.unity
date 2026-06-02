@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bfd94e6e06db0a4181e237882c82f6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseManager
-  pauseWindow: {fileID: 0}
+  pauseWindow: {fileID: 460389930}
   readyObject: {fileID: 579692391}
   setObject: {fileID: 1402897028}
   goObject: {fileID: 1462820370}
@@ -1708,7 +1708,7 @@ MonoBehaviour:
   m_text: 9999999
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 320902dfccd6ae4448a8147aa0373294, type: 2}
-  m_sharedMaterial: {fileID: -416971216153156944, guid: 320902dfccd6ae4448a8147aa0373294, type: 2}
+  m_sharedMaterial: {fileID: 6713004688263717209, guid: 320902dfccd6ae4448a8147aa0373294, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4940,7 +4940,7 @@ MonoBehaviour:
   m_text: Perfect Good Miss
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 320902dfccd6ae4448a8147aa0373294, type: 2}
-  m_sharedMaterial: {fileID: -416971216153156944, guid: 320902dfccd6ae4448a8147aa0373294, type: 2}
+  m_sharedMaterial: {fileID: 6713004688263717209, guid: 320902dfccd6ae4448a8147aa0373294, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5247,7 +5247,7 @@ MonoBehaviour:
   m_text: 999
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 320902dfccd6ae4448a8147aa0373294, type: 2}
-  m_sharedMaterial: {fileID: -416971216153156944, guid: 320902dfccd6ae4448a8147aa0373294, type: 2}
+  m_sharedMaterial: {fileID: 6713004688263717209, guid: 320902dfccd6ae4448a8147aa0373294, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -1,6 +1,4 @@
-using System.Collections.Generic;
 using UnityEngine;
-using static TreeEditor.TreeEditorHelper;
 public class JudgeSystem : MonoBehaviour
 {
     private float perfectTick; // perfect 판정 tick 범위
@@ -23,29 +21,6 @@ public class JudgeSystem : MonoBehaviour
         Debug.Log($"[JudgeSystem] Initialized with perfectTick: {perfectTick}, goodTick: {goodTick}, badTick: {missTick}");
     }
 
-    private void Update()
-    {
-        if (GameStarter.Instance.isAuto)
-        {
-            List<NoteController> toDestroy = new List<NoteController>();
-            foreach (Transform note in lane)
-            {
-                NoteController nc = note.GetComponent<NoteController>();
-                if (nc == null) continue;
-                if (nc.targetTick <= TickClock.Instance.Tick)
-                {
-                    OnPerfect(nc.targetTick);
-                    GameManager.Instance.playerController.PlaySE(nc.noteType.ToString());
-                    toDestroy.Add(nc);
-                }
-            }
-            foreach (NoteController nc in toDestroy)
-            {
-                Destroy(nc.gameObject);
-            }
-        }
-    }
-
     // noteType과 키 입력 상태를 받아 판정을 수행하는 메서드. noteType은 판정하려는 노트의 유형, isKeyDown은 키가 눌렸는지 여부를 나타냄.
     public bool Judge(NoteType noteType, bool isKeyDown = false)
     {
@@ -61,7 +36,7 @@ public class JudgeSystem : MonoBehaviour
                 GameManager.Instance.playerController.OnCounter();
                 break;
         }
-        float currentTick = (float) TickClock.Instance.Tick + SettingManager.Instance.JudgementOffset; // 입력 시점의 tick
+        float currentTick = (float) TickClock.Instance.Tick; // 입력 시점의 tick
 
         // 소환되어있는 노트들 중 currentTick과 가장 가까운 노트를 반환
         // noteType이 일치하거나, noteType이 Counter가 아니면서 소환된 노트의 noteType이 Reload인 경우만 고려 (즉, Counter 입력으로는 Reload 노트를 판정할 수 없음)

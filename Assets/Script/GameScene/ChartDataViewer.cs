@@ -39,7 +39,7 @@ public class ChartDataViewer : MonoBehaviour
                     break;
                 case "AlertEffect":
                     AlertEffectData alertEffect = e as AlertEffectData;
-                    Debug.Log($"[ChartDataViewer] AlertEffect - Tick: {alertEffect.tick}, Duration: {alertEffect.duration}");
+                    Debug.Log($"[ChartDataViewer] AlertEffect - Tick: {alertEffect.tick}, AlertType: {alertEffect.alertType}");
                     break;
                 case "BPMEvent":
                     BPMEventData bpmEvent = e as BPMEventData;

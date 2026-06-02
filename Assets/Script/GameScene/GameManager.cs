@@ -1,11 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
 public class GameManager : MonoBehaviour
 {
-    private const float startDelay = 1f;
-    [SerializeField] private GameObject readyUIObject;
-    public AudioSource audioSource;
     public static GameManager Instance { get; private set; } // 싱글톤 패턴으로 구현하여 다른 클래스에서 쉽게 접근 가능
 
     // 각종 매니저 및 컨트롤러 참조
@@ -23,9 +19,7 @@ public class GameManager : MonoBehaviour
     public BossManager bossManager;
     public TextEffectManager textEffectManager;
     public NoteEffectManager noteEffectManager;
-    public AlertEffectManager alertEffectManager;
     public BPMEventManager bpmEventManager;
-    public BeatLineManager beatLineManager;
 
     public UIManager uiManager;
     public PlayerController playerController;
@@ -54,14 +48,11 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        audioSource = GetComponent<AudioSource>();
     }
-    public void Init(string songName)
+    void Start()
     {
-        Debug.Log($"[GameManager] SongName : {songName}");
         // Test Code - JSON 파일에서 ChartData 로드
-        jsonConverter.Init();
-        ChartData chartData = jsonConverter.Load(songName);
+        ChartData chartData = jsonConverter.Load("Test");
         //Debug.Log("[GameManager]ChartData loaded: " + chartData.metaData.title);
         // chartDataViewer.ViewChartData(chartData);
 
@@ -71,19 +62,15 @@ public class GameManager : MonoBehaviour
         //Debug.Log("[GameManager] Start: bpm = " + bpm + ", resolution = " + resolution + ", offset = " + audioOffset);
 
         laneController.Init(noteSpeed); // LaneController 초기화, noteSpeed 전달
-        arriveTime = laneController.getArriveTime() + startDelay; // LaneController로부터 arriveTime 계산
+        arriveTime = laneController.getArriveTime(); // LaneController로부터 arriveTime 계산
 
-        musicPlayer.Init(chartData.metaData.title, arriveTime, audioOffset); // MusicPlayer 초기화, arriveTime과 audioOffset 전달
+        musicPlayer.Init(arriveTime, audioOffset); // MusicPlayer 초기화, arriveTime과 audioOffset 전달
         TickClock.Instance.Init(bpm, resolution); // TickClock 초기화, bpm과 resolution 전달
         Debug.Log($"[GameManager] arriveTime: {arriveTime}, audioOffset: {audioOffset}");
 
         arriveTick = arriveTime * (bpm / 60f) * resolution;
         noteManager.Init(resolution, noteSpeed, arriveTick, laneController.moveDistance); // NoteSpawner 초기화, resolution과 noteSpeed, arriveTick, moveDistance 전달
-        float endTick = musicPlayer.ClipLength * (bpm / 60f) * resolution;
-        float startTick = chartData.metaData.startTick;
-        beatLineManager.Init(resolution, noteSpeed, arriveTick, laneController.moveDistance, startTick, endTick);
         enemyManager.Init(); // EnemySpawner 초기화
-        alertEffectManager.Init();
 
         chartScheduler.Init(chartData); // ChartScheduler 초기화, ChartData 전달
 
@@ -103,8 +90,6 @@ public class GameManager : MonoBehaviour
         resultManager.Init(noteNumber);
         resultManager.SetTitle(chartData.metaData.title);
         resultManager.SetProgress(progress);
-
-        StartCoroutine(ShowReadyUI());
     }
 
     public void ChangeBpm(float bpm)
@@ -113,10 +98,9 @@ public class GameManager : MonoBehaviour
         this.bpm = bpm;
         noteSpeed = noteSpeed * (bpm / previousBpm); // 노트 스피드 조정
         TickClock.Instance.ChangeBpm(bpm); // TickClock에 BPM 변경 알림
-        arriveTime = laneController.getArriveTime() + startDelay; // LaneController로부터 arriveTime 재계산
+        arriveTime = laneController.getArriveTime(); // LaneController로부터 arriveTime 재계산
         arriveTick = arriveTime * (bpm / 60f) * resolution;
         noteManager.ChangeBpm(noteSpeed, arriveTick); // NoteSpawner에 BPM 변경 알림, noteSpeed와 arriveTick 전달
-        beatLineManager.ChangeBpm(noteSpeed, arriveTick);
     }
 
     public void OnMusicEnd()
@@ -132,12 +116,5 @@ public class GameManager : MonoBehaviour
     {
         DataCarrier.Instance.SetData(resultData);
         SceneManager.LoadScene("ResultScene");
-    }
-    private IEnumerator ShowReadyUI()
-    {
-        audioSource.Play(); // Ready 사운드 재생
-        readyUIObject.SetActive(true);
-        yield return new WaitForSeconds(startDelay);
-        readyUIObject.SetActive(false);
     }
 }

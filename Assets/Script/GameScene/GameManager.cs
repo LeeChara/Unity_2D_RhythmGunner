@@ -104,6 +104,7 @@ public class GameManager : MonoBehaviour
         resultManager.SetTitle(chartData.metaData.title);
         resultManager.SetProgress(progress);
 
+        Debug.Log($"[GameManager] arriveTime: {arriveTime}, startDelay: {startDelay}");
         StartCoroutine(ShowReadyUI());
     }
 

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66e325e7911924fee809bfd450e1e912, type: 3}
+  m_Name: Oshama Scramble!
+  m_EditorClassIdentifier: Assembly-CSharp::SongData
+  songTitle: Oshama Scramble!
+  artist: t+pazolite
+  BPM: 190
+  description: 
+  jacketImage: {fileID: 570291463573374987, guid: a30289f559ca4fe43b5fd1fae3f0e440, type: 3}
+  previewClip: {fileID: 8300000, guid: ac5e573fce08b47409698d59c2b0a743, type: 3}
+  playSceneName: GameScene

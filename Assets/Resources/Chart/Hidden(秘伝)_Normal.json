@@ -1,6 +1,6 @@
 {
     "metaData":{
-        "title": "test",
+        "title": "Hidden(秘伝)",
         "bpm": 125,
         "resolution": 480,
         "offset": 0,
@@ -8,6 +8,7 @@
     },
     "events": [
         {"tick": 0, "type": "Note", "noteType": "Attack"},
+        {"tick": 480, "type": "Note", "noteType": "Attack"},
         {"tick": 0, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.4, "y": 0.4}},
         {"tick": 0, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "Appear"},
         {"tick": 0, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "SlashA"},

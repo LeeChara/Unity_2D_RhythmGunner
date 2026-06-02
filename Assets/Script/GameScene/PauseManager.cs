@@ -46,7 +46,7 @@ public class PauseManager : MonoBehaviour
 
     public void Quit()
     {
-        SceneManager.LoadScene("SongSelectScene"); // 곡 선택 씬 이름 맞게 수정
+        SceneManager.LoadScene("StageSelection"); // 곡 선택 씬 이름 맞게 수정
     }
 
     public void Resume()

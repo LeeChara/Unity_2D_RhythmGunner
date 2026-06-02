@@ -1,4 +1,4 @@
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using UnityEngine;
 
 public class GameStarter : MonoBehaviour
@@ -15,8 +15,17 @@ public class GameStarter : MonoBehaviour
 
     private void Start()
     {
-        if (songName == null) songName = "Test";
+        if (GameData.SelectedSong != null)
+        {
+            string difficulty = GameData.SelectedDifficulty.ToString();
+            songName = GameData.SelectedSong.songTitle + "_" + difficulty;
+        }
+        else
+        {
+            songName = "Hidden(秘伝)_Easy";
+        }
 
+        Debug.Log($"[GameStarter] Selected Song : {songName}");
         GameStart();
     }
 

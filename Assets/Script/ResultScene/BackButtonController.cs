@@ -17,6 +17,6 @@ public class BackButtonController : MonoBehaviour
     }
     public void OnBackButton()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("StageSelection");
     }
 }

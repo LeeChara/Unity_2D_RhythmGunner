@@ -8,7 +8,7 @@ public class SettingUIManager : MonoBehaviour
     [SerializeField] private Slider judgementSlider;
     [SerializeField] private Slider musicDelaySlider;
 
-    private void OnEnable()
+    private void Start()
     {
         // 열릴 때 현재 저장된 값으로 슬라이더 초기화
         bgmSlider.value = SettingManager.Instance.BgmVolume;

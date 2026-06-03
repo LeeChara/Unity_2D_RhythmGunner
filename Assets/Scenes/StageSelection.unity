@@ -369,6 +369,7 @@ GameObject:
   - component: {fileID: 937296224}
   - component: {fileID: 937296223}
   - component: {fileID: 937296222}
+  - component: {fileID: 937296225}
   m_Layer: 0
   m_Name: Clicker
   m_TagString: Untagged
@@ -502,6 +503,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &937296225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937296221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b250f5525346748b8e5eefbfc2374b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundRegisterSe
+  audioSource: {fileID: 0}
 --- !u!1 &958994039
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,7 +526,8 @@ GameObject:
   m_Component:
   - component: {fileID: 958994041}
   - component: {fileID: 958994040}
-  - component: {fileID: 958994042}
+  - component: {fileID: 958994043}
+  - component: {fileID: 958994044}
   m_Layer: 0
   m_Name: StageSelectManager
   m_TagString: Untagged
@@ -538,7 +553,7 @@ MonoBehaviour:
   preview: {fileID: 960125886}
   SongButtons: {fileID: 751226077}
   fadeCanvasGroup: {fileID: 258025228}
-  seAudioSource: {fileID: 958994042}
+  seAudioSource: {fileID: 958994043}
   backSE: {fileID: 8300000, guid: d38dbbed1688941429f42e393b4daf0f, type: 3}
 --- !u!4 &958994041
 Transform:
@@ -555,7 +570,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1303086463}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &958994042
+--- !u!82 &958994043
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -652,6 +667,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &958994044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958994039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b250f5525346748b8e5eefbfc2374b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundRegisterSe
+  audioSource: {fileID: 958994043}
 --- !u!1 &960125885
 GameObject:
   m_ObjectHideFlags: 0

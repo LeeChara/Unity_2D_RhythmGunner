@@ -119,52 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &76664243
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 76664245}
-  - component: {fileID: 76664244}
-  m_Layer: 0
-  m_Name: SettingManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &76664244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 76664243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bdcf7e82d901eb48a61545bb0d3a6d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SettingManager
-  JudgementOffset: 0
-  NoteSpawnOffset: 0
---- !u!4 &76664245
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 76664243}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.82509, y: 5.16392, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &83682391
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,6 +130,7 @@ GameObject:
   - component: {fileID: 83682393}
   - component: {fileID: 83682392}
   - component: {fileID: 83682394}
+  - component: {fileID: 83682395}
   m_Layer: 0
   m_Name: PauseManager
   m_TagString: Untagged
@@ -311,6 +266,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &83682395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83682391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b250f5525346748b8e5eefbfc2374b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundRegisterSe
+  audioSource: {fileID: 83682394}
 --- !u!1 &85299931
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,6 +1030,7 @@ GameObject:
   - component: {fileID: 211218901}
   - component: {fileID: 211218900}
   - component: {fileID: 211218899}
+  - component: {fileID: 211218902}
   m_Layer: 0
   m_Name: MusicPlayer
   m_TagString: Untagged
@@ -1193,6 +1162,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &211218902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211218898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a03a49824bb4f334d994c845987fdffe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundRegisterBmg
+  audioSource: {fileID: 211218899}
 --- !u!1 &220512590
 GameObject:
   m_ObjectHideFlags: 0
@@ -2549,6 +2531,7 @@ GameObject:
   m_Component:
   - component: {fileID: 719086506}
   - component: {fileID: 719086505}
+  - component: {fileID: 719086510}
   - component: {fileID: 719086508}
   - component: {fileID: 719086507}
   - component: {fileID: 719086509}
@@ -2778,6 +2761,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &719086510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719086504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b250f5525346748b8e5eefbfc2374b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundRegisterSe
+  audioSource: {fileID: 719086509}
 --- !u!1 &753022973
 GameObject:
   m_ObjectHideFlags: 0
@@ -2864,6 +2860,7 @@ GameObject:
   - component: {fileID: 916413291}
   - component: {fileID: 916413290}
   - component: {fileID: 916413292}
+  - component: {fileID: 916413293}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3026,6 +3023,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &916413293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916413289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b250f5525346748b8e5eefbfc2374b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundRegisterSe
+  audioSource: {fileID: 916413292}
 --- !u!1 &1077639196
 GameObject:
   m_ObjectHideFlags: 0
@@ -5403,7 +5413,6 @@ SceneRoots:
   - {fileID: 585427487}
   - {fileID: 475551563}
   - {fileID: 1147929838}
-  - {fileID: 76664245}
   - {fileID: 1996565701}
   - {fileID: 341258797}
   - {fileID: 1579564631}

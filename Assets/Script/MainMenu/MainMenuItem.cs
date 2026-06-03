@@ -24,13 +24,4 @@ public class MainMenuItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         textObject.SetActive(false);
         transform.localScale = originalScale;
     }
-    private void Start()
-    {
-        SettingManager.Instance.RegisterSe(audioSource);
-    }
-
-    private void OnDestroy()
-    {
-        SettingManager.Instance.UnregisterSe(audioSource);
-    }
 }

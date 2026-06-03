@@ -13,4 +13,13 @@ public class Clicker : MonoBehaviour
             audioSource.PlayOneShot(clickSE);
         }
     }
+    private void Start()
+    {
+        SettingManager.Instance.RegisterSe(audioSource);
+    }
+
+    private void OnDestroy()
+    {
+        SettingManager.Instance.UnregisterSe(audioSource);
+    }
 }

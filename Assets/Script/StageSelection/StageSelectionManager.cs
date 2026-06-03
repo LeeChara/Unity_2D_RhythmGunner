@@ -28,6 +28,9 @@ public class StageSelectionManager : MonoBehaviour
     [Header("Stage Button")]
     public GameObject SongButtons;
 
+    [Header("BGM")]
+    public AudioSource bgmAudioSource;
+
     [Header("Fade")]
     public CanvasGroup fadeCanvasGroup;
 
@@ -87,7 +90,7 @@ public class StageSelectionManager : MonoBehaviour
             seAudioSource.PlayOneShot(backSE);
         }
 
-        if (fadeCanvasGroup != null) // 페이드 아웃
+        if (fadeCanvasGroup != null)
         {
             fadeCanvasGroup.blocksRaycasts = true;
 
@@ -110,12 +113,22 @@ public class StageSelectionManager : MonoBehaviour
             fadeCanvasGroup.alpha = 1f;
         }
 
-        SceneManager.LoadScene(mainMenuSceneName); // 메인 메뉴로 이동
+        if (backSE != null)
+        {
+            yield return new WaitForSeconds(backSE.length);
+        }
+
+        SceneManager.LoadScene(mainMenuSceneName);
     }
 
     public void OpenSongPreview(SongData songData)
     {
         SongButtons.SetActive(false);
+
+        if (bgmAudioSource != null)
+        {
+            bgmAudioSource.Pause();
+        }
 
         if (currentPreview != null)
         {
@@ -139,6 +152,11 @@ public class StageSelectionManager : MonoBehaviour
         {
             Destroy(currentPreview);
             currentPreview = null;
+        }
+
+        if (bgmAudioSource != null)
+        {
+            bgmAudioSource.UnPause();
         }
     }
 }

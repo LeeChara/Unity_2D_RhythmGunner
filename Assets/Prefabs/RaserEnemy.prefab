@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 5866213883354237502}
   - component: {fileID: 6106231905327956597}
   - component: {fileID: 5158602115233493308}
+  - component: {fileID: 4041732475302598416}
+  - component: {fileID: 2849473333628436081}
   m_Layer: 0
   m_Name: RaserEnemy
   m_TagString: Untagged
@@ -28,8 +30,8 @@ Transform:
   m_GameObject: {fileID: 815667053047082348}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.72, y: 0.16, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,9 +85,9 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -8613438420593525032, guid: ab8efc8eab016584a9db9bb005ae8287, type: 3}
+  m_Sprite: {fileID: -3984044536280307371, guid: 728747d6595f77340a55eac9577d6a69, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.82, y: 2.96}
@@ -103,7 +105,7 @@ Animator:
   m_GameObject: {fileID: 815667053047082348}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: b49d8e1305aafb64483fc3b398c65abb, type: 2}
+  m_Controller: {fileID: 22100000, guid: 7ae9be3e003f7f646b90f66b77e331b1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -127,8 +129,125 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb9fcf187012eb14785a9b08d98bd4aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  appearBeat: 3
+  appearBeat: 4
   prepareBeat: 1
   attackBeat: 0
-  disappearBeat: -2
+  disappearBeat: -1
+  eyeGlow: {fileID: 0}
+  audioSource: {fileID: 4041732475302598416}
+  appearSE: {fileID: 8300000, guid: 4f5eac2d3f79b8147ada8dec2b30f8af, type: 3}
+  prepareSE: {fileID: 8300000, guid: 5ed8828810dc9c6469b98de4456467f5, type: 3}
+  attackSE: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
+  disappearSE: {fileID: 8300000, guid: 4f5eac2d3f79b8147ada8dec2b30f8af, type: 3}
+  dieSE: {fileID: 8300000, guid: 249219fd35f21c44fac71276b094c0e1, type: 3}
   dieDelay: 0.5
+--- !u!82 &4041732475302598416
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815667053047082348}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &2849473333628436081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815667053047082348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b250f5525346748b8e5eefbfc2374b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundRegisterSe
+  audioSource: {fileID: 4041732475302598416}

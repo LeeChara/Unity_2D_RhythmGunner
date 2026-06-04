@@ -5250,8 +5250,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
   RaserEnemyPrefab: {fileID: 815667053047082348, guid: cc3d3e1d758825945b5315e215ec6414, type: 3}
-  SwordEnemyPrefab: {fileID: 815667053047082348, guid: cc3d3e1d758825945b5315e215ec6414, type: 3}
-  DogEnemyPrefab: {fileID: 815667053047082348, guid: cc3d3e1d758825945b5315e215ec6414, type: 3}
+  SwordEnemyPrefab: {fileID: 1807893392852821177, guid: 4bbd18dbde35a524193dbf448ade4325, type: 3}
+  DogEnemyPrefab: {fileID: 3448489835088426763, guid: a705f1bc05fd0dc4a9638ad39f777732, type: 3}
   spawnedEnemies: []
 --- !u!4 &2147113524
 Transform:

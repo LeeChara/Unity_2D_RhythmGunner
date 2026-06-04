@@ -1,0 +1,671 @@
+fileFormatVersion: 2
+guid: b296538ca9d4b1d4587f35b30981d1cc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6739108072555805443
+    second: SwordRobot_0
+  - first:
+      213: -7113914889375013181
+    second: SwordRobot_1
+  - first:
+      213: -2416353509977434962
+    second: SwordRobot_2
+  - first:
+      213: 3389575519733682548
+    second: SwordRobot_3
+  - first:
+      213: 3259822501069245164
+    second: SwordRobot_4
+  - first:
+      213: 8948536752695254680
+    second: SwordRobot_5
+  - first:
+      213: -8173044687989494558
+    second: SwordRobot_6
+  - first:
+      213: 4616732854970347982
+    second: SwordRobot_7
+  - first:
+      213: -2294064045143488206
+    second: SwordRobot_8
+  - first:
+      213: -8334918192053623838
+    second: SwordRobot_9
+  - first:
+      213: -2184181744701724934
+    second: SwordRobot_10
+  - first:
+      213: 2765368186962560311
+    second: SwordRobot_11
+  - first:
+      213: -6557191988112219714
+    second: SwordRobot_12
+  - first:
+      213: -6276523892049684853
+    second: SwordRobot_13
+  - first:
+      213: 298311371188051328
+    second: SwordRobot_14
+  - first:
+      213: 2919953194134393297
+    second: SwordRobot_15
+  - first:
+      213: 5356433490007208188
+    second: SwordRobot_16
+  - first:
+      213: -5440258100136794542
+    second: SwordRobot_17
+  - first:
+      213: -9207085381847029309
+    second: SwordRobot_18
+  - first:
+      213: -7921388610160060955
+    second: SwordRobot_19
+  - first:
+      213: -7406126331404702830
+    second: SwordRobot_20
+  - first:
+      213: -3045315879404772064
+    second: SwordRobot_21
+  - first:
+      213: 6678497905532440424
+    second: SwordRobot_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SwordRobot_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1122
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.5349677, y: 0.08538251}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df40850d9e0e972a0800000000000000
+      internalID: -6739108072555805443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordRobot_1
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1122
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.48667896, y: 0.077056885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6a078691c464d90800000000000000
+      internalID: -7113914889375013181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordRobot_2
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1122
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.4250691, y: 0.077056885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea4d60af843677ed0800000000000000
+      internalID: -2416353509977434962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordRobot_3
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1122
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.37844545, y: 0.05874067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4711619f9f03a0f20800000000000000
+      internalID: 3389575519733682548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordRobot_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 842
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.5016651, y: 0.048749868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceace0f1b473d3d20800000000000000
+      internalID: 3259822501069245164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordRobot_5
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 842
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.44338554, y: 0.0470847}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89e9de3e3c69f2c70800000000000000
+      internalID: 8948536752695254680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordRobot_6
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 842
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.4050875, y: 0.042089406}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec2efea823839e80800000000000000
+      internalID: -8173044687989494558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordRobot_7
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 842
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.3901012, y: 0.028768267}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1f163321ee11040800000000000000
+      internalID: 4616732854970347982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordRobot_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 562
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.50333023, y: 0.13367136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2390a39c7e8d920e0800000000000000
+      internalID: -2294064045143488206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordRobot_9
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 562
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.53663284, y: 0.11535492}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e3e3ba801c645c80800000000000000
+      internalID: -8334918192053623838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordRobot_10
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 562
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.39176637, y: 0.12534572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af62926864a30b1e0800000000000000
+      internalID: -2184181744701724934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordRobot_11
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 562
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.3751151, y: 0.06207079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735c119e6bf806620800000000000000
+      internalID: 2765368186962560311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordRobot_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 282
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.51338416, y: 0.16730782}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb1a888d0ac2005a0800000000000000
+      internalID: -6557191988112219714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordRobot_13
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 282
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.50382406, y: 0.16730782}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86502e46ce45e8a0800000000000000
+      internalID: -6276523892049684853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordRobot_14
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 282
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.37763017, y: 0.17877993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08d9f109c90d32400800000000000000
+      internalID: 298311371188051328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordRobot_15
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 282
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.32475892, y: 0.19174457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d1d521a5f1c58820800000000000000
+      internalID: 2919953194134393297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordRobot_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.4770557, y: 0.10994685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf0b2ea21efd55a40800000000000000
+      internalID: 5356433490007208188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordRobot_17
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 2
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.48470384, y: 0.117594935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 256a7e6e4125084b0800000000000000
+      internalID: -5440258100136794542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordRobot_18
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 2
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.45219922, y: 0.13862722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9e05e50acd93080800000000000000
+      internalID: -9207085381847029309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordRobot_19
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.41204658, y: 0.14436328}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e595934703911290800000000000000
+      internalID: -7921388610160060955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordRobot_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 842
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9043bf95bb3a0f4bb95f791eb724edf
+      internalID: -7406126331404702830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 69ac330b222622f4dae59590e731948b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":5.0},"gridSpriteSize":{"x":280.0,"y":280.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      SwordRobot_0: -6739108072555805443
+      SwordRobot_1: -7113914889375013181
+      SwordRobot_10: -2184181744701724934
+      SwordRobot_11: 2765368186962560311
+      SwordRobot_12: -6557191988112219714
+      SwordRobot_13: -6276523892049684853
+      SwordRobot_14: 298311371188051328
+      SwordRobot_15: 2919953194134393297
+      SwordRobot_16: 5356433490007208188
+      SwordRobot_17: -5440258100136794542
+      SwordRobot_18: -9207085381847029309
+      SwordRobot_19: -7921388610160060955
+      SwordRobot_2: -2416353509977434962
+      SwordRobot_20: -7406126331404702830
+      SwordRobot_3: 3389575519733682548
+      SwordRobot_4: 3259822501069245164
+      SwordRobot_5: 8948536752695254680
+      SwordRobot_6: -8173044687989494558
+      SwordRobot_7: 4616732854970347982
+      SwordRobot_8: -2294064045143488206
+      SwordRobot_9: -8334918192053623838
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

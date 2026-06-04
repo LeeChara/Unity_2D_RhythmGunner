@@ -1,0 +1,660 @@
+fileFormatVersion: 2
+guid: 728747d6595f77340a55eac9577d6a69
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1241819766008217340
+    second: raserRobot_0
+  - first:
+      213: 9093888840314043394
+    second: raserRobot_1
+  - first:
+      213: 5685768269190108166
+    second: raserRobot_2
+  - first:
+      213: -3984044536280307371
+    second: raserRobot_3
+  - first:
+      213: -65724469258426458
+    second: raserRobot_4
+  - first:
+      213: 4160818054150671442
+    second: raserRobot_5
+  - first:
+      213: -6674003372331970346
+    second: raserRobot_6
+  - first:
+      213: 2502469213149193274
+    second: raserRobot_7
+  - first:
+      213: 5969272064319274555
+    second: raserRobot_8
+  - first:
+      213: -4746517096277882849
+    second: raserRobot_9
+  - first:
+      213: 6361775669406188500
+    second: raserRobot_10
+  - first:
+      213: -684342772630606569
+    second: raserRobot_11
+  - first:
+      213: 1027101848583726056
+    second: raserRobot_12
+  - first:
+      213: 266247696753135484
+    second: raserRobot_13
+  - first:
+      213: -7044583106876228721
+    second: raserRobot_14
+  - first:
+      213: -2356486193729538228
+    second: raserRobot_15
+  - first:
+      213: -7485899924674262349
+    second: raserRobot_16
+  - first:
+      213: 4240758460979037749
+    second: raserRobot_17
+  - first:
+      213: -7050858486343312819
+    second: raserRobot_18
+  - first:
+      213: -5495133643070690723
+    second: raserRobot_19
+  - first:
+      213: -6801606306018358308
+    second: raserRobot_20
+  - first:
+      213: -7501865317593407511
+    second: raserRobot_21
+  - first:
+      213: -1250226224456933090
+    second: raserRobot_22
+  - first:
+      213: 218939115206176749
+    second: raserRobot_23
+  - first:
+      213: -1194080956585032615
+    second: raserRobot_24
+  - first:
+      213: -7796074701591283334
+    second: raserRobot_25
+  - first:
+      213: -2927191101919850211
+    second: raserRobot_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: raserRobot_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1122
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.516888, y: 0.1094635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4018504908b24cee0800000000000000
+      internalID: -1241819766008217340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raserRobot_1
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1122
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.4662239, y: 0.0967974}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20cbec108bbf33e70800000000000000
+      internalID: 9093888840314043394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raserRobot_2
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1122
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.34167436, y: 0.06513236}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6049348cd18e7ee40800000000000000
+      internalID: 5685768269190108166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raserRobot_3
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1122
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.25934514, y: 0.05035531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5592da54a94d5b8c0800000000000000
+      internalID: -3984044536280307371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raserRobot_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 842
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.44933584, y: 0.035578266}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a7ecc481ff761ff0800000000000000
+      internalID: -65724469258426458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raserRobot_5
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 842
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.37333962, y: 0.03346732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25cceaca9f13eb930800000000000000
+      internalID: 4160818054150671442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raserRobot_6
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 842
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.25934514, y: 0.041911315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d0d4621b4d2163a0800000000000000
+      internalID: -6674003372331970346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raserRobot_7
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 842
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.21290305, y: 0.03346732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a34eb1f9d7e8ab220800000000000000
+      internalID: 2502469213149193274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raserRobot_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 562
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.35222948, y: 0.025023324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3eb961e05d17d250800000000000000
+      internalID: 5969272064319274555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raserRobot_9
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 562
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.27201125, y: 0.027134487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18c90c59dbf02eb0800000000000000
+      internalID: -4746517096277882849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raserRobot_10
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 562
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.2825662, y: 0.02291238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3cda3e341994850800000000000000
+      internalID: 6361775669406188500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raserRobot_11
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 562
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.28678828, y: 0.025023324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d2fb4cfd9b086f0800000000000000
+      internalID: -684342772630606569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raserRobot_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 282
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.38600558, y: 0.14112864}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e3eaf080bff04e00800000000000000
+      internalID: 1027101848583726056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raserRobot_13
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 282
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.38389468, y: 0.1432397}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f8c3b9ed6e1b300800000000000000
+      internalID: 266247696753135484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raserRobot_14
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 282
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.32900825, y: 0.17490485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8bbce3fcfc9c3e90800000000000000
+      internalID: -7044583106876228721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raserRobot_15
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 281
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.3648954, y: 0.1896819}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4773a0ca441c4fd0800000000000000
+      internalID: -2356486193729538228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raserRobot_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.4197817, y: 0.18968174}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bacaa53eadbc1890800000000000000
+      internalID: -7485899924674262349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raserRobot_17
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 2
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.37756163, y: 0.20868081}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53643ec0a533ada30800000000000000
+      internalID: 4240758460979037749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raserRobot_18
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 2
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.36067352, y: 0.23190188}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4a55ff4091562e90800000000000000
+      internalID: -7050858486343312819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raserRobot_19
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.38389456, y: 0.2361239}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a297be01d5db3b0800000000000000
+      internalID: -5495133643070690723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a467456e99c66834ca8b8a6994c4c72a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":5.0},"gridSpriteSize":{"x":280.0,"y":280.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      raserRobot_0: -1241819766008217340
+      raserRobot_1: 9093888840314043394
+      raserRobot_10: 6361775669406188500
+      raserRobot_11: -684342772630606569
+      raserRobot_12: 1027101848583726056
+      raserRobot_13: 266247696753135484
+      raserRobot_14: -7044583106876228721
+      raserRobot_15: -2356486193729538228
+      raserRobot_16: -7485899924674262349
+      raserRobot_17: 4240758460979037749
+      raserRobot_18: -7050858486343312819
+      raserRobot_19: -5495133643070690723
+      raserRobot_2: 5685768269190108166
+      raserRobot_3: -3984044536280307371
+      raserRobot_4: -65724469258426458
+      raserRobot_5: 4160818054150671442
+      raserRobot_6: -6674003372331970346
+      raserRobot_7: 2502469213149193274
+      raserRobot_8: 5969272064319274555
+      raserRobot_9: -4746517096277882849
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

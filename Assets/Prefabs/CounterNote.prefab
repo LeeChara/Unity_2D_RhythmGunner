@@ -88,5 +88,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af305e249485e8a44b034a075420a256, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteController
-  targetTick: 0
+  targetTick: 50
   noteType: 0

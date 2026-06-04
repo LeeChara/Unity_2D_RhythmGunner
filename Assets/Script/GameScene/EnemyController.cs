@@ -7,6 +7,13 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float attackBeat; // 박자 단위, 공격 타이밍
     [SerializeField] private float disappearBeat; // 박자 단위, 퇴장 타이밍
 
+    [SerializeField] private GameObject eyeGlow;
+    public AudioSource audioSource;
+    public AudioClip appearSE;
+    public AudioClip prepareSE;
+    public AudioClip attackSE;
+    public AudioClip disappearSE;
+    public AudioClip dieSE;
 
     private float appearTick;
     private float prepareTick;
@@ -70,31 +77,58 @@ public class EnemyController : MonoBehaviour
     {
         transform.position = Camera.main.ViewportToWorldPoint(new Vector3(position.x, position.y, 10));
         animator.SetTrigger("Appear");
+        audioSource.PlayOneShot(appearSE);
         Debug.Log($"[EnemyController] Appear at Tick: {TickClock.Instance.Tick}");
     }
 
     private void Prepare()
     {
         animator.SetTrigger("Prepare");
+        audioSource.PlayOneShot(prepareSE);
         Debug.Log($"[EnemyController] Prepare at Tick: {TickClock.Instance.Tick}");
+
+        if (enemyType == "Dog")
+            eyeGlow.SetActive(true);
     }
 
     private void Attack()
     {
         animator.SetTrigger("Attack");
+        audioSource.PlayOneShot(attackSE);
         Debug.Log($"[EnemyController] Attack at Tick: {TickClock.Instance.Tick}");
+
+        if (enemyType == "Dog")
+            eyeGlow.SetActive(false);
+
+        switch (enemyType)
+        {
+            case "Dog":
+                transform.position = Camera.main.ViewportToWorldPoint(new Vector3(0.2f, 0.2f, 10));
+                break;
+            case "Sword":
+                transform.position = Camera.main.ViewportToWorldPoint(new Vector3(0.1f, 0.2f, 10));
+                break;
+        }
     }
 
     private void Disappear()
     {
-        animator.SetTrigger("Disappear");
+
+        if (enemyType == "Laser")
+        {
+            return;
+        }
+
+            animator.SetTrigger("Disappear");
         Invoke("DestroySelf", dieDelay);
+        audioSource.PlayOneShot(disappearSE);
         Debug.Log($"[EnemyController] Disappear at Tick: {TickClock.Instance.Tick}");
     }
     public void Die()
     {
         animator.SetTrigger("Die");
         Invoke("DestroySelf", dieDelay);
+        audioSource.PlayOneShot(dieSE);
     }
 
     private void DestroySelf()

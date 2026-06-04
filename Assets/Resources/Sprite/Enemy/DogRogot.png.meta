@@ -1,0 +1,654 @@
+fileFormatVersion: 2
+guid: 6cd9384adb5727a4c85d1cd510f48869
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3721213148698363636
+    second: dogRogot_0
+  - first:
+      213: -7271121191817845638
+    second: dogRogot_1
+  - first:
+      213: 7070235052116177972
+    second: dogRogot_2
+  - first:
+      213: 8057927590028918900
+    second: dogRogot_3
+  - first:
+      213: -5359022418377100346
+    second: dogRogot_4
+  - first:
+      213: -839661100222507019
+    second: dogRogot_5
+  - first:
+      213: -246701512764207099
+    second: dogRogot_6
+  - first:
+      213: 3504035333979711227
+    second: dogRogot_7
+  - first:
+      213: 7057373704669739617
+    second: dogRogot_8
+  - first:
+      213: -7169828088752881218
+    second: dogRogot_9
+  - first:
+      213: 6243223370115760234
+    second: dogRogot_10
+  - first:
+      213: 1774812187249512081
+    second: dogRogot_11
+  - first:
+      213: 344950837554319154
+    second: dogRogot_12
+  - first:
+      213: -6768598481460191832
+    second: dogRogot_13
+  - first:
+      213: -4902215427038787561
+    second: dogRogot_14
+  - first:
+      213: -9022634221349934464
+    second: dogRogot_15
+  - first:
+      213: -3978463921033896338
+    second: dogRogot_16
+  - first:
+      213: -4537782142683307236
+    second: dogRogot_17
+  - first:
+      213: -5162919195816288127
+    second: dogRogot_18
+  - first:
+      213: 950152898444903148
+    second: dogRogot_19
+  - first:
+      213: -7794497838960023031
+    second: dogRogot_20
+  - first:
+      213: 218286264712975727
+    second: dogRogot_21
+  - first:
+      213: -4620201238189195440
+    second: dogRogot_22
+  - first:
+      213: 804334049039800959
+    second: dogRogot_23
+  - first:
+      213: -7578884500723416413
+    second: dogRogot_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DogRogot_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1122
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.49726623, y: 0.14187056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deca32e2db6babf4db7af96663f46858
+      internalID: -1919683597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogRogot_1
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1122
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.44247514, y: 0.13184074}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ebc497edb623d64bb5f64dcf01c5b77
+      internalID: -1541060636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogRogot_2
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1122
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.41256213, y: 0.13184074}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a6a62970bac4d44a9336ace0503fe6
+      internalID: 731721227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogRogot_3
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 1122
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.48619428, y: 0.14334543}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ba0194247ec5c4994b28a3ab3d9025
+      internalID: 1621333190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogRogot_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 842
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.49714214, y: 0.18705967}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c97479ddba7d54aa0c5ad5fd5683b0
+      internalID: -1731439230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogRogot_5
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 842
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.498571, y: 0.19563337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de5dee298ffa5944b8821398b8e4361
+      internalID: 1241446600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogRogot_6
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 842
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.4685632, y: 0.19992022}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c1886c1880e7948aea021b86701bba
+      internalID: -204694240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogRogot_7
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 842
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.49523512, y: 0.1871035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a5d7830b9e3e44cbcbbd9058083c0d
+      internalID: -801164361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogRogot_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 562
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.49017406, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c0972f04e43154689f324a686d7548
+      internalID: 153199390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogRogot_9
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 562
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.476137, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3853216f6eabd7d4db12c8b8ebe425bc
+      internalID: -243703154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogRogot_10
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 562
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.48641858, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bae6665efcea5741a24bda2413e487a
+      internalID: 935687801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogRogot_11
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 562
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.505433, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed6c9ca838198c4eabbcb226365ad24
+      internalID: -503191613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogRogot_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 282
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.4786752, y: 0.25831842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97641f9c4a7984a4b934fc02a06ff989
+      internalID: 2044764180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogRogot_13
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 282
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.4840064, y: 0.26187253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e46bf90d507a744825476b6d069a2a
+      internalID: -292417838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogRogot_14
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 282
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.4893376, y: 0.25121012}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1295f0140c89474381f6a6167027f75
+      internalID: -1194586498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogRogot_15
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 282
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.5177708, y: 0.25831842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c51ed01dc959a840aad098d5d50fb28
+      internalID: -1630926770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogRogot_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.47854272, y: 0.34366783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03223e1755878ee488ecfc9a3f223859
+      internalID: -1673028954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogRogot_17
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 2
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.4678142, y: 0.30535117}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf90c5b8bc1d0754bb40a3bed2b6eed5
+      internalID: -1158711347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogRogot_18
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 2
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.50459814, y: 0.29308984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ce406f39bbbde4488b0d7a1206d3ff
+      internalID: -1172458905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogRogot_19
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.48773912, y: 0.30228582}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ed0f3c2581d7a438fa63e4ade5c599
+      internalID: -1207166226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2c27e7e64f129db46924a1aa8be55c59
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":5.0},"gridSpriteSize":{"x":280.0,"y":280.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      DogRogot_0: -1919683597
+      DogRogot_1: -1541060636
+      DogRogot_10: 935687801
+      DogRogot_11: -503191613
+      DogRogot_12: 2044764180
+      DogRogot_13: -292417838
+      DogRogot_14: -1194586498
+      DogRogot_15: -1630926770
+      DogRogot_16: -1673028954
+      DogRogot_17: -1158711347
+      DogRogot_18: -1172458905
+      DogRogot_19: -1207166226
+      DogRogot_2: 731721227
+      DogRogot_3: 1621333190
+      DogRogot_4: -1731439230
+      DogRogot_5: 1241446600
+      DogRogot_6: -204694240
+      DogRogot_7: -801164361
+      DogRogot_8: 153199390
+      DogRogot_9: -243703154
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

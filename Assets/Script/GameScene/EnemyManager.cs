@@ -22,7 +22,7 @@ public class EnemyManager : MonoBehaviour
     public void Init()
     {
         spawnPosition = Camera.main.ViewportToWorldPoint(new Vector3(1.5f, 1.5f, 0f)); // 화면 밖에서 스폰, 정해진 타이밍에 화면 안으로 이동
-        prepareTick = 8 * TickClock.Instance.Resolution; // 8박자
+        prepareTick = 16 * TickClock.Instance.Resolution; // 16박자
     }
     private void Update()
     {

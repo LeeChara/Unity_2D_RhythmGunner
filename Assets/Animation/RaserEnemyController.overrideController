@@ -8,4 +8,14 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: RaserEnemyController
   m_Controller: {fileID: 9100000, guid: e998ff9d8dcfa824d9b54d6a3a141c9d, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 2c25f5904fa85a54f95b1b4ac42bdc53, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 79cead34159a0fc489e1552b398c315e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 63300fa8f5fe2f543924a2bb69e502e4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 29e1aa2a8479a2f4aa792a2bddd52049, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 9964a32e3d5ad4841ab5726cccd743ea, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: fee95a3109a13af42a27d4f0a0e23588, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: afc29ae7fc10a7f498a8b66d36975156, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: dac0e7ce75c0c4447b4606230d553671, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c18b6c29062de944bb6142bbabceac32, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 98eeaaa450147cd479bdca479f4b94ec, type: 2}

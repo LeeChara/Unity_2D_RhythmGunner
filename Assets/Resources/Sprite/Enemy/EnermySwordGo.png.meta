@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: abd3be9eb9556b848a309f8011170713
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4552909154377123450
+    second: EnermySwordGo_0
+  - first:
+      213: -3035248071973797916
+    second: EnermySwordGo_1
+  - first:
+      213: 8589000867652771717
+    second: EnermySwordGo_2
+  - first:
+      213: -206857799784215314
+    second: EnermySwordGo_3
+  - first:
+      213: 1558574723175680361
+    second: EnermySwordGo_4
+  - first:
+      213: -1804469822259372416
+    second: EnermySwordGo_5
+  - first:
+      213: 6658953180764483961
+    second: EnermySwordGo_6
+  - first:
+      213: -5107326541191482972
+    second: EnermySwordGo_7
+  - first:
+      213: 5523981777132506262
+    second: EnermySwordGo_8
+  - first:
+      213: -2148128005565292234
+    second: EnermySwordGo_9
+  - first:
+      213: 7152386671218913382
+    second: EnermySwordGo_10
+  - first:
+      213: 8916016818425684472
+    second: EnermySwordGo_11
+  - first:
+      213: 2511701367812286853
+    second: EnermySwordGo_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EnermySwordGo_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 579
+        width: 270
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6893ab61f31d0d0c0800000000000000
+      internalID: -4552909154377123450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermySwordGo_1
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 579
+        width: 271
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4efffc0c5f1a0e5d0800000000000000
+      internalID: -3035248071973797916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermySwordGo_2
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 575
+        width: 279
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58f17fb58c2423770800000000000000
+      internalID: 8589000867652771717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermySwordGo_3
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 579
+        width: 292
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eecc7d45de7112df0800000000000000
+      internalID: -206857799784215314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermySwordGo_4
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 577
+        width: 286
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9690acaf37b21a510800000000000000
+      internalID: 1558574723175680361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermySwordGo_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 192
+        width: 303
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e5154d14c35f6e0800000000000000
+      internalID: -1804469822259372416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermySwordGo_6
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 192
+        width: 289
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 971bc6323aa596c50800000000000000
+      internalID: 6658953180764483961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermySwordGo_7
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 195
+        width: 278
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a17b5012912f19b0800000000000000
+      internalID: -5107326541191482972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermySwordGo_8
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 211
+        width: 273
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69cc6b3b82029ac40800000000000000
+      internalID: 5523981777132506262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermySwordGo_9
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 190
+        width: 57
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6316630d5f05032e0800000000000000
+      internalID: -2148128005565292234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermySwordGo_10
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 193
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660fd3258c1624360800000000000000
+      internalID: 7152386671218913382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermySwordGo_11
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 194
+        width: 291
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f1eba9ae0e0cbb70800000000000000
+      internalID: 8916016818425684472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnermySwordGo_12
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 196
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5896052261b5bd220800000000000000
+      internalID: 2511701367812286853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      EnermySwordGo_0: -4552909154377123450
+      EnermySwordGo_1: -3035248071973797916
+      EnermySwordGo_10: 7152386671218913382
+      EnermySwordGo_11: 8916016818425684472
+      EnermySwordGo_12: 2511701367812286853
+      EnermySwordGo_2: 8589000867652771717
+      EnermySwordGo_3: -206857799784215314
+      EnermySwordGo_4: 1558574723175680361
+      EnermySwordGo_5: -1804469822259372416
+      EnermySwordGo_6: 6658953180764483961
+      EnermySwordGo_7: -5107326541191482972
+      EnermySwordGo_8: 5523981777132506262
+      EnermySwordGo_9: -2148128005565292234
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

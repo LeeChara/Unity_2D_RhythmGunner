@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: 3db77950cbe795d47ae93103fbfd3d1f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2416487759536793198
+    second: SwordEnermyOut_0
+  - first:
+      213: -8081261673905582873
+    second: SwordEnermyOut_1
+  - first:
+      213: -2148754206389218355
+    second: SwordEnermyOut_2
+  - first:
+      213: 7782996703603310144
+    second: SwordEnermyOut_3
+  - first:
+      213: -2270876681089579934
+    second: SwordEnermyOut_4
+  - first:
+      213: 4623231926436022863
+    second: SwordEnermyOut_5
+  - first:
+      213: 5920011386813724965
+    second: SwordEnermyOut_6
+  - first:
+      213: 9185160328396831334
+    second: SwordEnermyOut_7
+  - first:
+      213: 7080982553345471969
+    second: SwordEnermyOut_8
+  - first:
+      213: 2140620931602692754
+    second: SwordEnermyOut_9
+  - first:
+      213: 7354797207629437124
+    second: SwordEnermyOut_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SwordEnermyOut_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 563
+        width: 233
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e66254f60d6198120800000000000000
+      internalID: 2416487759536793198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyOut_1
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 563
+        width: 233
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec01ede25799df80800000000000000
+      internalID: -8081261673905582873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyOut_2
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 562
+        width: 246
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc35b821f671e22e0800000000000000
+      internalID: -2148754206389218355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyOut_3
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 561
+        width: 235
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04ebf4e0442c20c60800000000000000
+      internalID: 7782996703603310144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyOut_4
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 561
+        width: 248
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26400fea0b93c70e0800000000000000
+      internalID: -2270876681089579934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyOut_5
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 108
+        width: 241
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4ac67131f4092040800000000000000
+      internalID: 4623231926436022863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyOut_6
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 108
+        width: 235
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 529bc41adfa182250800000000000000
+      internalID: 5920011386813724965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyOut_7
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 127
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66a7a1357ae387f70800000000000000
+      internalID: 9185160328396831334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyOut_8
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 106
+        width: 230
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e535e89d14b44260800000000000000
+      internalID: 7080982553345471969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyOut_9
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 106
+        width: 225
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ab1f2556305bd10800000000000000
+      internalID: 2140620931602692754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyOut_10
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 106
+        width: 224
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c899cbc71d711660800000000000000
+      internalID: 7354797207629437124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SwordEnermyOut_0: 2416487759536793198
+      SwordEnermyOut_1: -8081261673905582873
+      SwordEnermyOut_10: 7354797207629437124
+      SwordEnermyOut_2: -2148754206389218355
+      SwordEnermyOut_3: 7782996703603310144
+      SwordEnermyOut_4: -2270876681089579934
+      SwordEnermyOut_5: 4623231926436022863
+      SwordEnermyOut_6: 5920011386813724965
+      SwordEnermyOut_7: 9185160328396831334
+      SwordEnermyOut_8: 7080982553345471969
+      SwordEnermyOut_9: 2140620931602692754
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

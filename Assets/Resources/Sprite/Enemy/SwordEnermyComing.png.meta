@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 1432e2b31fff002418a94e4abdfd7b21
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5024024888339256054
+    second: SwordEnermyComing_0
+  - first:
+      213: 9003305744674482742
+    second: SwordEnermyComing_1
+  - first:
+      213: -6192749598072888056
+    second: SwordEnermyComing_2
+  - first:
+      213: 8413260205542779612
+    second: SwordEnermyComing_3
+  - first:
+      213: -4515153231404169441
+    second: SwordEnermyComing_4
+  - first:
+      213: 802748075092214581
+    second: SwordEnermyComing_5
+  - first:
+      213: -6822848702662547722
+    second: SwordEnermyComing_6
+  - first:
+      213: 1653216696412032722
+    second: SwordEnermyComing_7
+  - first:
+      213: 2189350720707997530
+    second: SwordEnermyComing_8
+  - first:
+      213: 4124406503217851792
+    second: SwordEnermyComing_9
+  - first:
+      213: -3694967210760103870
+    second: SwordEnermyComing_10
+  - first:
+      213: 5958652721070947227
+    second: SwordEnermyComing_11
+  - first:
+      213: -9218458613011243512
+    second: SwordEnermyComing_12
+  - first:
+      213: -2523045023353400822
+    second: SwordEnermyComing_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SwordEnermyComing_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 459
+        width: 319
+        height: 565
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0d21d38bf3174ab0800000000000000
+      internalID: -5024024888339256054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyComing_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 527
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63a6e8b8fda22fc70800000000000000
+      internalID: 9003305744674482742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyComing_2
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 563
+        width: 267
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8052ce71d0fee0aa0800000000000000
+      internalID: -6192749598072888056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyComing_3
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 435
+        width: 629
+        height: 589
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdaae42e497e1c470800000000000000
+      internalID: 8413260205542779612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyComing_4
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 455
+        width: 292
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1782bfee04f651c0800000000000000
+      internalID: -4515153231404169441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyComing_5
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 485
+        width: 472
+        height: 539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53300040f1fe32b00800000000000000
+      internalID: 802748075092214581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyComing_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 253
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f66091014f5051a0800000000000000
+      internalID: -6822848702662547722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyComing_7
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 450
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de426683d761f610800000000000000
+      internalID: 1653216696412032722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyComing_8
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1
+        width: 297
+        height: 461
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5fab8c71e2226e10800000000000000
+      internalID: 2189350720707997530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyComing_9
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 3
+        width: 323
+        height: 453
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09d6c95dcd5dc3930800000000000000
+      internalID: 4124406503217851792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyComing_10
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1
+        width: 338
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2489de906e6d8bcc0800000000000000
+      internalID: -3694967210760103870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyComing_11
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 9
+        width: 274
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9b395b541361b250800000000000000
+      internalID: 5958652721070947227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyComing_12
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 157
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e13d2abb4711080800000000000000
+      internalID: -9218458613011243512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnermyComing_13
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 155
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0214be3be75cfcd0800000000000000
+      internalID: -2523045023353400822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SwordEnermyComing_0: -5024024888339256054
+      SwordEnermyComing_1: 9003305744674482742
+      SwordEnermyComing_10: -3694967210760103870
+      SwordEnermyComing_11: 5958652721070947227
+      SwordEnermyComing_12: -9218458613011243512
+      SwordEnermyComing_13: -2523045023353400822
+      SwordEnermyComing_2: -6192749598072888056
+      SwordEnermyComing_3: 8413260205542779612
+      SwordEnermyComing_4: -4515153231404169441
+      SwordEnermyComing_5: 802748075092214581
+      SwordEnermyComing_6: -6822848702662547722
+      SwordEnermyComing_7: 1653216696412032722
+      SwordEnermyComing_8: 2189350720707997530
+      SwordEnermyComing_9: 4124406503217851792
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -10,16 +10,22 @@
         {"tick": 0, "type": "첫음은 600"},
         {"tick": 0, "type": "마디1"},
         {"tick": 600, "type": "Note", "noteType": "Defense"},
+        {"tick": 0, "type": "Enemy", "enemyType": "Raser"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+        {"tick": 0, "type": "Enemy", "enemyType": "Sword"},
+
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 0, "type": "Enemy", "enemyType": "Sword", "position": {"x": 0.4, "y": 0.2}},
         {"tick": 240, "type": "Note", "noteType": "Attack"},
 
         {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 0, "type": "Enemy", "enemyType": "Raser", "position": {"x": 0.5, "y": 0.2}},
         {"tick": 240, "type": "Note", "noteType": "Attack"},
 
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
+        {"tick": 240, "type": "Note", "noteType": "Counter"},
+        {"tick": 0, "type": "Enemy", "enemyType": "Dog", "position": {"x": 0.6, "y": 0.2}},
+        {"tick": 240, "type": "Note", "noteType": "Counter"},
+        {"tick": 0, "type": "Enemy", "enemyType": "Dog", "position": {"x": 0.7, "y": 0.2}},
         
         {"tick": 0, "type": "마디2"},
         {"tick": 240, "type": "Note", "noteType": "Defense"},

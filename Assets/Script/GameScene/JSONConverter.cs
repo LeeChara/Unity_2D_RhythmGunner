@@ -54,8 +54,8 @@ public class JSONConverter : MonoBehaviour
                     Position position = jo["position"]?.ToObject<Position>();
                     if (position == null)
                     {
-                        float posX = Random.Range(0.4f, 0.9f);
-                        float posY = Random.Range(0.4f, 0.9f);
+                        float posX = Random.Range(0.4f, 0.8f);
+                        float posY = 0.2f;
                         position = new Position {x = posX, y = posY};
                     }
 

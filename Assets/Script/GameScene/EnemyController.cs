@@ -21,8 +21,12 @@ public class EnemyController : MonoBehaviour
 
     public float targetTick { get; private set; } // 판정 타이밍 Tick
     private Position position;
-    public void Init(float targetTick, Position position)
+    private string enemyType;
+    private Animator animator;
+    public float dieDelay = 0.5f; // 죽음 애니메이션 후 제거까지의 시간
+    public void Init(string enemyType, float targetTick, Position position)
     {
+        this.enemyType = enemyType;
         this.targetTick = targetTick;
         // 박자를 Tick으로 변환
         appearTick = targetTick - appearBeat * TickClock.Instance.Resolution;
@@ -31,6 +35,8 @@ public class EnemyController : MonoBehaviour
         disappearTick = targetTick - disappearBeat * TickClock.Instance.Resolution;
 
         this.position = position;
+        animator = GetComponent<Animator>();
+        Debug.Log($"[EnemyController] Init - enemyType: {enemyType}, targetTick: {targetTick}, appearTick: {appearTick}, prepareTick: {prepareTick}, attackTick: {attackTick}, disappearTick: {disappearTick}");
     }
     private void Update()
     {
@@ -60,26 +66,39 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private void Appear() // 등장
+    private void Appear()
     {
         transform.position = Camera.main.ViewportToWorldPoint(new Vector3(position.x, position.y, 10));
-        // Debug.Log("[EnemyController] Enemy Appeared at Tick: " + TickClock.Instance.Tick);
-    }
-    private void Prepare() // 공격 준비
-    {
-        // Debug.Log("[EnemyController] Enemy Prepared at Tick: " + TickClock.Instance.Tick);
-    }
-    private void Attack() // 공격
-    {
-        // Debug.Log("[EnemyController] Enemy Attacked at Tick: " + TickClock.Instance.Tick);
-    }
-    private void Disappear() // 퇴장
-    {
-        // Debug.Log("[EnemyController] Enemy Disappeared at Tick: " + TickClock.Instance.Tick);
+        animator.SetTrigger("Appear");
+        Debug.Log($"[EnemyController] Appear at Tick: {TickClock.Instance.Tick}");
     }
 
-    public void Die() // 사망
+    private void Prepare()
     {
-        Destroy(this.gameObject);
+        animator.SetTrigger("Prepare");
+        Debug.Log($"[EnemyController] Prepare at Tick: {TickClock.Instance.Tick}");
+    }
+
+    private void Attack()
+    {
+        animator.SetTrigger("Attack");
+        Debug.Log($"[EnemyController] Attack at Tick: {TickClock.Instance.Tick}");
+    }
+
+    private void Disappear()
+    {
+        animator.SetTrigger("Disappear");
+        Invoke("DestroySelf", dieDelay);
+        Debug.Log($"[EnemyController] Disappear at Tick: {TickClock.Instance.Tick}");
+    }
+    public void Die()
+    {
+        animator.SetTrigger("Die");
+        Invoke("DestroySelf", dieDelay);
+    }
+
+    private void DestroySelf()
+    {
+        Destroy(gameObject);
     }
 }

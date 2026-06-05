@@ -129,10 +129,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb9fcf187012eb14785a9b08d98bd4aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  appearBeat: 4
-  prepareBeat: 2
+  appearBeat: 2
+  prepareBeat: 1
   attackBeat: -0.5
-  disappearBeat: -2
+  disappearBeat: -1
   eyeGlow: {fileID: 0}
   audioSource: {fileID: 6126737795509166949}
   appearSE: {fileID: 8300000, guid: 4f5eac2d3f79b8147ada8dec2b30f8af, type: 3}

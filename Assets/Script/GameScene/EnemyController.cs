@@ -79,6 +79,8 @@ public class EnemyController : MonoBehaviour
         animator.SetTrigger("Appear");
         audioSource.PlayOneShot(appearSE);
         Debug.Log($"[EnemyController] Appear at Tick: {TickClock.Instance.Tick}");
+        if (enemyType == "Dog")
+            eyeGlow.SetActive(false);
     }
 
     private void Prepare()
@@ -106,7 +108,7 @@ public class EnemyController : MonoBehaviour
                 transform.position = Camera.main.ViewportToWorldPoint(new Vector3(0.2f, 0.2f, 10));
                 break;
             case "Sword":
-                transform.position = Camera.main.ViewportToWorldPoint(new Vector3(0.1f, 0.2f, 10));
+                transform.position = Camera.main.ViewportToWorldPoint(new Vector3(0.2f, 0.2f, 10));
                 break;
         }
     }

@@ -57,8 +57,8 @@ public class JSONConverter : MonoBehaviour
 
                     if (autoEnemyType != null)
                     {
-                        float posX = Random.Range(0.4f, 0.8f);
-                        float posY = Random.Range(0.15f, 0.25f);
+                        float posX = Random.Range(0.5f, 0.8f);
+                        float posY = Random.Range(0.2f, 0.25f);
                         EnemyData autoEnemyData = new EnemyData
                         {
                             tick = previousTick + jo["tick"].ToObject<float>(),

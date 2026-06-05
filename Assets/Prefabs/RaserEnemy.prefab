@@ -129,8 +129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb9fcf187012eb14785a9b08d98bd4aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  appearBeat: 4
-  prepareBeat: 1
+  appearBeat: 2
+  prepareBeat: 0.5
   attackBeat: 0
   disappearBeat: -1
   eyeGlow: {fileID: 0}

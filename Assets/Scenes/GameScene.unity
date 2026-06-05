@@ -1576,7 +1576,7 @@ MonoBehaviour:
   m_text: 9999999
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 320902dfccd6ae4448a8147aa0373294, type: 2}
-  m_sharedMaterial: {fileID: 6713004688263717209, guid: 320902dfccd6ae4448a8147aa0373294, type: 2}
+  m_sharedMaterial: {fileID: 8657315730492453751, guid: 320902dfccd6ae4448a8147aa0373294, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2550,6 +2550,10 @@ MonoBehaviour:
   muzzleLight2: {fileID: 166598966}
   shieldLight: {fileID: 1738937613}
   counterLight: {fileID: 570017888}
+  eyeGlow: {fileID: 1322471008}
+  eyeGlowAttackPosition: {x: 0.3, y: 2.9, z: 0}
+  eyeGlowDefensePosition: {x: 0.3, y: 2.3, z: 0}
+  eyeGlowCounterPosition: {x: -0.6, y: 1.8, z: 0}
 --- !u!82 &719086509
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4836,7 +4840,7 @@ MonoBehaviour:
   m_text: We Could Get More Machinegun Psystyle!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 320902dfccd6ae4448a8147aa0373294, type: 2}
-  m_sharedMaterial: {fileID: 6713004688263717209, guid: 320902dfccd6ae4448a8147aa0373294, type: 2}
+  m_sharedMaterial: {fileID: 8657315730492453751, guid: 320902dfccd6ae4448a8147aa0373294, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4992,7 +4996,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameStarter
   songName: Chaos
-  isAuto: 0
+  isAuto: 1
 --- !u!4 &2111965049
 Transform:
   m_ObjectHideFlags: 0
@@ -5143,7 +5147,7 @@ MonoBehaviour:
   m_text: 999
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 320902dfccd6ae4448a8147aa0373294, type: 2}
-  m_sharedMaterial: {fileID: 6713004688263717209, guid: 320902dfccd6ae4448a8147aa0373294, type: 2}
+  m_sharedMaterial: {fileID: 8657315730492453751, guid: 320902dfccd6ae4448a8147aa0373294, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

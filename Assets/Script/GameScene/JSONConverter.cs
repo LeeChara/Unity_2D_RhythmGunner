@@ -45,6 +45,29 @@ public class JSONConverter : MonoBehaviour
                         noteType = noteType,
                         intensity = jo["intensity"]?.ToString() ?? "normal"
                     };
+
+                    string autoEnemyType = noteType switch
+                    {
+                        NoteType.Attack => "Sword",
+                        NoteType.Counter => "Dog",
+                        NoteType.Defense => "Raser",
+                        NoteType.Reload => null,
+                        _ => null
+                    };
+
+                    if (autoEnemyType != null)
+                    {
+                        float posX = Random.Range(0.4f, 0.8f);
+                        float posY = Random.Range(0.15f, 0.25f);
+                        EnemyData autoEnemyData = new EnemyData
+                        {
+                            tick = previousTick + jo["tick"].ToObject<float>(),
+                            type = "Enemy",
+                            enemyType = autoEnemyType,
+                            position = new Position { x = posX, y = posY }
+                        };
+                        chartData.events.Add(autoEnemyData);
+                    }
                     break;
 
                 case "Enemy":

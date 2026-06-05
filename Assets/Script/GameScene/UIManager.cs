@@ -31,7 +31,7 @@ public class UIManager : MonoBehaviour
         score = 0;
         displayScore = 0;
         combo = 0;
-        point = 1000000 / noteNumber; // 노트 하나당 점수
+        point = Mathf.CeilToInt(1000000f / noteNumber); // 노트 하나당 점수
 
         titleText.GetComponent<TextMeshProUGUI>().text = metaData.title;
     }

@@ -34,6 +34,18 @@ public class JudgeSystem : MonoBehaviour
                 if (nc == null) continue;
                 if (nc.targetTick <= TickClock.Instance.Tick)
                 {
+                    switch (nc.noteType)
+                    {
+                        case NoteType.Attack:
+                            GameManager.Instance.playerController.OnAttack();
+                            break;
+                        case NoteType.Defense:
+                            GameManager.Instance.playerController.OnDefense();
+                            break;
+                        case NoteType.Counter:
+                            GameManager.Instance.playerController.OnCounter();
+                            break;
+                    }
                     OnPerfect(nc.targetTick);
                     GameManager.Instance.playerController.PlaySE(nc.noteType.ToString());
                     toDestroy.Add(nc);

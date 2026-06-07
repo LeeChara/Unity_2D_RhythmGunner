@@ -70,7 +70,7 @@
         {"tick": 0, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "SlashA"},
         {"tick": 0, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "Disappear"},
         {"tick": 0, "type": "BPMEvent", "bpm": 200},
-        {"tick": 0, "type": "TextEffect", "text": "Test", "position": {"x": 0.5, "y": 0.5}, "size": 64, "color": "#FF0000", "align": "Center", "duration": 0.75},
+        
         {"tick": 0, "type": "AlertEffect"},
         {"tick": 0, "type": "NoteEffect", "noteType": "Attack", "startPosition": {"x": 0.5, "y": 0.5}, "endPosition": {"x": 0.5, "y": 0.5}, "duration": 4800}
     ]

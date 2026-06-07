@@ -52,6 +52,7 @@ public class NoteManager: MonoBehaviour
     {
         NoteData scheduledNoteData = new NoteData()
         {
+            targetTick = noteData.tick,
             tick = noteData.tick - arriveTick, // 노트가 도착하는 tick보다 arriveTick만큼 먼저 스폰
             type = noteData.type,
             noteType = noteData.noteType,
@@ -80,7 +81,7 @@ public class NoteManager: MonoBehaviour
         }
         GameObject note = Instantiate(notePrefab);
         note.GetComponent<RectTransform>().SetParent(lane, false);
-        note.GetComponent<NoteController>().Init(noteData.tick + arriveTick, noteData.noteType, moveDistance, destroyX);
+        note.GetComponent<NoteController>().Init(noteData.targetTick, noteData.noteType, moveDistance, destroyX);
     }
 
     // BPM이 변경될 때 노트 스피드와 arriveTick을 업데이트하는 메서드. BPMEventManager에서 호출됨

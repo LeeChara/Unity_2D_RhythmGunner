@@ -3871,7 +3871,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1579564630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4996,7 +4996,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameStarter
   songName: Chaos
-  isAuto: 1
 --- !u!4 &2111965049
 Transform:
   m_ObjectHideFlags: 0

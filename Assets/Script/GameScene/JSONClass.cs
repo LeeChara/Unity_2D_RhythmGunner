@@ -24,6 +24,7 @@ public class EventData // 이벤트 기본 클래스
 }
 public class NoteData : EventData // 노트 클래스
 {
+    public float targetTick; // 노트가 판정되는 tick, NoteManager에서 사용
     public NoteType noteType;
     public string intensity; // "Normal", "Strong", "Weak" 등으로 구분
 }

@@ -1,30 +1,76 @@
 {
     "metaData":{
         "title": "Hidden(秘伝)",
-        "bpm": 125,
+        "bpm": 200,
         "resolution": 480,
         "offset": 0,
-        "startTick": 0
+        "startTick": 420
     },
     "events": [
-        {"tick": 0, "type": "Note", "noteType": "Attack"},
+        {"tick": 300, "type": "마디1"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
+        {"tick": 120, "type": "Note", "noteType": "Reload"},
+        {"tick": 120, "type": "Note", "noteType": "Reload"},
+        {"tick": 120, "type": "Note", "noteType": "Reload"},
+        {"tick": 120, "type": "Note", "noteType": "Reload"},
+        {"tick": 120, "type": "Note", "noteType": "Reload"},
+        {"tick": 120, "type": "Note", "noteType": "Reload"},
+        {"tick": 120, "type": "Note", "noteType": "Reload"},
+
+        {"tick": 3020, "type": "Note", "noteType": "Attack"},
+        {"tick": 960, "type": "Note", "noteType": "Attack"},
+        {"tick": 960, "type": "Note", "noteType": "Attack"},
+        {"tick": 960, "type": "Note", "noteType": "Defense"},
+        {"tick": 480, "type": "Note", "noteType": "Defense"},
+
+        {"tick": 480, "type": "Note", "noteType": "Defense"},
+        {"tick": 960, "type": "Note", "noteType": "Defense"},
+        {"tick": 960, "type": "Note", "noteType": "Defense"},
+        {"tick": 960, "type": "Note", "noteType": "Attack"},
+        {"tick": 480, "type": "Note", "noteType": "Attack"},
+
+        {"tick": 480, "type": "Note", "noteType": "Attack"},
+        {"tick": 960, "type": "Note", "noteType": "Attack"},
+        {"tick": 960, "type": "Note", "noteType": "Attack"},
+        {"tick": 960, "type": "Note", "noteType": "Defense"},
+        {"tick": 480, "type": "Note", "noteType": "Defense"},
+
+        {"tick": 480, "type": "Note", "noteType": "Defense"},
+        {"tick": 960, "type": "Note", "noteType": "Defense"},
+        {"tick": 960, "type": "Note", "noteType": "Defense"},
+        {"tick": 960, "type": "Note", "noteType": "Attack"},
+        {"tick": 480, "type": "Note", "noteType": "Attack"},
+
         {"tick": 480, "type": "Note", "noteType": "Attack"},
         {"tick": 480, "type": "Note", "noteType": "Attack"},
+        {"tick": 480, "type": "Note", "noteType": "Defense"},
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+
+        {"tick": 720, "type": "Note", "noteType": "Attack"},
         {"tick": 480, "type": "Note", "noteType": "Attack"},
+        {"tick": 480, "type": "Note", "noteType": "Defense"},
+        {"tick": 240, "type": "Note", "noteType": "Defense"},
+
+        {"tick": 720, "type": "Note", "noteType": "Defense"},
+        {"tick": 480, "type": "Note", "noteType": "Defense"},
         {"tick": 480, "type": "Note", "noteType": "Attack"},
-        {"tick": 480, "type": "Note", "noteType": "Attack"},
-        {"tick": 480, "type": "Note", "noteType": "Attack"},
-        {"tick": 480, "type": "Note", "noteType": "Attack"},
-        {"tick": 480, "type": "Note", "noteType": "Attack"},
-        {"tick": 480, "type": "Note", "noteType": "Attack"},
-        {"tick": 480, "type": "Note", "noteType": "Attack"},
-        {"tick": 480, "type": "Note", "noteType": "Attack"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
+
+        {"tick": 720, "type": "Note", "noteType": "Defense"},
+        {"tick": 360, "type": "Note", "noteType": "Defense"},
+        {"tick": 360, "type": "Note", "noteType": "Defense"},
+        {"tick": 120, "type": "Note", "noteType": "Reload"},
+        {"tick": 120, "type": "Note", "noteType": "Reload"},
+        {"tick": 120, "type": "Note", "noteType": "Reload"},
+        {"tick": 120, "type": "Note", "noteType": "Reload"},
+
+
         {"tick": 0, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.4, "y": 0.4}},
         {"tick": 0, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "Appear"},
         {"tick": 0, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "SlashA"},
         {"tick": 0, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "Disappear"},
-        {"tick": 0, "type": "BPMEvent", "bpm": 125},
-        {"tick": 0, "type": "TextEffect", "text": "Test", "position": {"x": 0.5, "y": 0.5}, "size": 64, "color": "#FF0000", "align": "Center", "duration": 0.75},
+        {"tick": 0, "type": "BPMEvent", "bpm": 200},
+        
         {"tick": 0, "type": "AlertEffect"},
         {"tick": 0, "type": "NoteEffect", "noteType": "Attack", "startPosition": {"x": 0.5, "y": 0.5}, "endPosition": {"x": 0.5, "y": 0.5}, "duration": 4800}
     ]

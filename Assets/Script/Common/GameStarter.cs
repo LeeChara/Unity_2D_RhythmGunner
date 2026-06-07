@@ -6,8 +6,6 @@ public class GameStarter : MonoBehaviour
     public static GameStarter Instance { get; private set; }
 
     public string songName;
-
-    public bool isAuto;
     private void Awake()
     {
         Instance = this;

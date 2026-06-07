@@ -25,7 +25,7 @@ public class JudgeSystem : MonoBehaviour
 
     private void Update()
     {
-        if (GameStarter.Instance.isAuto)
+        if (SettingManager.Instance.IsAuto)
         {
             List<NoteController> toDestroy = new List<NoteController>();
             foreach (Transform note in lane)

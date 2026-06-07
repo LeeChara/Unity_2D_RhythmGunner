@@ -8,6 +8,12 @@ public class SettingManager : MonoBehaviour
     public float NoteSpawnOffset; // ms 단위, 노트 소환 타이밍 조절, 양수: 노트가 빨리 소환, 음수: 노트가 늦게 소환 
     public float BgmVolume;
     public float SeVolume;
+    public bool IsAuto { get; private set; }
+    public void SetIsAuto(bool isAuto)
+    {
+        Debug.Log($"[SettingManager] Set IsAuto to {isAuto}");
+        IsAuto = isAuto;
+    }
 
     private List<AudioSource> bgmSources = new List<AudioSource>();
     private List<AudioSource> seSources = new List<AudioSource>();

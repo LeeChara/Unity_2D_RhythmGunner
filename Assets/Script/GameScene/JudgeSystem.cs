@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using static TreeEditor.TreeEditorHelper;
 public class JudgeSystem : MonoBehaviour
 {
     private float perfectTick; // perfect 판정 tick 범위

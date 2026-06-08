@@ -1,7 +1,4 @@
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
-using UnityEngine.UIElements;
 
 public class ResultManager : MonoBehaviour
 {

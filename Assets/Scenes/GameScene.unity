@@ -4839,8 +4839,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: We Could Get More Machinegun Psystyle!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 320902dfccd6ae4448a8147aa0373294, type: 2}
-  m_sharedMaterial: {fileID: 8657315730492453751, guid: 320902dfccd6ae4448a8147aa0373294, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 716375e53fa6749a5b5de7f8ac088f52, type: 2}
+  m_sharedMaterial: {fileID: 3402401282236764829, guid: 716375e53fa6749a5b5de7f8ac088f52, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4870,7 +4870,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535

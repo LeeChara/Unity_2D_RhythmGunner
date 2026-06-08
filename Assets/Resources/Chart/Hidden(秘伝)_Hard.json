@@ -8,8 +8,8 @@
     },
     "events": [
         {"tick": 300, "type": "파트1"},
-        {"tick": 0, "type": "TextEffect", "text": "Booting...", "position": {"x": 0.5, "y": 0.5}, "size": 35, "color": "#FFFFFF", "align": "Center", "duration": 1},
-        {"tick": 120, "type": "Note", "noteType": "Counter"},
+        {"tick": 0, "type": "TextEffect", "text": "Initializing...", "position": {"x": 0.5, "y": 0.5}, "size": 28, "color": "#FFFFFF", "align": "Center", "duration": 1},
+        {"tick": 120, "type": "Note", "noteType": "Attack"},
         {"tick": 120, "type": "Note", "noteType": "Reload"},
         {"tick": 120, "type": "Note", "noteType": "Reload"},
         {"tick": 120, "type": "Note", "noteType": "Reload"},
@@ -87,13 +87,13 @@
         {"tick": 240, "type": "Note", "noteType": "Counter"},
         
         {"tick": 0, "type": "파트3"},
-        {"tick": 480, "type": "Note", "noteType": "Counter"},
+        {"tick": 480, "type": "Note", "noteType": "Attack"},
         {"tick": 120, "type": "Note", "noteType": "Reload"},
         {"tick": 120, "type": "Note", "noteType": "Defense"},
         {"tick": 120, "type": "Note", "noteType": "Reload"},
         {"tick": 120, "type": "Note", "noteType": "Reload"},
         {"tick": 480, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
         {"tick": 120, "type": "Note", "noteType": "Attack"},
 
         {"tick": 720, "type": "Note", "noteType": "Defense"},
@@ -102,7 +102,7 @@
         {"tick": 120, "type": "Note", "noteType": "Reload"},
         {"tick": 120, "type": "Note", "noteType": "Reload"},
         {"tick": 480, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
         {"tick": 120, "type": "Note", "noteType": "Attack"},
         
         {"tick": 720, "type": "Note", "noteType": "Attack"},
@@ -111,7 +111,7 @@
         {"tick": 120, "type": "Note", "noteType": "Reload"},
         {"tick": 120, "type": "Note", "noteType": "Reload"},
         {"tick": 480, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
+        {"tick": 120, "type": "Note", "noteType": "Attack"},
         {"tick": 120, "type": "Note", "noteType": "Defense"},
 
         {"tick": 720, "type": "Note", "noteType": "Counter"},
@@ -124,13 +124,13 @@
         {"tick": 120, "type": "Note", "noteType": "Attack"},
         {"tick": 240, "type": "Note", "noteType": "Counter"},
 
-        {"tick": 360, "type": "Note", "noteType": "Counter"},
+        {"tick": 360, "type": "Note", "noteType": "Attack"},
         {"tick": 120, "type": "Note", "noteType": "Reload"},
         {"tick": 120, "type": "Note", "noteType": "Defense"},
         {"tick": 120, "type": "Note", "noteType": "Reload"},
         {"tick": 120, "type": "Note", "noteType": "Reload"},
         {"tick": 480, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
         {"tick": 120, "type": "Note", "noteType": "Attack"},
 
         {"tick": 720, "type": "Note", "noteType": "Defense"},
@@ -139,7 +139,7 @@
         {"tick": 120, "type": "Note", "noteType": "Reload"},
         {"tick": 120, "type": "Note", "noteType": "Reload"},
         {"tick": 480, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
+        {"tick": 120, "type": "Note", "noteType": "Attack"},
         {"tick": 120, "type": "Note", "noteType": "Defense"},
 
         {"tick": 720, "type": "Note", "noteType": "Attack"},
@@ -148,7 +148,7 @@
         {"tick": 120, "type": "Note", "noteType": "Reload"},
         {"tick": 120, "type": "Note", "noteType": "Reload"},
         {"tick": 480, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
+        {"tick": 120, "type": "Note", "noteType": "Defense"},
         {"tick": 120, "type": "Note", "noteType": "Attack"},
 
         {"tick": 720, "type": "Note", "noteType": "Defense"},
@@ -281,7 +281,7 @@
         {"tick": 120, "type": "Note", "noteType": "Reload"},
         {"tick": 120, "type": "Note", "noteType": "Reload"},
 
-        {"tick": 240, "type": "Note", "noteType": "Counter"},
+        {"tick": 240, "type": "Note", "noteType": "Attack"},
         {"tick": 120, "type": "Note", "noteType": "Reload"},
         {"tick": 120, "type": "Note", "noteType": "Reload"},
         {"tick": 120, "type": "Note", "noteType": "Reload"},
@@ -359,370 +359,6 @@
         {"tick": 120, "type": "Note", "noteType": "Defense"},
         {"tick": 120, "type": "Note", "noteType": "Defense"},
         {"tick": 120, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
-
-        {"tick": 0, "type": "TextEffect", "text": "Loading...", "position": {"x": 0.5, "y": 0.5}, "size": 35, "color": "#FFFFFF", "align": "Center", "duration": 2.5},
-
-        {"tick": 3960, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 480, "type": "Note", "noteType": "Counter"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 0, "type": "TextEffect", "text": "Reprogramming...", "position": {"x": 0.5, "y": 0.5}, "size": 25, "color": "#FFFFFF", "align": "Center", "duration": 8},
-
-        {"tick": 480, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 480, "type": "Note", "noteType": "Counter"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 480, "type": "Note", "noteType": "Defense"},
-
-        {"tick": 720, "type": "Note", "noteType": "Defense"},
-
-        {"tick": 720, "type": "Note", "noteType": "Defense"},
-
-        {"tick": 480, "type": "Note", "noteType": "Defense"},
-
-        {"tick": 720, "type": "Note", "noteType": "Defense"},
-
-        {"tick": 720, "type": "Note", "noteType": "Defense"},
-
-        {"tick": 480, "type": "Note", "noteType": "Counter"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 480, "type": "Note", "noteType": "Counter"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 480, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 480, "type": "Note", "noteType": "Counter"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 0, "type": "TextEffect", "text": "Optimizing...", "position": {"x": 0.5, "y": 0.5}, "size": 25, "color": "#FFFFFF", "align": "Center", "duration": 8},
-
-        {"tick": 360, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
-
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
-
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
-
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
-
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Counter"},
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
-
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Counter"},
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
-
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
-
-
-        {"tick": 360, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 360, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 360, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Counter"},
-
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Counter"},
-
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Counter"},
-
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-
-        {"tick": 240, "type": "Note", "noteType": "Counter"},
-
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Counter"},
-
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
-
-        {"tick": 240, "type": "Note", "noteType": "Counter"},
-
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-
-        {"tick": 360, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
-
-        {"tick": 240, "type": "Note", "noteType": "Counter"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
-
-
-        {"tick": 240, "type": "Note", "noteType": "Counter"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
-
-        {"tick": 240, "type": "Note", "noteType": "Counter"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
-
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Counter"},
-
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Counter"},
-
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-
-        {"tick": 240, "type": "Note", "noteType": "Counter"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-        {"tick": 120, "type": "Note", "noteType": "Reload"},
-
-        {"tick": 120, "type": "Note", "noteType": "Counter"},
-
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Counter"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-        {"tick": 240, "type": "Note", "noteType": "Attack"},
-        {"tick": 240, "type": "Note", "noteType": "Counter"},
-        {"tick": 240, "type": "Note", "noteType": "Defense"},
-
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
-        {"tick": 120, "type": "Note", "noteType": "Defense"},
-
-        {"tick": 120, "type": "Note", "noteType": "Attack"},
-
-        {"tick": 0, "type": "Enemy", "enemyType": "RobotA", "position": {"x": 0.4, "y": 0.4}},
-        {"tick": 0, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "Appear"},
-        {"tick": 0, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "SlashA"},
-        {"tick": 0, "type": "Boss", "bossType": "RobotAlpha", "bossAction": "Disappear"},
-        {"tick": 0, "type": "BPMEvent", "bpm": 200},
-
-        
-        {"tick": 0, "type": "AlertEffect"},
-        {"tick": 0, "type": "NoteEffect", "noteType": "Attack", "startPosition": {"x": 0.5, "y": 0.5}, "endPosition": {"x": 0.5, "y": 0.5}, "duration": 4800}
+        {"tick": 120, "type": "Note", "noteType": "Defense"}
     ]
 }

@@ -7,6 +7,12 @@ public class GameTester : MonoBehaviour
     public float jumpTick;
 
     public BPMEventManager bpmEventManager;
+
+    public void Awake()
+    {
+        this.activateJump = SettingManager.Instance.ActivateJump;
+        this.jumpTick = SettingManager.Instance.JumpTick;
+    }
     public void Jump()
     {
         if (!activateJump) return;

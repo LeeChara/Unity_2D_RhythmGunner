@@ -9,6 +9,9 @@ public class SettingManager : MonoBehaviour
     public float BgmVolume;
     public float SeVolume;
     public bool IsAuto { get; private set; }
+
+    public bool ActivateJump;
+    public float JumpTick;
     public void SetIsAuto(bool isAuto)
     {
         Debug.Log($"[SettingManager] Set IsAuto to {isAuto}");

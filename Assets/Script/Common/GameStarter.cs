@@ -20,14 +20,14 @@ public class GameStarter : MonoBehaviour
         }
         else
         {
-            songName = "Hidden(秘伝)_Easy";
+            songName = "We Could Get More Machinegun Psystyle!_Hard";
         }
 
         Debug.Log($"[GameStarter] Selected Song : {songName}");
         GameStart();
     }
 
-    private void GameStart()
+    public void GameStart()
     {
         Debug.Log($"[GameStarter] SongName : {songName}");
         GameManager.Instance.Init(songName);
